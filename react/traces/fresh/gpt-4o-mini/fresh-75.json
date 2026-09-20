@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-75",
+  "source": "fresh",
+  "question": "Where were two senior doctors arrested over suspicious deaths of newborn infants on January 14, 2026?",
+  "answer": "Novokuznetsk",
+  "evidence": "14 January – Two senior doctors are arrested over the suspicious deaths of nine newborn infants at a maternity hospital in Novokuznetsk from 4 to 12 January.",
+  "page": "2026 in Russia",
+  "url": "https://en.wikipedia.org/wiki/2026_in_Russia",
+  "sonnet_answer": "Rajasthan, India",
+  "agent_ok": false
+ },
+ "agent_answer": "Two senior doctors have been arrested in Russia following the deaths of nine babies in a maternity hospital in Siberia.",
+ "agent_ok": false,
+ "cost": 0.0002488500000000088,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Where were two senior doctors arrested over suspicious deaths of newborn infants on January 14, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_keTil5qxeWA8xTU3517YTpTN",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"two senior doctors arrested over suspicious deaths of newborn infants January 14 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_keTil5qxeWA8xTU3517YTpTN",
+   "content": "[Russian doctors arrested over 9 babies die in maternity hospital](https://www.bbc.com/news/articles/cx2wle7028ko) — Two senior doctors have been arrested in Russia following the deaths of nine babies in a maternity hospital in Siberia this month. The newborns died during the long New Year holiday in ...\n[Top doctors arrested after 9 newborns die at hospital in Russia: \"A ...](https://www.cbsnews.com/news/newborns-die-hospital-russia-doctors-arrested/) — People gather outside a maternity hospital after the state Investigative Committee opened a criminal case into the deaths of nine newborn babies and detained the hospital's chief doctor and acting ...\n[Nine newborn deaths: Russia arrests senior hospital staff](https://english.mathrubhumi.com/news/world/russia-arrests-hospital-chiefs-nine-newborn-deaths-siberia-x0fqa9x8) — Russian authorities have arrested two senior doctors after nine newborn babies died at a maternity hospital in Siberia, triggering outrage and renewed scrutiny of the country's strained ...\n[Russian doctors arrested after 9 babies die in maternity hospital](https://www.the-star.co.ke/news/world/2026-01-14-russian-doctors-arrested-after-9-babies-die-in-maternity-hospital) — Two senior doctors have been arrested in Russia following the deaths of nine babies in a maternity hospital in Siberia this month.\n[2 Russian doctors arrested after 9 babies die in maternity hospital](https://thetrumpet.ng/2-russian-doctors-arrested-after-9-babies-die-in-maternity-hospital/) — Two senior doctors have been arrested in Russia following the deaths of nine babies in a maternity hospital in Siberia this month. The newborns died during the long New Year holiday in Novokuznetsk, Russia's main investigative authority said in a statement."
+  },
+  {
+   "role": "assistant",
+   "content": "Two senior doctors were arrested in Russia over suspicious deaths of newborn infants. \n\nFINAL: Two senior doctors have been arrested in Russia following the deaths of nine babies in a maternity hospital in Siberia.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "task": {
+  "id": "fresh-100",
+  "source": "fresh",
+  "question": "What maximum distance did the crew of Artemis II reach from Earth on April 6, 2026?",
+  "answer": "252,756 miles",
+  "evidence": "April 6 – The crew of Artemis II breaks the record for the furthest humans have ever been from Earth, reaching a maximum distance of 252,756 miles (406,771 km) as they travel around the far side of the Moon.",
+  "page": "2026",
+  "url": "https://en.wikipedia.org/wiki/2026",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "252,756 miles",
+ "agent_ok": true,
+ "cost": 0.0005403000000000074,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What maximum distance did the crew of Artemis II reach from Earth on April 6, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_sdqyvWUB79NGbtY29gXnOOuv",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Artemis II maximum distance from Earth April 6 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_sdqyvWUB79NGbtY29gXnOOuv",
+   "content": "[Artemis II Return to Earth - NASA](https://www.nasa.gov/gallery/return-to-earth/) — The four astronauts aboard the agency's Artemis II test flight around the Moon made history at 1:56 p.m. EDT on April 6 , 2026 , when they reached 248,655 miles from Earth—surpassing the farthest distance ever traveled by humans, a record previously set by Apollo 13 in 1970. NASA astronauts Reid Wiseman, Victor Glover, and Christina Koch and CSA (Canadian Space Agency) astronaut Jeremy ...\n[Artemis II - Wikipedia](https://en.wikipedia.org/wiki/Artemis_II) — Artemis II ( April 1-11, 2026 ) was a crewed flyby of the Moon and first crewed flight of the NASA -led Artemis program. It was the first crewed flight beyond low Earth orbit (LEO) since Apollo 17 in 1972 and the only crewed flight beyond LEO not part of the Apollo program.\n[NASA's Artemis II Crew Eclipses Record for Farthest Human Spaceflight](https://www.nasa.gov/news-release/nasas-artemis-ii-crew-eclipses-record-for-farthest-human-spaceflight/) — On Monday, April 6 , 2026 , six days into the Artemis II mission, NASA astronauts Reid Wiseman, Victor Glover, and Christina Koch, and CSA (Canadian Space Agency) astronaut Jeremy Hansen surpassed the record for human spaceflight's farthest distance from Earth , which was previously set by the Apollo 13 mission in 1970.\n[Artemis 2 moon mission will break records: Historic!](https://nasaspacenews.com/2026/04/artemis-2-moon-mission-will-break/) — Artemis 2 moon mission will break the all-time human distance record on April 6 , 2026 . By reaching 252,757 miles from Earth , the Orion capsule officially surpasses the historic Apollo 13 mark established over fifty years ago. The Orion spacecraft reached its exit velocity following a nearly six-minute translunar injection burn on April 2.\n[Artemis II Astronauts Reach Farthest Distance from Earth Since 1972](https://www.karmactive.com/artemis-ii-moon-flyby-distance-record-252756-miles-april-2026/) — Artemis II astronauts completed humanity's "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_4F1AIH5fIUrDSpfravDExWf4",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.nasa.gov/news-release/nasas-artemis-ii-crew-eclipses-record-for-farthest-human-spaceflight/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_uWOvEdD5bDRSXpV7FupmLK4t",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.karmactive.com/artemis-ii-moon-flyby-distance-record-252756-miles-april-2026/\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_4F1AIH5fIUrDSpfravDExWf4",
+   "content": "NASA’s Artemis II Crew Eclipses Record for Farthest Human Spaceflight - NASA Explore Search News & Events News & Events News Releases Recently Published Video Series on NASA+ Podcasts & Audio Blogs Newsletters Social Media Media Resources Events Upcoming Launches & Landings Virtual Guest Program Multimedia Multimedia NASA+ Images NASA Live NASA Apps Podcasts Image of the Day e-Books 3D Resources Interactives STEM Multimedia NASA Brand & Usage Guidelines NASA+ Search Suggested Searches Climate Change Artemis Expedition 64 Mars perseverance SpaceX Crew-2 International Space Station View All Topics A-Z Home Missions Humans in Space Earth The Solar System The Universe Science Aeronautics Technology Learning Resources About NASA Español News & Events Multimedia NASA+ Featured 2 min read NASA Awards SpaceX Three Crew Flights to Space Station article 2 days ago 5 min read Newfound ‘Baby’ Planet Smashes Record for Youngest Known World article 4 days ago 6 min read NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater article 4 days ago Back Missions Search All NASA Missions A to Z List of Missions Upcoming Launches and Landings Spaceships and Rockets Communicating with Missions Artemis James Webb Space Telescope Hubble Space Telescope International Space Station OSIRIS-Rex Humans in Space Why Go to Space Astronauts Commercial Space Destinations Spaceships and Rockets Living in Space Earth Explore Earth Science Climate Change Earth, Our Planet Earth Science in Action Earth Multimedia Earth Data Earth Science Researchers The Solar System The Sun Mercury Venus Earth The Moon Mars Jupiter Saturn Uranus Neptune Pluto & Dwarf Planets Asteroids, Comets & Meteors The Kuiper Belt The Oort Cloud Skywatching The Universe Exoplanets The Search for Life in the Universe Stars Galaxies Black Holes The Big Bang Dark Energy Dark Matter Science Earth Science Planetary Science Astrophysics & Space Science The Sun & Heliophysics Biological & Physical Sciences Lunar Science Citizen Scien"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_uWOvEdD5bDRSXpV7FupmLK4t",
+   "content": "Artemis II Breaks 54-Year Human Distance Record at 252,756 Miles — \"It Is Blowing My Mind,\" Says Astronaut - Karmactive News Cheshire father and son die after entering slurry tank as farm safety warnings resurface Kim Kardashian Reveals Esophagitis Diagnosis, Condition Linked to Cancer That Killed Her Father Uber faces $40 million arbitration award over woman killed after being left near California freeway Nature Tiny crustaceans were seen riding giant sea spiders 3,000 metres below the Pacific surface Great white shark bites diver near Percé as Quebec registry records just 15 confirmed incidents in 330 years Jelly Bean beluga dies in Spain three weeks after Marineland transfer as cause remains unconfirmed Sustainability Azerbaijan Grand Prix 2026: Spectator Guide to Heat, Public Transport, and Waste Ziro Festival 2026: Pack Light, Respect Indigenous Land, and Travel Zero-Waste Worcester cycling ban faces review as councillors seek daytime access after 10am–6pm restriction Climate Health Cheshire father and son die after entering slurry tank as farm safety warnings resurface Kim Kardashian Reveals Esophagitis Diagnosis, Condition Linked to Cancer That Killed Her Father FDA Clears Aptitude Metrix Molecular COVID Test for Over-the-Counter Use Activism Dolly Parton Gave Away 325 Million Books and $1 Million for a COVID Vaccine Before She Died at 80 CJP’s Dipke: Gen Z Uprising Reaches 22.5M Followers, Demands Change ‘Just the Beginning’: CJP Founder Dipke’s Video Message After Government Victory Energy More About Contact Share this Facebook X Pinterest Linkedin Whatsapp Reddit Email Follow Karmactive on Google News Artemis II: Humans Venture Farthest From Earth Since 1972 📡 Mission In Progress Artemis II’s Orion spacecraft views a solar eclipse from behind the Moon. Photo: NASA | Public Domain Space Exploration Artemis II Astronauts Reach Farthest Distance from Earth Since 1972 Four astronauts passed behind the Moon, broke Apollo 13’s 54-year distance record, and witnes"
+  },
+  {
+   "role": "assistant",
+   "content": "On April 6, 2026, the crew of Artemis II reached a maximum distance of 252,756 miles from Earth, surpassing the farthest distance ever traveled by humans. \n\nFINAL: 252,756 miles",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

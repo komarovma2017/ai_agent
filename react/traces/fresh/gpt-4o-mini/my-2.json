@@ -1,0 +1,124 @@
+{
+ "task": {
+  "id": "my-2",
+  "source": "my",
+  "question": "Какого числа Anthropic выпустила модель Claude Opus 4.5?",
+  "answer": "November 24, 2025",
+  "evidence": "Our newest model, Claude Opus 4.5, is available today. ... Released November 24, 2025",
+  "page": "Claude Opus 4.5",
+  "url": "https://platform.claude.com/docs/en/models/opus-4-5/overview"
+ },
+ "agent_answer": "24 November",
+ "agent_ok": false,
+ "cost": 0.0007503000000000093,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Какого числа Anthropic выпустила модель Claude Opus 4.5?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TEm48Acccmn47UnBaUDGpw7U",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Claude Opus 4.5 release date Anthropic\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TEm48Acccmn47UnBaUDGpw7U",
+   "content": "[Introducing Claude Opus 4.5 \\ Anthropic](https://www.anthropic.com/news/claude-opus-4-5) — Opus 4.5 is available today on our apps, our API, and on all three major cloud platforms. If you're a developer, simply use claude - opus -4-5-20251101 via the Claude API. Pricing is now $5/$25 per million tokens—making Opus -level capabilities accessible to even more users, teams, and enterprises.\n[Anthropic Releases Claude Opus 4.5: The New King of AI Coding - Full ...](https://www.ainewshub.org/post/claude-opus-45-anthropic-release-breakdown) — What is Claude Opus 4.5 ? A Quick Overview Claude Opus 4.5 is Anthropic's flagship large language model (LLM), succeeding the already impressive Opus 4.1 and Sonnet 4.5 . Built on a foundation of constitutional AI principles, it emphasises helpfulness, honesty, and harmlessness while pushing boundaries in practical intelligence.\n[Claude Opus 4.5 — Benchmarks, Specs & Release Date](https://aireleasetracker.com/model/anthropic/claude-opus-4.5) — Claude Opus 4.5 Released Nov 24 2025 Claude Opus 4.5 is an AI model released by Anthropic on Monday, Nov 24 2025, 40 days after Claude Haiku 4.5 . Benchmark results (shown below) cover BullshitBench v2, SWE-Bench Verified, Humanity's Last Exam, GPQA Diamond, and OSWorld-Verified.\n[Claude Opus \\ Anthropic](https://www.anthropic.com/claude/opus) — Trust and safety Extensive testing and evaluation ensures the release of Opus 5 meets Anthropic's standards for safety, security, and reliability. The accompanying model card covers safety results in depth. Hear from our customers On FrontierCode 1.1, Claude Opus 5 approaches Fable-level performance at half the cost.\n[Introducing Claude Opus 4.5](https://rits.shanghai.nyu.edu/ai/introducing-claude-opus-4-5/) — Anthropic has announced the launch of their latest AI model, Claude Opus 4.5 , on November 24 2025. ( Anthropic ) This release represents a major advance in capability, efficiency, and alignment for enterprise- and developer-focused AI applicatio"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_YdTzrSOggCOmIQpWKSV2TYgn",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\":\"https://www.anthropic.com/news/claude-opus-4-5\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_YdTzrSOggCOmIQpWKSV2TYgn",
+   "content": "ошибка загрузки страницы: HTTPSConnectionPool(host='www.anthropic.com', port=443): Read timed out. (read timeout=15)"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7cnoUyxqUrEfmue5t1AEGTsn",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.anthropic.com/news/claude-opus-4-5\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_PQC89uxnIMxut9goZQzpIiY7",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.ainewshub.org/post/claude-opus-45-anthropic-release-breakdown\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 2,
+     "id": "call_hqPtpW2cXOgf3KN49WVfOU5A",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://aireleasetracker.com/model/anthropic/claude-opus-4.5\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7cnoUyxqUrEfmue5t1AEGTsn",
+   "content": "Introducing Claude Opus 4.5 \\ Anthropic Skip to main content Skip to footer Research Policy Commitments Learn News Try Claude Announcements Introducing Claude Opus 4.5 Nov 24, 2025 Our newest model, Claude Opus 4.5, is available today. It’s intelligent, efficient, and the best model in the world for coding, agents, and computer use. It’s also meaningfully better at everyday tasks like deep research and working with slides and spreadsheets. Opus 4.5 is a step forward in what AI systems can do, and a preview of larger changes to how work gets done. Claude Opus 4.5 is state-of-the-art on tests of real-world software engineering: Opus 4.5 is available today on our apps, our API, and on all three major cloud platforms. If you’re a developer, simply use claude-opus-4-5-20251101 via the Claude API . Pricing is now $5/$25 per million tokens—making Opus-level capabilities accessible to even more users, teams, and enterprises. Alongside Opus, we’re releasing updates to the Claude Developer Platform , Claude Code , and our consumer apps . There are new tools for longer-running agents and new ways to use Claude in Excel, Chrome, and on desktop. In the Claude apps, lengthy conversations no longer hit a wall. See our product-focused section below for details. First impressions As our Anthropic colleagues tested the model before release, we heard remarkably consistent feedback. Testers noted that Claude Opus 4.5 handles ambiguity and reasons about tradeoffs without hand-holding. They told us that, when pointed at a complex, multi-system bug, Opus 4.5 figures out the fix. They said that tasks that were near-impossible for Sonnet 4.5 just a few weeks ago are now within reach. Overall, our testers told us that Opus 4.5 just “gets it.” Many of our customers with early access have had similar experiences. Here are some examples of what they told us: Opus models have always been “the real SOTA” but have been cost prohibitive in the past. Claude Opus 4.5 is now at a price point where it "
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PQC89uxnIMxut9goZQzpIiY7",
+   "content": "--> Anthropic Releases Claude Opus 4.5: The New King of AI Coding – Full Breakdown and Benchmarks top of page A.I News Hub Latest AI News Best AI Tools AI Career Hub AI Startup & Investments AI PR & Exposure Global AI Events GITEX GLOBAL 2025 GISEC GLOBAL 2026 AI Sports Predictions About Subscribe Now Submit AI Tool Contact Blog More Use tab to navigate through the menu items. All Posts Latest AI News ChatGPT AI Finance Artificial General Intelligence AI News Today AI Startup & Investment AI Stocks Quantum Computer GITEX GLOBAL AI Automation Grok AI in Defense AI Job & Career Guide AI Face Swap App Global AI Tracker Malaysia AI hub Singapore AI strategy Enterprise AI AI Development in China Neuromorphic Computing European AI Press Release Synthetic Data Most Viewed Open-Source AI Models AI Music Generators Gemini AI AI Sports Predictions Prediction Market GISEC GLOBAL Search Anthropic Releases Claude Opus 4.5: The New King of AI Coding – Full Breakdown and Benchmarks Nov 25, 2025 14 min read By AI News Hub Staff | November 25, 2025 In the ever-escalating AI arms race, Anthropic just dropped a bombshell. Today, November 24, 2025, the company behind Claude unveiled Claude Opus 4.5 , positioning it as the world's most advanced model for coding, agentic tasks, and real-world computer use. Coming hot on the heels of Google's Gemini 3 Pro release just a week ago on November 18, this launch intensifies the battle for AI supremacy. Opus 4.5 isn't just an incremental upgrade, it's a paradigm shift, excelling in software engineering benchmarks, creative problem-solving, and safety robustness. If you're a developer, researcher, or AI enthusiast wondering what is Claude Opus 4.5 and how it stacks up against rivals like Gemini 3 Pro, GPT-5.1, and more, this comprehensive guide has you covered. We'll dive into the key features, benchmark showdowns (including a dedicated Gemini 3 Pro vs Claude Opus 4.5 section), pricing, safety measures, and what this means for the future of AI. L"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_hqPtpW2cXOgf3KN49WVfOU5A",
+   "content": "Claude Opus 4.5 — Benchmarks, Specs & Release Date AI Model Release Tracker Latest Analytics Benchmarks Compare Buy this spot $699 /month Buy this spot Reach developers, founders and AI enthusiasts who follow every new model release. Audience ~50K visitors in the last 90 days +500 registered users What you get This spot, on every desktop page Top of 2 bi-weekly newsletters Top of every instant alert email $699 /month Get in touch Latest Release DeepSeek-V4.1-Flash Sep 10 2026 Log in Sign up MENU Home Latest Analytics Benchmarks Compare Pricing Search models, benchmarks… Get Instant Alerts for new models $4 /mo Anthropic Anthropic 2026 Claude Fable 5.1 Claude Mythos 5.1 Claude Opus 5 Claude Sonnet 5 Claude Fable 5 Claude Mythos 5 Claude Opus 4.8 Claude Opus 4.7 Claude Sonnet 4.6 Claude Opus 4.6 2025 Claude Opus 4.5 Claude Haiku 4.5 Claude Sonnet 4.5 Claude Opus 4.1 Claude Sonnet 4 Claude Opus 4 Claude 3.7 Sonnet 2024 Claude 3.5 Haiku Claude 3.5 Sonnet (upgraded) Claude 3.5 Sonnet Claude 3 Haiku Claude 3 Sonnet Claude 3 Opus 2023 Claude 2.1 Claude Instant 1.2 Claude 2 Claude 1 Claude Opus 4.5 Released Nov 24 2025 Claude Opus 4.5 is an AI model released by Anthropic on Monday, Nov 24 2025 , 40 days after Claude Haiku 4.5 . Benchmark results (shown below) cover BullshitBench v2, SWE-Bench Verified, Humanity's Last Exam, GPQA Diamond, and OSWorld-Verified. Get Anthropic releases and AI news. One email, every other Monday. Sign up free API pricing Input What you pay for everything you send the model — your question, plus any documents or earlier conversation you include with it. $ 5.00 Cached input A reduced rate for text you send over and over. If every request starts with the same instructions or the same document, the provider keeps a copy ready and charges less to read it again. $ 0.50 5 min cache write A one-off charge for storing text so later requests can reuse it at the cheaper cached rate. This option keeps it for five minutes. $ 6.25 1 hr cache write A one-off c"
+  },
+  {
+   "role": "assistant",
+   "content": "Claude Opus 4.5 была выпущена 24 ноября 2025 года.\n\nFINAL: 24 November",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

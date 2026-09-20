@@ -1,0 +1,76 @@
+{
+ "task": {
+  "id": "fresh-78",
+  "source": "fresh",
+  "question": "What is the median overall survival time reported for patients with metastatic pancreatic cancer in May 2026?",
+  "answer": "13.2 months",
+  "evidence": "31 May – A Phase 3 trial published in the New England Journal of Medicine reports that daraxonrasib, an investigational oral RAS(ON) inhibitor, nearly doubles median overall survival in patients with previously treated metastatic pancreatic cancer, from 6.6 months with standard chemotherapy to 13.2 months.",
+  "page": "2026 in science",
+  "url": "https://en.wikipedia.org/wiki/2026_in_science",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "13.2 months",
+ "agent_ok": true,
+ "cost": 0.000493949999999993,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What is the median overall survival time reported for patients with metastatic pancreatic cancer in May 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_HumfcDglmBqIR3PKVwxjl6kC",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"median overall survival time metastatic pancreatic cancer May 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_HumfcDglmBqIR3PKVwxjl6kC",
+   "content": "[ASCO 2026: Daraxonrasib doubles median overall survival in metastatic ...](https://ecancer.org/en/news/28376-asco-2026-daraxonrasib-doubles-median-overall-survival-in-metastatic-pancreatic-cancer) — On May 1, 2026 , the FDA granted permission for Revolution Medicines to initiate an expanded access programme to daraxonrasib for patients with previously treated metastatic pancreatic cancer .\n[Daraxonrasib Extends Median Survival in Previously Treated Pancreatic ...](https://ascopost.com/issues/june-10-2026/daraxonrasib-nearly-doubles-survival-in-previously-treated-metastatic-pancreatic-cancer/) — Median Overall survival was nearly doubled among patients with previously treated metastatic pancreatic cancer who received the multiselective RAS (ON) inhibitor daraxonrasib in the phase III RASolute 302 trial, the results of which were presented at the Plenary Session of the 2026 ASCO Annual Meeting by Brian M. Wolpin, MD, MPH, Director of ...\n[RAS(ON) inhibitor doubles median overall survival in patients with ...](https://medicalxpress.com/news/2026-06-rason-inhibitor-median-survival-patients.html) — On May 1, 2026 , the FDA granted permission for Revolution Medicines to initiate an expanded access program to daraxonrasib for patients with previously treated metastatic pancreatic cancer .\n[RAS (ON) Inhibitor Doubles Median Overall Survival in Results of Phase ...](https://www.dana-farber.org/newsroom/news-releases/2026/rason-inhibitor-doubles-median-overall-survival-in-results-of-phase-3-trial-for-patients-with-metastatic-pancreatic-cancer) — The global phase 3 trial enrolled 500 patients with metastatic pancreatic cancer in North America, Europe and Asia. All patients were previously treated with one line of chemotherapy for metastatic disease. Patients were randomized to receive daraxonrasib or a second line of chemotherapy.\n[Daraxonrasib doubles survival in previously treated metastatic ...](https://www.ccjm.org/page/asco-2026/daraxonrasib-pancreatic) — Daraxonrasib, a"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_qjBEkRL6UEEeWg7EzLi0aEhn",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\":\"https://ascopost.com/issues/june-10-2026/daraxonrasib-nearly-doubles-survival-in-previously-treated-metastatic-pancreatic-cancer/\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_qjBEkRL6UEEeWg7EzLi0aEhn",
+   "content": "Daraxonrasib Nearly Doubles Survival in Previously Treated Metastatic Pancreatic Cancer - The ASCO Post --> --> Toggle navigation About About The ASCO Post Editorial Board Rights and Permissions Contact Subscribe News FDA Update Journal Spotlight Expert's Corner In the Clinic View By Issue View All Meetings IASLC WCLC 2026 2026 ASCO GI ASCO Breakthrough 2026 ASCO 2026 ESTRO 2026 Calendar View All Topics AI in Oncology Breast Cancer Lung Cancer Prostate Cancer Lymphoma Cardio-oncology View All Perspectives Charles Bennett and colleagues: The Inflation Reduction Act and Ibrutinib Derek Raghavan: How I Discuss the Current Political Chaos When Patients Ask Health-Related Questions About It Narjust Florez and Coral Olazagasti: Silence Is Complicity Robert Peter Gale: Therapy With a TKI for EGFR-Variant Lung Adenocarcinoma: Lessons From CML? Raj Mohan on Kindness, Mercy, Empathy, Compassion: Are They Relevant in the Era of Robotics and AI? ;--> Videos Newsreels Video Roundtables Podcasts Subscribe --> Advertisement Daraxonrasib Extends Median Survival in Previously Treated Pancreatic Cancer By Caroline Helwick June 10, 2026 Advertisement Median Overall survival was nearly doubled among patients with previously treated metastatic pancreatic cancer who received the multiselective RAS(ON) inhibitor daraxonrasib in the phase III RASolute 302 trial, the results of which were presented at the Plenary Session of the 2026 ASCO Annual Meeting by Brian M. Wolpin, MD, MPH , Director of the Hale Family Center for Pancreatic Cancer Research and the Gastrointestinal Cancer Center, Dana-Farber Cancer Institute, Boston. 1 These data were simultaneously published by Eileen O’Reilly et al in The New England Journal of Medicine . 2 Brian M. Wolpin, MD, MPH Eileen O’Reilly, MD Median overall survival was 13.2 months with daraxonrasib vs 6.7 months with chemotherapy (hazard ratio [HR] = 0.40; P = 4.6 × 10 -11 ) in the overall population, which included patients with metastatic pancreatic duct"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 13.2 months",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

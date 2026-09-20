@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-57",
+  "source": "fresh",
+  "question": "What is the name of the former President upheld with a 7-year prison sentence in July 2026?",
+  "answer": "Yoon Suk Yeol",
+  "evidence": "7 July – The Supreme Court upholds the 7-year prison sentence and 5-year suspended sentence for former President Yoon Suk Yeol, who was convicted on charges of inciting insurrection and interfering with official duties by ordering his security service to block the execution of a court warrant.",
+  "page": "2026 in South Korea",
+  "url": "https://en.wikipedia.org/wiki/2026_in_South_Korea",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "Yoon Suk Yeol",
+ "agent_ok": true,
+ "cost": 0.0002599499999999949,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the former President upheld with a 7-year prison sentence in July 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_eqWGcuKOj3TYvE8cXKjApffQ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"former President 7-year prison sentence July 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_eqWGcuKOj3TYvE8cXKjApffQ",
+   "content": "[Former President Yoon Suk Yeol Sentenced to Seven Years for Arrest ...](https://www.chosun.com/english/national-en/2026/07/09/O6LSCU2PF5GN7NXNKLTICMGSW4/) — Former President Yoon Suk-yeol received the Supreme Court's final guilty verdict for the first time since the December 3 emergency martial law. The Supreme Court's Third Division (Justice Lee Sook-yeon as presiding justice) on the 9th upheld the lower court's ruling of seven years in prison for obstructing the Corruption Investigation Office for High-ranking Officials' execution of an ...\n[S. Korea Supreme Court upholds 7-yr prison term for ex-President Yoon ...](https://www.upi.com/Top_News/World-News/2026/07/09/korea-Korea-Supreme-Court-Yoon-Suk-Yeol-upholds-seven-year-sentence-obstruction-justice/4181783586007/) — The Supreme Court on Thursday upheld a seven- year prison term for former President Yoon Suk Yeol for obstructing justice by blocking investigators from detaining him in the wake of his failed ...\n[S. Korea's top court finalizes 7-year sentence for ex-President Yoon ...](https://english.news.cn/20260709/b1b779aab52b4652b22565642deeb07c/c.html) — SEOUL, July 9 (Xinhua) -- South Korea's top court on Thursday finalized a seven- year prison sentence for former President Yoon Suk-yeol over obstruction of arrest, live footage showed.\n[South Korea's Supreme Court Upholds Prison Sentence for Yoon in First ...](https://www.usnews.com/news/world/articles/2026-07-09/south-koreas-supreme-court-upholds-prison-sentence-for-yoon-in-first-martial-law-case) — SEOUL, South Korea (AP) — South Korea's Supreme Court on Thursday upheld a seven- year prison sentence for former President Yoon Suk Yeol in the first case to reach the country's highest court ...\n[South Korea's Supreme Court upholds prison sentence for Yoon in first ...](https://www.latimes.com/world-nation/story/2026-07-09/south-koreas-supreme-court-upholds-prison-sentence-for-yoon-in-first-martial-law-case) — South Korea's Supreme Court has upheld a seven- "
+  },
+  {
+   "role": "assistant",
+   "content": "The former President upheld with a 7-year prison sentence in July 2026 is Yoon Suk Yeol. \n\nFINAL: Yoon Suk Yeol",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

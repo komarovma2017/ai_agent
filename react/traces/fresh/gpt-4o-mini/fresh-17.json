@@ -1,0 +1,90 @@
+{
+ "task": {
+  "id": "fresh-17",
+  "source": "fresh",
+  "question": "In spaceflight, what was launched by ISRO on September 3, 2026?",
+  "answer": "EOS-05",
+  "evidence": "On 3 September, ISRO launched EOS-05, India's first geostationary Earth observation satellite. The satellite was launched on PSLV's return-to-flight mission after the failed PSLV-C62 in January 2026.",
+  "page": "2026 in spaceflight",
+  "url": "https://en.wikipedia.org/wiki/2026_in_spaceflight",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "GISAT-1A (EOS-05) launched by ISRO.",
+ "agent_ok": true,
+ "cost": 0.0006179999999999936,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "In spaceflight, what was launched by ISRO on September 3, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_cFS6yIpAX66HJo4BcrQjVSm2",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"ISRO launch September 3 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_cFS6yIpAX66HJo4BcrQjVSm2",
+   "content": "[Launch Missions - Indian Space Research Organisation (ISRO)](https://www.isro.gov.in/LaunchMissions.html) — Explore ISRO's launch missions, showcasing India's advancements in space technology and achievements in satellite launches and interplanetary explorations.\n[EOS-05 (GISAT-1A) | GSLV Mk II | Next Spaceflight](https://nextspaceflight.com/launches/details/1508/) — A GSLV Mk II rocket launched with EOS-05 (GISAT-1A) from Second Launch Pad at Satish Dhawan Space Centre, India on Thursday September Th, 2026 at 21:25 UTC.\n[EOS-05 - Wikipedia](https://en.wikipedia.org/wiki/EOS-05) — Mukunth, Vasudevan (19 August 2026 ). \"All eyes on GISAT-1A mission as ISRO aims to mend faulty launch streak\". The Hindu. ISSN 0971-751X. Retrieved 3 September 2026 . \"GISAT-1, 2 (EOS-03, 05)\". Gunter's Space Page. Retrieved 2 February 2026 . \"CEOS EO Handbook - AGENCY SUMMARY - ISRO \". CEOS. October 2022. Retrieved 1 December 2022. \"WMO OSCAR | Satellite: GISAT\". space.oscar.wmo.int. Retrieved ...\n[Indian Space Research Organisation (ISRO)](https://www.isro.gov.in/) — Atmospheric Re-entry of LVM3 M5 Upper Stage on 30 July 2026 ISRO tests an improved version of the first stage of Small Satellite Launch vehicle (SSLV) ISRO tests an improved version of the first stage of Small Satellite Launch vehicle (SSLV) India - U.S. Civil Space Joint Working Group meeting at ISRO Headquarters, Bengaluru\n[ISRO Launch Schedule - RocketLaunch.org](https://rocketlaunch.org/launch-schedule/indian-space-research-organization) — The most comprehensive, up-to-date list of upcoming ISRO rocket launches. Search the 19 scheduled launches, with filters to easily find specific ISRO missions. Perfect for researchers and space enthusiasts."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5nPv3RSjANCMxAnm8jbPyB1a",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://nextspaceflight.com/launches/details/1508/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_0OmlbfkJpldCcYx96LII26iw",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://en.wikipedia.org/wiki/EOS-05\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5nPv3RSjANCMxAnm8jbPyB1a",
+   "content": "Next Spaceflight Launches Rockets Reuse Starship Locations Get the App Up Next Next Spaceflight Open the NextSpaceflight X/Twitter Join the NextSpaceflight discord Email [email protected] © 2025, Next Spaceflight About Privacy Policy Settings Calendar API Access © 2026 , Next Spaceflight / Loading... / Loading... EOS-05 (GISAT-1A) | GSLV Mk II | Next Spaceflight ISRO / EOS-05 (GISAT-1A) Launch Success Liftoff Time (GMT) 21:25 :00 Thursday September 3, 2026 Watch Replay Official Livestream Rocket Active GSLV Mk II Active Since 2010 Agency ISRO Price $47.00 million Rocket Height: 51.7m Payload to Orbit LEO: 5,000 kg GTO: 2,500 kg Liftoff Thrust 7,887 Kilonewtons Fairing Diameter: 4m Height: 7.8m Stages 3 Strap-ons 4 Mission Details Read Article Track Payloads EOS-05 ( GISAT-1A ) Wiki GEO Imaging Satellite, or GISAT, is a planned Indian geo-imaging satellite intended to be able to provide images quickly during disasters. EOS-05/GISAT-1A will replace EOS-03/GISAT-1 lost in launch failure in 2021. Manufacturer: ISRO Operator: ISRO Geostationary Transfer Orbit 1 Payload 2,367 kilograms Rocket Active GSLV Mk II Active Since 2010 Agency ISRO Price $47.00 million Rocket Height: 51.7m Payload to Orbit LEO: 5,000 kg GTO: 2,500 kg Liftoff Thrust 7,887 Kilonewtons Fairing Diameter: 4m Height: 7.8m Stages 3 Strap-ons 4 Launch Site General Trajectory NE SE Launching East Second Launch Pad Satish Dhawan Space Centre, India Fastest Turnaround 31 days Second Launch Pad Satish Dhawan Space Centre, India Fastest Turnaround 31 days Stats GSLV Mk I & II 19th Mission 1st Mission of 2026 Indian Space Research Organisation 103rd Mission 2nd Mission of 2026 2026 210th Orbital launch attempt"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0OmlbfkJpldCcYx96LII26iw",
+   "content": "EOS-05 - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 Objectives 2 Instruments 3 Launch 4 References Toggle the table of contents EOS-05 1 language தமிழ் Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser Print/export Download as PDF Printable version In other projects Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia Earth observation satellite of India \"},\"launch_date\":{\"wt\":\"3 September 2026, 21:25 UTC\"},\"launch_rocket\":{\"wt\":\"[[GSLV Mk II]] ([[GSLV-F17|F17]])\"},\"launch_site\":{\"wt\":\"[[Satish Dhawan Space Centre]], SLP\"},\"launch_contractor\":{\"wt\":\"[[ISRO]]\"},\"entered_service\":{\"wt\":\"\"},\"disposal_type\":{\"wt\":\"\"},\"deactivated\":{\"wt\":\"\"},\"last_contact\":{\"wt\":\"\"},\"orbit_reference\":{\"wt\":\"[[Geocentric orbit]]\"},\"orbit_regime\":{\"wt\":\"[[Geosynchronous orbit]]\"},\"orbit_periapsis\":{\"wt\":\"\"},\"orbit_apoapsis\":{\"wt\":\"\"},\"orbit_inclination\":{\"wt\":\"\"},\"orbit_period\":{\"wt\":\"\"},\"apsis\":{\"wt\":\"gee\"},\"instruments\":{\"wt\":\"\"},\"programme\":{\"wt\":\"'''[[Indian Remote Sensing Programme|EOS series]]'''\"},\"previous_mission\":{\"wt\":\"[[EOS-N1]]\"},\"next_mission\":{\"wt\":\"\"},\"programme2\":{\"wt\":\"[[GEO Imaging Satellite|GISAT series]]\"},\"previous_mission2\":{\"wt\":\"[[EOS-03|GISAT-1]]\"},\"next_mission2\":{\"wt\":\"[[GISAT-2]]\"}},\"i\":0}}]}'> GISAT-1A GISAT-1A in the clean room before encapsulation Names EOS-05 / GISAT-1A Mission type Earth observation Operator ISRO COSPAR ID 2026-202A SATCAT number</span>\"}]]}'>no. 100607 Website https://www.i"
+  },
+  {
+   "role": "assistant",
+   "content": "On September 3, 2026, ISRO launched the GISAT-1A satellite, also known as EOS-05, using the GSLV Mk II rocket. This satellite is designed for geostationary imaging and aims to provide images quickly during emergencies.\n\nFINAL: GISAT-1A (EOS-05) launched by ISRO.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

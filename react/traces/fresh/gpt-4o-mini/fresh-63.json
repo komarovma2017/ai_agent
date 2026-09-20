@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-63",
+  "source": "fresh",
+  "question": "How many people were killed in the avalanche near Ratschings in March 2026?",
+  "answer": "Two",
+  "evidence": "21 March – Two people are killed in an avalanche at the Hohe Ferse near Ratschings.",
+  "page": "2026 in Italy",
+  "url": "https://en.wikipedia.org/wiki/2026_in_Italy",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "2",
+ "agent_ok": false,
+ "cost": 0.0002621999999999902,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "How many people were killed in the avalanche near Ratschings in March 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_LODBRIv6v19CIQEqBMibubL7",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"avalanche near Ratschings March 2026 deaths\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_LODBRIv6v19CIQEqBMibubL7",
+   "content": "[25 Skiers Caught, 2 Killed In Avalanche In Italy](https://unofficialnetworks.com/2026/03/22/25-skiers-caught-2-killed-in-avalanche-in-italy/) — The slide occurred at about 2,400 meters (7,874 feet) on the slopes of Hohe Ferse, also known as Monte Tallone Grande, near the town of Ratschings close to the Austrian border. Rescue officials said 25 skiers were caught in the avalanche . Two people were killed, three were seriously injured and two others suffered minor injuries.\n[Avalanche Tragedy: 2 Skiers Killed, 5 Injured in Northern Italy ...](https://informedclearly.com/en/accident/45273/avalanche-skiers-killed-italy-2026) — The avalanche struck on Saturday, March 21, 2026 , at approximately 11:40 a.m. local time, sweeping down the slopes of Hohe Ferse near Ratschings at an altitude of 2,300 meters (7,874 feet), dangerously close to the Austrian border.\n[25 Skiers Caught, 2 Killed In Avalanche In Italy - Carving Skills](https://carvingskills.com/2026/03/22/25-skiers-caught-2-killed-in-avalanche-in-italy/) — The slide occurred at about 2,400 meters (7,874 feet) on the slopes of Hohe Ferse, also known as Monte Tallone Grande, near the town of Ratschings close to the Austrian border. Rescue officials said 25 skiers were caught in the avalanche . Two people were killed, three were seriously injured and two others suffered minor injuries.\n[A deadly Italian alpine avalanche kills 2 skiers, trapping 25](https://www.mercurynews.com/2026/03/21/a-deadly-south-tyrol-avalanche-kills-2-skiers-trapping-25-near-the-austria-border/) — The avalanche happened at an altitude of around 7,874 feet on the slopes of the 8,757-foot Hohe Ferse (also known as Monte Tallone Grande) near the town of Ratschings , close to the border with ...\n[South Tyrol Avalanche: Two Dead in Val Ridanna](https://www.the-ski-guru.com/2026/03/21/val-ridanna-avalanche-march-2026-south-tyrol/) — 🚨 Avalanche in Val Ridanna (South Tyrol): Two Dead, Multiple Buried in Major Rescue Operation Update - 22 March 2026 Loc"
+  },
+  {
+   "role": "assistant",
+   "content": "The avalanche near Ratschings in March 2026 resulted in the deaths of two people. \n\nFINAL: 2",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

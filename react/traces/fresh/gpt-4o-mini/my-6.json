@@ -1,0 +1,52 @@
+{
+ "task": {
+  "id": "my-6",
+  "source": "my",
+  "question": "Какого числа модель DeepSeek-V4-Pro вышла в общий доступ (GA) под номером сборки 0813?",
+  "answer": "August 13, 2026",
+  "evidence": "V4-Pro reached general availability on August 13, 2026 after a months-long preview that opened on April 24, and it is still DeepSeek's model for the hardest reasoning and coding work.",
+  "page": "DeepSeek V4 status",
+  "url": "https://geotoolbox.ai/blog/deepseek-v4"
+ },
+ "agent_answer": "13 August",
+ "agent_ok": false,
+ "cost": 0.00024855000000001404,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Какого числа модель DeepSeek-V4-Pro вышла в общий доступ (GA) под номером сборки 0813?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_8SqR8KfsHHC7lEiklSUPR90S",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"DeepSeek-V4-Pro GA release date build number 0813\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_8SqR8KfsHHC7lEiklSUPR90S",
+   "content": "[DeepSeek-V4-Pro-0813 — Benchmarks, Specs & Release Date](https://aireleasetracker.com/model/deepseek/deepseek-v4-pro-0813) — DeepSeek - V4 - Pro - 0813 is an AI model released by DeepSeek on Thursday, Aug 13 2026, 13 days after DeepSeek - V4 -Flash-0731. Benchmark results (shown below) cover BullshitBench v2, SWE-Bench Verified, Terminal-Bench 2.1, Toolathlon-Verified, BrowseComp, CyberGym, and 2 more.\n[DeepSeek-V4-Pro-0813 Finally GA Released - note（ノート）](https://note.com/bright_jacana710/n/n83d14f7ca544?hl=en) — On August 12, 2026, DeepSeek ended the preview period for its flagship model, 'DeepSeek-V4-Pro,' and began offering the GA version, DeepSeek - V4 - Pro - 0813 . About four months since the preview — just how far has the level of completion reached? DeepSeek - V4 - Pro - 0813 is the official release of the ...\n[DeepSeek-V4-Pro-0813 (GA) — Models & AI Labs | AgentSpace](https://agentspace.cc/tool/deepseek-v4-pro-0813-ga) — DeepSeek-V4-Pro is a general availability release of the DeepSeek-V4 model, announced on August 13, 2026. It introduces major agent upgrades, flexible reasoning effort levels, and native support for the OpenAI Responses API, optimized for Codex.\n[DeepSeek V4 Pro 0813 GA Agentic LLM | TechPillow Blog](https://www.techpillow.co/blog/deepseek-v4-pro-0813-llm-model-release) — DeepSeek V4 Pro 0813 is the general-availability production checkpoint of DeepSeek's flagship reasoning model, reaching GA on 13 August 2026 via a quiet API documentation update — with no press release , blog post, or changelog.\n[DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof](https://www.techtimes.com/articles/324241/20260813/deepseek-v4-pro-0813-goes-ga-benchmark-claims-await-independent-proof.htm) — For developers calling deepseek-v4-pro , the endpoint now serves the 0813 production checkpoint instead of the April preview build — and no integration changes are required."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 13 August",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

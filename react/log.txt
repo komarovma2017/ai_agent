@@ -1,0 +1,83 @@
+PS C:\Users\komar\AI_Agents\ReAct> python check_fresh.py fresh_my.jsonl --sonnet
+записей: 23, проблем: 0
+
+Sonnet без инструментов: 0 из 23 верно, 0%. Потрачено $0.076
+критерий свежести пройден
+
+Даже с исправленным промптом языковой конфликт для my-20 никуда не денется: вопрос по-русски, а «of» в золотом ответе — английское слово.
+
+show_trace_from_disk("my-20")
+user     | Сколько игроков ПСЖ реализовали в серии пенальти в финале Лиги чемпионов 2026 года из пяти попыток? 
+assistant|  web_search{"query":"PSG penalty shootout Champions League final 2026"}
+tool     | [PSG Wins 2026 Champions League Final: Beat Arsenal on Penalties](https://www.fifaworldcupnews.com/psg-wins-2026-champions-league-final/) — Penalty Shootout ( PSG 4-3 Arsenal) PSG  
+assistant|  read_page{"url": "https://www.fifaworldcupnews.com/psg-wins-2026-champions-league-final/"}; read_page{"url": "https://sportingchronicle.com/psg-arsenal-champions-league-final-2026-report/"}
+tool     | PSG Wins 2026 Champions League Final: Beat Arsenal on Penalties Skip to content About 2026 WORLD CUP National League Point Table World Cup Qualification Women’s World Cup Champions 
+tool     | PSG Win 2026 Champions League Final on Penalties vs Arsenal | Full Match Report Skip to content Sporting Chronicle® Home F1 Football Golf Horse Racing Expand SCR Ratings Table MLB  
+assistant|  web_search{"query":"PSG penalty shootout players converted Champions League final 2026"}
+tool     | [PSG Win 2026 Champions League Final on Penalties vs Arsenal | Full ...](https://sportingchronicle.com/psg-arsenal-champions-league-final-2026-report) — PSG beat Arsenal 4-3 on pen 
+assistant|  read_page{"url": "https://en.wikipedia.org/wiki/2026_UEFA_Champions_League_final"}; read_page{"url": "https://blogs.myco.io/arsenal-vs-psg-ucl-final-2026-match-recap/"}
+tool     | ошибка загрузки страницы: HTTPSConnectionPool(host='en.wikipedia.org', port=443): Read timed out. (read timeout=15) 
+tool     | UCL Final '26, Arsenal vs PSG: Goals, Penalties & Full Recap Skip to main content Hit enter to search or ESC to close Close Search Watch ICC T20 search Menu Sports Cricket ICC Wome 
+assistant|  web_search{"query":"Champions League final 2026 PSG penalties list converted players"}
+tool     | [PSG Wins 2026 Champions League Final: Beat Arsenal on Penalties](https://www.fifaworldcupnews.com/psg-wins-2026-champions-league-final/) — Penalty Shootout ( PSG 4-3 Arsenal) PSG  
+user     | Инструменты больше недоступны. Ответь по тому, что уже известно, последней строкой FINAL: <ответ>. 
+assistant| В финале Лиги чемпионов 2026 года Париж Сен-Жермен (ПСЖ) реализовал 4 из 5 попыток в серии пенальти. FINAL: 4 
+шагов: 6, цена: 0.202 ¢, время: 0.0 c
+
+эталон: 4 of 5
+источник: PSG calmly converted 4 of 5 attempts in their successful shootout to win 4-3.
+
+
+
+
+id	question	gold	agent_answer	agent_ok	cost	steps
+0	fresh-0	On what date did Ukraine boycott the closing c...	15 March	15 March	True	0.000555	3
+1	fresh-1	What date was Progress MS-33 launched to the ISS?	22 March	25 февраля	False	0.000255	3
+2	fresh-2	Who entered negotiations with the Trump admini...	Miguel Díaz-Canel	Я не смог найти информацию о переговорах с адм...	False	0.000642	6
+3	fresh-3	What agreement did Ukraine and Romania sign in...	a strategic partnership agreement	Strategic partnership declaration on 12 March ...	False	0.000712	3
+4	fresh-4	What measure came into force in Victoria, Aust...	A total fire ban	The vacant residential land tax, or VRLT, is c...	False	0.001270	6
+5	fresh-5	How many people were killed in the car inciden...	two people	Two people were killed.	True	0.000231	2
+6	fresh-6	How many people are reported missing in Tibet ...	4,500	519	False	0.000743	3
+7	fresh-7	Who was imprisoned in Istanbul for insulting P...	Deniz Göktaş	Deniz Göktaş	True	0.000456	3
+8	fresh-8	Who was charged by the FSB in Russia on 29 Jul...	Pavel Durov	Pavel Durov	True	0.000246	2
+9	fresh-9	What city hosted the 2026 BWF World Championsh...	New Delhi	New Delhi, India	True	0.000226	2
+10	fresh-10	How many people were killed in the February 18...	Twelve	12	False	0.000252	2
+11	fresh-11	What was the title of the art exhibition at Fo...	Helter Skelter	Helter Skelter: Arthur Jafa and Richard Prince	True	0.000252	2
+12	fresh-12	What is the number of children receiving suppo...	700,000	over 700,000	True	0.000670	4
+13	fresh-13	What is the highest recorded temperature in Ge...	41.5 °C	41.7°C	False	0.000540	3
+14	fresh-14	What city in Spain experienced a fatal inciden...	Ciudad Rodrigo	Ciudad Rodrigo	True	0.000352	3
+15	fresh-15	Who was dismissed as Commander-in-Chief of the...	Oleksandr Syrskyi	Oleksandr Syrskyi	True	0.000245	2
+16	fresh-16	In ice hockey, which team won their first Walt...	Montreal Victoire	Montréal Victoire	False	0.000421	3
+17	fresh-17	In spaceflight, what was launched by ISRO on S...	EOS-05	GISAT-1A (EOS-05) launched by ISRO.	True	0.000618	3
+18	fresh-18	In Germany, what was the date when a Munich co...	13 July	13 July 2026	True	0.000887	4
+19	fresh-19	In animation, what did Disney Branded Televisi...	Disney Kids & Family	Disney Kids & Family	True	0.000247	2
+20	fresh-20	In the 2026 FIFA World Cup, what format was us...	single-elimination	The knockout stage utilized a strict single-el...	True	0.000850	4
+21	fresh-21	In art, which artist accused Devon Rodriguez o...	Gavin Snider	Gavin Snider	True	0.000249	2
+22	fresh-22	In animation, what is the name of the indie an...	Clara and the Below	Clara and the Below	True	0.000715	3
+23	fresh-23	In Ukraine, who was arrested on February 15, 2...	German Galushchenko	German Galushchenko	True	0.000537	3
+24	fresh-24	In the United Kingdom, what is declared across...	a drought	A drought has been declared across the entire ...	True	0.000583	3
+25	fresh-25	In the Afghanistan–Pakistan war, what did the ...	"open war"	"open war" on the Afghan Taliban	True	0.000657	4
+26	fresh-26	In Japan, how many people were injured in the ...	nine	9 people were injured.	False	0.000244	2
+27	fresh-27	In classical music, who was placed on leave un...	Markus Hinterhäuser	Markus Hinterhäuser	True	0.000761	5
+28	fresh-28	What was the number of people killed in the ma...	nine	9	False	0.000449	3
+29	fresh-29	How many people were killed in the train derai...	43	46	False	0.001205	8
+30	fresh-30	In which city was journalist Alican Uludag arr...	Ankara	Ankara	True	0.000697	4
+31	fresh-31	Who formed the new government of Kazakhstan af...	Aibek Dädebai	информация недоступна.	False	0.000268	3
+32	fresh-32	Who won the Archibald Prize on May 8, 2026?	Richard Lewer	Richard Lewer	True	0.000236	2
+33	fresh-33	Which MP defected from the Conservative Party ...	Marilyn Gladu	Marilyn Gladu	True	0.000666	4
+34	fresh-34	What was the magnitude of the earthquake that ...	6.3	6.3	True	0.000655	3
+35	fresh-35	Who became the first person to swim around the...	Dina Levačić	Dina Levačić	True	0.000263	2
+36	fresh-36	How many people were killed in the earthquake ...	129	136 dead, 1,776 injured	False	0.000739	4
+37	fresh-37	On what date did resident doctors in England a...	15 June	15 June	True	0.000485	3
+38	fresh-38	What position is V. D. Satheesan elected to in...	Chief Minister	Chief Minister of Kerala	True	0.000823	4
+39	fresh-39	What was the location of the train collision i...	Gelida	between Gelida and Sant Sadurní d'Anoia, Catal...	True	0.001057	5
+40	fresh-40	Who is shot and severely injured in Moscow on ...	Vladimir Alekseyev	Lt. Gen. Vladimir Alexeyev	False	0.000602	3
+41	fresh-41	What was the number of participants in the ant...	Thirty thousand people	30,000	False	0.001157	6
+42	fresh-42	Who inaugurated the Noida International Airpor...	Prime Minister Narendra Modi	PM Narendra Modi	False	0.000236	2
+43	fresh-43	Who was sworn in as the Mayor of New York City...	Zohran Mamdani	Zohran Mamdani	True	0.000279	2
+44	fresh-44	What is the name of the super-Earth with a con...	LHS 1140 b	LHS 1140 b	True	0.000241	2
+45	fresh-45	What type of aircraft crashed in Yalova Provin...	F-16 Fighting Falcon	A Turkish F-16 fighter jet.	True	0.000486	3
+46	fresh-46	How many people died in the Moscow bombing on ...	five	three dead, 21 injured	False	0.000558	3
+47	fresh-47	What position did Dharmendra Pradhan resign fr...	Education Minister	Union Education Minister Dharmendra Pradhan re...	True	0.000273	2
+48	fresh-48	Who was dismissed as defence minister in Ukrai...	Mykhailo Fedorov	Mykhailo Fedorov	True	0.000528	3
+49	fresh-49	What was the sentence given to Asiya Andrabi i...	life imprisonment	life imprisonment	True	0.001230	5

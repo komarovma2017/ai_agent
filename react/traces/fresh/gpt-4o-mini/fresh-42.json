@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-42",
+  "source": "fresh",
+  "question": "Who inaugurated the Noida International Airport in India in March 2026?",
+  "answer": "Prime Minister Narendra Modi",
+  "evidence": "28 March – The Noida International Airport is inaugurated by Prime Minister Narendra Modi.",
+  "page": "2026 in India",
+  "url": "https://en.wikipedia.org/wiki/2026_in_India",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "PM Narendra Modi",
+ "agent_ok": false,
+ "cost": 0.0002356500000000039,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Who inaugurated the Noida International Airport in India in March 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_VKcmJ2QyNTuhR3WELMsCo48C",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Noida International Airport inauguration March 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_VKcmJ2QyNTuhR3WELMsCo48C",
+   "content": "[Noida International Airport Inauguration: PM Narendra Modi to ...](https://timesofindia.indiatimes.com/life-style/travel/news/pm-narendra-modi-to-inaugurate-noida-international-airport-on-march-28-2026-what-this-means-for-delhi-ncr-travellers/articleshow/129817346.cms) — A new era in Indian aviation dawns with the inauguration of Noida International Airport at Jewar. This second international gateway for Delhi NCR, set to be launched by PM Modi on March 28, 2026 ...\n[Noida International Airport - Wikipedia](https://en.wikipedia.org/wiki/Noida_International_Airport) — The airport is intended to complement Indira Gandhi International Airport as part of the Delhi-NCR region's dual- airport system. [4] The first phase was inaugurated on 28 March 2026 , following the grant of an aerodrome licence by the DGCA on 6 March 2026 . [1][5] Commercial operations began on 15 June 2026 . [6]\n[Noida International Airport Jewar Inauguration 2026 | Delhi-NCR's ...](https://www.newdelhiwants.com/new-on-delhiwants/noida-international-airport-set-for-inauguration-on-march-28) — Noida International Airport in Jewar will be inaugurated on March 28, 2026 by PM Narendra Modi, enhancing Delhi-NCR connectivity and boosting tourism.\n[Noida International Airport Inauguration 2026: Jewar Airport Opens](https://firstreport.news/government-of-india/noida-international-airport-inauguration-2026/) — Noida International Airport inauguration took place on March 28, 2026 . Jewar Airport will boost connectivity in Delhi-NCR.\n[Noida International Airport Inauguration Today: Time, Flight Dates, and ...](https://pulseofnoida.com/noida-updates/noida-international-airport-inauguration-2026-what-it-means-for-noida-greater-noida-and-jewar-1790/) — Today, March 28, 2026 , marks a historic milestone as Prime Minister Narendra Modi arrives in Gautam Buddha Nagar to formally inaugurate Phase 1 of the Noida International Airport in Jewar."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: PM Narendra Modi",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

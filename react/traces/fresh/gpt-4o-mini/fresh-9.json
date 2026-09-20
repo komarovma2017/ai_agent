@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-9",
+  "source": "fresh",
+  "question": "What city hosted the 2026 BWF World Championships in sports in August?",
+  "answer": "New Delhi",
+  "evidence": "August 17 – 23 : 2026 BWF World Championships in New Delhi, India",
+  "page": "2026 in sports",
+  "url": "https://en.wikipedia.org/wiki/2026_in_sports",
+  "sonnet_answer": "Zhengzhou",
+  "agent_ok": true
+ },
+ "agent_answer": "New Delhi, India",
+ "agent_ok": true,
+ "cost": 0.00022635000000000016,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What city hosted the 2026 BWF World Championships in sports in August?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_rM8Q73c6BizAbyv3FBylw6eg",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"2026 BWF World Championships host city August\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_rM8Q73c6BizAbyv3FBylw6eg",
+   "content": "[2026 BWF World Championships - Wikipedia](https://en.wikipedia.org/wiki/2026_BWF_World_Championships) — The 2026 BWF World Championships is the 30th edition of the world badminton championships . It took place in New Delhi, India in 2026 . India hosted the World Championships for the first time since 2009.\n[Tournament | BWF World Championships 2026](https://bwfworldtour.bwfbadminton.com/tournament/5601/bwf-world-championships-2026/overview/) — BWF World Championships 2026 17 - 23 August INDIRA GANDHI INDOOR STADIUM, Indraprastha Estate, Grand Trunk Rd, Near Raj Ghat, LiveScore\n[Tournament | BWF World Championships 2026](https://bwfbadminton.com/tournament/5601/bwf-world-championships-2026/info) — {{entry.player1.name_type_id == 1 ? entry.player1.last_name : entry.player1.first_name}} {{entry.player1.name_type_id == 1 ? entry.player1.first_name : entry.player1 ...\n[Tournament | BWF World Championships 2026](https://bwfworldtour.bwfbadminton.com/tournament/5601/bwf-world-championships-2026/draws) — Rankings News Match Centre BWF World Championships 2026 17 - 23 August INDIRA GANDHI INDOOR STADIUM, Indraprastha Estate, Grand Trunk Rd, Near Raj Ghat, LiveScore\n[2026 BWF World Championships Schedule & Global Viewing Guide](https://badmintonworldtour.com/2026-bwf-world-championships-schedule/) — Check the full 2026 BWF World Championships provisional schedule from 17-23 August in New Delhi. Includes court layouts, match rounds, and global time zone conversions for US, UK, Europe, Asia, and Australia."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: New Delhi, India",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

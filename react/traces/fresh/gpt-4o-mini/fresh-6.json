@@ -1,0 +1,118 @@
+{
+ "task": {
+  "id": "fresh-6",
+  "source": "fresh",
+  "question": "How many people are reported missing in Tibet after the floods in August 2026?",
+  "answer": "4,500",
+  "evidence": "August 26 – 2026 Nepal–Tibet floods: At least 1,130 people are killed and nearly 4,500 reported missing in Tibet Autonomous Region after a flash flood strikes between Tibet and Nepal.",
+  "page": "2026",
+  "url": "https://en.wikipedia.org/wiki/2026",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "519",
+ "agent_ok": false,
+ "cost": 0.0007430999999999965,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "How many people are reported missing in Tibet after the floods in August 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_DdoBcHzIs1Vnjoa2uLhdwPWM",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Tibet floods August 2026 missing people report\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_DdoBcHzIs1Vnjoa2uLhdwPWM",
+   "content": "[2026 Nepal-Tibet floods - Wikipedia](https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods) — On the morning of 26 August 2026 , a series of flash floods and debris flows [c] destroyed the Gyirong Port on the China-Nepal border and struck dozens of settlements along a 72 km (45 mi)[14] stretch of the Trishuli River [d] in Nepal. At least 1,410 deaths and 6,145 missing persons in Nepal, and 43 deaths and 519 missing in the Tibet Autonomous Region of China were reported. [3] The flood ...\n[August 2026 Nepal-Tibet floods - AntarcticGlaciers.org](https://www.antarcticglaciers.org/2026/08/august-2026-nepal-tibet-floods/) — On 26th August 2026 , devastating floods hit Nepal and Tibet . At time of writing, 1400 people were missing , and 270 bodies had been recovered, but this toll is sadly expected to rise. The flooding hit the Gyirong border crossing and was caught on CCTV, showing people running for their lives before a wall of water overwhelmed them. It is a scene of devastation with a harrowing human toll.\n[More than 1,300 are missing in Nepal and Tibet after catastrophic ...](https://www.newslaundry.com/2026/08/27/more-than-1300-are-missing-in-nepal-and-tibet-after-catastrophic-floods-caused-by-glacial-collapse) — The region saw similar flash floods in August last year, when a glacial lake in Tibet overflowed because of high temperatures. Nine people were killed, and critical infrastructure, including a bridge connecting Nepal and China, was damaged. Drone footage in Nepal showed roads destroyed and buildings buried by thundering water the color of wet ...\n[Latest missing persons update for Nepal-Tibet border flash floods ...](https://www.malaymail.com/news/world/2026/08/31/latest-missing-persons-update-for-nepal-tibet-border-flash-floods-3048-missing/233344) — Latest missing persons update for Nepal- Tibet border flash floods : 3,048 missing An aerial view shows a torrent of muddy water surging through the Trishuli river past houses in the aftermath of flash"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_jRUDbk7P3us3eJjmFmefAXM5",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_7KLCKyK49STcy0yrVWcXfcpy",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.antarcticglaciers.org/2026/08/august-2026-nepal-tibet-floods/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 2,
+     "id": "call_6QD8vGEM5Hjrqv3Z3kyQxaRk",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.newslaundry.com/2026/08/27/more-than-1300-are-missing-in-nepal-and-tibet-after-catastrophic-floods-caused-by-glacial-collapse\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 3,
+     "id": "call_FRAp0QJBuoRxDaiUqXTdXcii",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.malaymail.com/news/world/2026/08/31/latest-missing-persons-update-for-nepal-tibet-border-flash-floods-3048-missing/233344\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_jRUDbk7P3us3eJjmFmefAXM5",
+   "content": "2026 Nepal–Tibet floods - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 Background Toggle Background subsection 1.1 Geography and history 1.1.1 Gallery 1.2 Climate change 1.3 Early warning systems 2 Cause Toggle Cause subsection 2.1 Risk of further flooding 3 Casualties Toggle Casualties subsection 3.1 List of casualties 4 Damage Toggle Damage subsection 4.1 Nepal 4.1.1 Power infrastructure 4.2 China 5 Response Toggle Response subsection 5.1 Nepal 5.2 China 5.2.1 Censorship and state media coverage 5.3 Other countries 5.4 International organisations 5.5 Individuals 6 Misinformation 7 See also 8 Notes 9 References 10 External links Toggle the table of contents 2026 Nepal–Tibet floods 53 languages Afrikaans العربية अवधी Azərbaycanca Беларуская বাংলা Bosanski Català Čeština Deutsch Español Euskara فارسی Suomi Français Gaeilge עברית हिन्दी Magyar Հայերեն Bahasa Indonesia Íslenska 日本語 한국어 کٲشُر Kurdî Latina ລາວ मराठी Bahasa Melayu မြန်မာဘာသာ नेपाली Nederlands Polski پنجابی Português Русский ᱥᱟᱱᱛᱟᱲᱤ Simple English Slovenščina Shqip Српски / srpski தமிழ் తెలుగు ไทย Tagalog Türkçe Українська اردو Tiếng Việt 文言 粵語 中文 Edit links Article Talk English Read View source View history Tools Tools move to sidebar hide Actions Read View source View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikiquote Wikidata item Appearance move to sidebar hide Coordinates : 28°18′N 85°30′E ﻿ / ﻿ 28.3°N 85.5°E ﻿ / 28.3; 85.5 From Wikipedia, the free encyclopedia Flash-flood disaster in Ne"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7KLCKyK49STcy0yrVWcXfcpy",
+   "content": "August 2026 Nepal-Tibet floods - AntarcticGlaciers.org Skip to content Home Antarctica Glaciers & Climate Glacier Processes Glacial Geology Deplete & Retreat Teachers About Blog Home Antarctica Glaciers & Climate Glacier Processes Glacial Geology Deplete & Retreat Teachers About Blog Home 2026 August August 2026 Nepal-Tibet floods Site Map Newest Content Glossary Links Feedback Survey Please fill in this form to let us know your feedback: Feedback Survey Search Recent Blog Posts August 2026 Nepal-Tibet floods AntarcticGlaciers.org feedback survey 2026 Website updates and metrics in year to July 2026 IPCC First Order Draft PhD advertised through IAPETUS (2026 entry) How to write a paper review The Cryosphere in the IPCC AR7 Working Group I Authors selected for the IPCC AR7 IGS Richardson Medal Strategic networking: building an academic career Tags Alexander Island fieldwork Andes andes blog antarctica APIS author blogging careers case-study Climate change Conference cosmogenic nuclide dating cryospheric geomorphology dating deposition EDI erosion Fieldwork glacier recession GLOF greenland GreenlandStorymapCollection hazard Himalaya hydrology ice flow Ice shelves ice stream introductory JRI Juneau lakes Laurentide LGM mass balance model moraine patagonia people Pine-Island Post-16 prizes radar resource Rothera science communication sea ice Sea level rise sedimentology storymaps structural glaciology study skills SWW Thwaites Glacier UK video WAIS water resource wildlife Younger Dryas License AntarcticGlaciers.org by Bethan Davies is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License . August 2026 Nepal-Tibet floods Posted on 27/08/2026 / by Bethan Davies Tagged hazard , Nepal On 26th August 2026, devastating floods hit Nepal and Tibet. At time of writing, 1400 people were missing, and 270 bodies had been recovered, but this toll is sadly expected to rise. The flooding hit the Gyirong border crossing and was caught on CCTV , sho"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_6QD8vGEM5Hjrqv3Z3kyQxaRk",
+   "content": "More than 1,300 are missing in Nepal and Tibet after catastrophic floods caused by glacial collapse Skip to main content Get app Subscribe Video Podcast Long Form Subscriber Only #FightToBreathe हिन्दी Subscribe NL Sena Join the Book Club More Explainers Store Analysis Books Legal Fund Media Newsletter NL Interview Comic NL Documentaries Report Explainers Store Analysis Books Legal Fund Media Newsletter NL Interview Comic NL Documentaries Report Ground Report More than 1,300 are missing in Nepal and Tibet after catastrophic floods caused by glacial collapse Hundreds of foreigners were reported missing, including Indian nationals on pilgrimage to Mount Kailash. Written By: Niranjan Shrestha & Shristi Kafle & Associated Press Date: 27 Aug, 2026 Rescue operations along the Trishuli River in Nuwakot district. (AP Photo/Niranjan Shrestha) Read in app Rescue teams were searching for hundreds of missing people along the Nepal-China border after a catastrophic and deadly torrent of floods and mud swept through several communities a day earlier following a glacial collapse. The National Disaster Risk Reduction and Management Authority in Nepal said 826 people were missing and the death toll from the country’s flash floods rose to 165 on Thursday. Nepalese authorities ramped up operations in the worst-affected districts of Nuwakot and Rasuwa. Chinese state broadcaster CCTV separately reported that 260 of the 558 missing people in Tibet were foreigners and two villagers were rescued. At least three people were killed as of Thursday morning, it said. The disaster in Nepal and Tibet is not a one-off. The Lhende Khola river system has now flooded twice in just 14 months and the increasingly unstable Himalayan ice system threatens communities, infrastructure and water supplies across one of the world’s most densely populated regions. A map showing districts impacted by a flash flood in Nepal. (AP Digital Embed) The region saw similar flash floods in August last year, when a glacia"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_FRAp0QJBuoRxDaiUqXTdXcii",
+   "content": "Latest missing persons update for Nepal-Tibet border flash floods: 3,048 missing | Malay Mail Our Facebook page link Our Twitter page link Our Instagram page link Our Tiktok page link Our Youtube page link About Us Advertise Home MALAYSIA SINGAPORE MONEY WORLD LIFE EAT/DRINK SHOWBIZ OPINION SPORTS TECH/GADGETS What You Think 精彩大马 ARCHIVES ABOUT US PRIVACY POLICY TERMS OF USE ADVERTISE 精彩大马 Enter a word Most Read Malaysia / 16 h ago Bau man missing since Sept 16 found dead trapped between rocks, 500m from farmhouse Showbiz / 16 h ago ‘One of the best stage productions I have seen in the country’: PM lauds M.Nasir’s Mansur & Liu musical Malaysia / 11 h ago ‘Lots of noise, then silence’: PAS’ Sanusi questions DAP’s Anthony Loke’s resignation offer over Najib house arrest Malaysia / 16 h ago Muhyiddin confirms Bersatu alliance talks started, denies Jana Wibawa court outcome tied to Pakatan cooperation Malaysia / 14 h ago No one should feel obliged to help pay RM50m fine, Najib tells supporters as Umno solidarity fund hits RM1m Malaysia / 14 h ago Saifuddin Nasution: Proposed House Arrest Act focuses on remand detainees and prison overcrowding Malaysia / 19 h ago Santap Lah: Ready-to-eat meals from Malaysia’s Michelin selected restaurants at a CAFé by 7-Eleven near you What You Think / 8 h ago A single resignation by Loke suffices: Malaysia does not need a constitutional confrontation — Phar Kim Beng Malaysia / 15 h ago AG says Prisons Dept to issue SOPs for Najib’s house arrest, RM50m fine must be paid Malaysia / 12 h ago DAP sec-gen’s Cabinet quit offer over Najib house arrest is his own call, says Umno veep Khaled Nordin Malaysia / 14 h ago Rescued Croatian hiker fined RM25,000 over Mount Kinabalu climb says trespassing was ‘last thing on my mind’ Malaysia / 13 h ago Prisons Dept says still waiting for official notice before Najib’s house arrest can start Malaysia / 7 h ago Anwar to meet Loke before deciding on resignation, says no letter submitted yet Malaysia / 10 h"
+  },
+  {
+   "role": "assistant",
+   "content": "According to the reports from August 2026, 519 people were reported missing in the Tibet Autonomous Region of China after the floods. \n\nFINAL: 519",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

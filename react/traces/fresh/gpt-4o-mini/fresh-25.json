@@ -1,0 +1,98 @@
+{
+ "task": {
+  "id": "fresh-25",
+  "source": "fresh",
+  "question": "In the Afghanistan–Pakistan war, what did the government of Pakistan declare on February 26, 2026?",
+  "answer": "\"open war\"",
+  "evidence": "February 26 – 2026 Afghanistan–Pakistan war: The government of Pakistan declares \"open war\" against the Taliban in Afghanistan.",
+  "page": "2026",
+  "url": "https://en.wikipedia.org/wiki/2026",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "\"open war\" on the Afghan Taliban",
+ "agent_ok": true,
+ "cost": 0.0006572999999999996,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "In the Afghanistan–Pakistan war, what did the government of Pakistan declare on February 26, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_kWO5zq4lbrB02BJ7lg6URaMV",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Pakistan government declaration February 26 2026 Afghanistan Pakistan war\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_kWO5zq4lbrB02BJ7lg6URaMV",
+   "content": "[Pakistan Declares Open War on Afghan Taliban: Airstrikes Hammer Kabul ...](https://www.military.com/feature/2026/02/27/pakistan-declares-open-war-afghan-taliban-airstrikes-hammer-kabul-and-kandahar.html) — Pakistan carried out airstrikes on military targets in Kabul, Kandahar, and Paktia province early on February 27, 2026 , hours after Afghan Taliban forces launched ground attacks on Pakistani ...\n[Pakistan Declares 'Open War' on Afghan Taliban](https://militarnyi.com/en/news/pakistan-declares-open-war-afghan-taliban/) — The HMMWV armored vehicles of Afghan militants. February 26 , 2026 . Source: wfwitness. The previous escalation occurred on February 22, when Pakistan carried out airstrikes on Afghanistan's Nangarhar and Paktika provinces, stating that the targets were camps and hideouts of militants from the banned groups Tehrik-i-Taliban Pakistan and Islamic State. Meanwhile, Afghan officials reported ...\n[Pakistan Declares OPEN War on Radical Neighbors!](https://newsinsights.org/pakistan-declares-open-war-on-radical-neighbors/) — Pakistan's stark declaration of \"open war \" against Afghanistan's Taliban on February 27, 2026 , shatters a fragile ceasefire, thrusting South Asia into unprecedented peril. Story Snapshot Pakistan launches airstrikes on February 21 targeting TTP and ISIS-K camps, sparking Taliban retaliation. Operation Ghazab Lil Haq destroys 27 Taliban posts after Afghanistan's February 26 ...\n[Pakistan Declares 'Open War' With Afghanistan After Clashes](https://www.bloomberg.com/news/articles/2026-02-27/pakistan-says-it-s-in-open-war-with-afghanistan-after-clashes) — Pakistani soldiers patrol near the Pakistan - Afghanistan border crossing in Chaman on Feb. 27. Photographer: Abdul Basit/AFP/Getty Images By Bilal Hussain and Dan Strumpf February 26 , 2026 at 10:02 ...\n[Pakistan Strikes Afghanistan in 'Open War' Against Taliban Government](https://www.nytimes.com/2026/02/26/world/asia/pakistan-afghanistan-taliban.html) — The airstrikes came hours aft"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_MMLSMzNalSgXVYTOJSkJmbpx",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\":\"https://www.military.com/feature/2026/02/27/pakistan-declares-open-war-afghan-taliban-airstrikes-hammer-kabul-and-kandahar.html\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_MMLSMzNalSgXVYTOJSkJmbpx",
+   "content": "Pakistan Declares Open War on Afghan Taliban: Airstrikes Hammer Kabul and Kandahar Insurance Mortgages VA Loans Check VA Loan Rates Money HomeFront Grant Credit Cards Personal Finance Military Pay Information Military Pay Charts Join the Military Contact a Recruiter ASVAB Navy Advancement Benefits Military Pay and Benefits GI Bill Veteran Health Care Tricare Retirement Discounts News Army Navy Air Force Marine Corps Coast Guard Space Force Military Life Military Base Guides Veteran Jobs Military Transition Off Duty Games Auto Fitness Daily Trivia Game Spouse & Family Military History Login Insurance Mortgages VA Loans Check VA Loan Rates Money HomeFront Grant Credit Cards Personal Finance Military Pay Information Military Pay Charts Join the Military Contact a Recruiter ASVAB Navy Advancement Benefits Military Pay and Benefits GI Bill Veteran Health Care Tricare Retirement Discounts News Army Navy Air Force Marine Corps Coast Guard Space Force Military Life Military Base Guides Veteran Jobs Military Transition Off Duty Games Auto Fitness Daily Trivia Game Spouse & Family Military History Sign in Newsletter Close Afghanistan Updated Feb 28, 2026, 10:00 AM EST Pakistan Declares Open War on Afghan Taliban: Airstrikes Hammer Kabul and Kandahar Pakistan has declared open war on the Afghan Taliban, launching airstrikes on Kabul, Kandahar, and other key targets after Taliban forces attacked border posts in a major escalation along the disputed Durand Line. Defense Minister Khawaja Asif says Islama Like Follow Followed Add us on By Robert Billard Updated Feb 28, 2026, 10:00 AM EST Sign in to your Military.com account Afghan Taliban soldiers peer through the sight of their weapons, on the Afghan side of the Torkham border crossing with Pakistan in Torkham, Afghanistan, Friday, Feb. 27, 2026. (AP Photo/Wahidullah Kakar) Add Us Like Like follow Follow followed Followed Thread Log in Here is a fact-based summary of the story contents: Try something different: Show me the facts "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ndECoRTqsZR0EXw3F4fObJrz",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\":\"https://militarnyi.com/en/news/pakistan-declares-open-war-afghan-taliban/\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ndECoRTqsZR0EXw3F4fObJrz",
+   "content": "Pakistan Declares ‘Open War’ on Afghan Taliban --> --> --> --> --> --> Sun, 20 September 2026 Ukr Eng Donate Ukr Eng News Articles Blogs Videocontent Partners About Us Advertising Special projects --> Donate Pakistan Declares ‘Open War’ on Afghan Taliban #Afghanistan #Asia #Pakistan #Terrorism #World Sania Kozatskyi February 27, 2026 13:20 --> Air strike on the Afghan capital Kabul on the night of February 27, 2026. Photo credits: Pakistan Ministry of Defense Pakistan Declares ‘Open War’ on Afghan Taliban --> News STING S Interceptor Drone Destroys Geran-5 Small Cruise Missile September 20, 2026 21:03 Germany Officially Receives First F-35A Fighter September 20, 2026 20:21 Russia Confirms Rassvet Satellite Communications System Operates From 500-km Orbit September 20, 2026 19:39 Geran-5 Cruise Missile Adopts a Revised Engine Configuration to Enhance Speed and Range September 20, 2026 19:31 Otokar and Leonardo Conduct Live-Fire Tests of TULPAR Light Tank September 20, 2026 18:57 All news Pakistan’s Defense Minister Khawaja Asif said on Friday that the country is in a state of ‘open war’ with neighboring Afghanistan. He made the statement on the social media platform X . On the night of Friday, February 27, Pakistan launched airstrikes on several Afghan cities, including the capital, Kabul. “Our patience has run out. Now an open war has begun between us and you (Afghanistan),” the defense minister said. This was the strongest public statement made so far amid the rapidly escalating conflict between the two countries. Pakistan’s President Asif Ali Zardari assured that the country would not compromise on peace or its territorial integrity. “Those who mistake our desire for peace as weakness will receive a firm response and no one will be beyond our reach,” his statement said. On the evening of February 26, the Afghan Taliban launched an offensive operation against Pakistani military bases and facilities at several points along the border. In Kabul, officials claimed tha"
+  },
+  {
+   "role": "assistant",
+   "content": "On February 26, 2026, the government of Pakistan declared \"open war\" on the Afghan Taliban following attacks on Pakistani military bases. The Defense Minister Khawaja Asif stated, “Our patience has run out. Now an open war has begun between us and you (Afghanistan).” \n\nFINAL: \"open war\" on the Afghan Taliban",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

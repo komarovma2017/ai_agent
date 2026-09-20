@@ -1,0 +1,184 @@
+{
+ "task": {
+  "id": "fresh-66",
+  "source": "fresh",
+  "question": "How many people were reportedly trapped after a hotel collapse in Anuppur, Madhya Pradesh in April 2026?",
+  "answer": "at least six",
+  "evidence": "4 April – One person is killed and at least six others are reportedly trapped after a four-story hotel collapses in Anuppur, Madhya Pradesh.",
+  "page": "2026 in India",
+  "url": "https://en.wikipedia.org/wiki/2026_in_India",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "7-10",
+ "agent_ok": false,
+ "cost": 0.001497750000000006,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "How many people were reportedly trapped after a hotel collapse in Anuppur, Madhya Pradesh in April 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_AL4PzOLYzMxpyN578SoM1igi",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Anuppur hotel collapse April 2026 trapped people\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_AL4PzOLYzMxpyN578SoM1igi",
+   "content": "[1 Dead, Several Feared Trapped As Five-Storey Hotel Collapses In Madhya ...](https://www.republicworld.com/india/1-dead-several-feared-trapped-as-4-storey-building-collapses-in-madhya-pradesh-s-anuppur) — Updated 5 April 2026 at 02:36 IST 1 Dead, Several Feared Trapped As Five-Storey Hotel Collapses In Madhya Pradesh's Anuppur | VIDEO Several people are feared to trapped under debris after a five-storey hotel collapsed in Anuppur district, Madhya Pradesh, on Saturday.\n[Madhya Pradesh: One killed, several trapped after three-storey hotel ...](https://www.indiatvnews.com/madhya-pradesh/madhya-pradesh-several-feared-trapped-after-four-storey-hotel-collapses-in-anuppur-district-2026-04-04-1036317) — One person was killed, and six others were feared trapped under debris after a three-storey hotel collapsed in the Anuppur district of Madhya Pradesh on Saturday evening, police said. The lodge ...\n[One killed, 7-10 feared trapped as 4-storey lodge collapses in MP ...](https://www.hindustantimes.com/cities/bhopal-news/one-killed-7-10-feared-trapped-as-4-storey-lodge-collapses-in-mp-official-101775322483090.html) — Anuppur , One person was killed and 7-10 others were trapped in the debris after a four-storey building collapsed in Kotma town in Anuppur district of Madhya Pradesh on Saturday evening, police said.\n[Four-storey lodge collapses in MP's Anuppur; at least six ... - ThePrint](https://theprint.in/india/four-storey-lodge-collapses-in-mps-anuppur-at-least-six-persons-feared-trapped/2896855/) — Anuppur (MP), Apr 4 (PTI) A four-storey building collapsed in Kotma town in Anuppur district of Madhya Pradesh on Saturday evening, trapping at least six persons in the debris, police said. An official identified the ill-fated building as 'Aggarwal Lodge' located near a bus stand.\n[Lodge collapse in MP's Anuppur kills 3 so far, several feared trapped ...](https://www.hindustantimes.com/india-news/lodge-collapse-in-mps-anuppur-kills-three-so-far-several-feared-trapped-chilling-cct"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_rVzoTXBiuOIKDL6vMVyibjWl",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.hindustantimes.com/cities/bhopal-news/one-killed-7-10-feared-trapped-as-4-storey-lodge-collapses-in-mp-official-101775322483090.html\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_PTvSmygnaoV3G6izzU5Thevo",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.indiatvnews.com/madhya-pradesh/madhya-pradesh-several-feared-trapped-after-four-storey-hotel-collapses-in-anuppur-district-2026-04-04-1036317\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_rVzoTXBiuOIKDL6vMVyibjWl",
+   "content": "ошибка загрузки страницы: HTTPSConnectionPool(host='www.hindustantimes.com', port=443): Read timed out. (read timeout=15)"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_PTvSmygnaoV3G6izzU5Thevo",
+   "content": "Madhya Pradesh: One killed, several trapped after three-storey hotel collapses in Anuppur district - India TV News Welcome User! Sign In / Register Sign Out Dark Mode Videos Aap Ki Adalat Aaj Ki Baat Originals India Maharashtra Karnataka Uttar Pradesh Delhi Bihar Madhya Pradesh Rajasthan Haryana Chhattisgarh Gujarat West Bengal Jammu & Kashmir Telangana Tamil Nadu North East Photos Video Entertainment Bollywood TV OTT Reviews Regional Hollywood Korean Photos Sports Cricket Football Tennis Photos Photos India Sports Entertainment World Fashion Lifestyle Lifestyle Food Travel Beauty Photos Spirituality Events Education Higher Studies Career Results Jobs Technology Gadgets Reviews Business markets Personal Finance Income Tax World Astrology Health Live Cricket Score LiveTV Science Auto Brand Content Pincode Topic Elections Trending Fact-check Explainers Crime Home Videos India World Sports Entertainment Tech Photos Lifestyle Health Business Explainer Advertisement Home Madhya Pradesh Madhya Pradesh: One killed, several trapped after three-storey hotel collapses in Anuppur district Madhya Pradesh: One killed, several trapped after three-storey hotel collapses in Anuppur district Edited By: Ashish Verma Published: Apr 04, 2026, 07:55 PM IST ,Updated: Apr 04, 2026, 09:16 PM IST Police and local administration are carrying out rescue efforts to pull those trapped under debris after a lodge collapsed in Madhya Pradesh's Anuppur. One person has died in the mishap. Madhya Pradesh hotel collapse Image Source : Reporter Bhopal: One person was killed, and six others were feared trapped under debris after a three-storey hotel collapsed in the Anuppur district of Madhya Pradesh on Saturday evening, police said. The lodge, located in Kotma town, came crumbling down at around 5.30 pm. The rescue teams, comprising police and local administration, acted swiftly and managed to pull out two people safely from the debris. They rushed to the Community Health Centre in Kotma, where one of "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_XvciLqVYvVQ1mbMuMM9P111a",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.republicworld.com/india/1-dead-several-feared-trapped-as-4-storey-building-collapses-in-madhya-pradesh-s-anuppur\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_eul2z1DDXL3HgYd9DoBha6Cq",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://theprint.in/india/four-storey-lodge-collapses-in-mps-anuppur-at-least-six-persons-feared-trapped/2896855\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_XvciLqVYvVQ1mbMuMM9P111a",
+   "content": "1 Dead, Several Feared Trapped As Five-Storey Hotel Collapses In Madhya Pradesh's Anuppur | VIDEO | Republic World --> Republic World R.Bharat R.Bangla R.Kannada Home India News Live TV Republic Show The Debate Visual Story Republic Summit Election News Budget 2026 World More LIVE TV News / India News / 1 Dead, Several Feared Trapped As Five-Storey Hotel Collapses In Madhya Pradesh's Anuppur | VIDEO Updated 5 April 2026 at 02:36 IST 1 Dead, Several Feared Trapped As Five-Storey Hotel Collapses In Madhya Pradesh's Anuppur | VIDEO Several people are feared to trapped under debris after a five-storey hotel collapsed in Anuppur district, Madhya Pradesh, on Saturday. Nidhi Sinha India News 2 min read Follow : Several Feared Trapped As 10-Year-Old Lodge Collapses In Madhya Pradesh's Anuppur | Image: ANI Anuppur : One person was killed while several people are feared to trapped under debris after a five-storey building collapsed in Anuppur district, Madhya Pradesh, on Saturday at around 5:30 pm. The incident took place in Kotma town. According to reports, the building that collapsed was a 10-year-old lodge called ‘Aggarwal Lodge'. The area was cordoned off and following an intensive rescue operation, three people were rescued and were shifted to hospital for treatment. Following the collapse, Anuppur Superintendent of Police (SP) Moti-Ur-Rehman said, “Rescue operations are underway at the site of the building collapse in Kotma bus stand. Police, SDRF and local administration teams are present on the spot. Our priority is to safely evacuate those trapped and provide immediate medical assistance to the injured. The area has been cordoned off, and further investigation into the cause of the collapse will be conducted.” Advertisement State minister Dilip Jaiswal said, \"We are trying our best to remove the rubble and rescue anyone who is left inside.\" Meanwhile, Anuppur DM Harshal Pancholi said that the deceased has been identified as a local resident. CCTV Footage A terrifying"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_eul2z1DDXL3HgYd9DoBha6Cq",
+   "content": "Just a moment… Checking your browser This is a one-time security check."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_OafSR5TVwpJ604W31Auae4Q0",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Anuppur hotel collapse April 2026 news summary\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_OafSR5TVwpJ604W31Auae4Q0",
+   "content": "[Anuppur Building Collapse: MP CM Orders Rescue, 1 Dead](https://www.newkerala.com/news/a/mp-cm-yadav-expresses-grief-over-anuppur-incident-602.htm) — MP CM Mohan Yadav expresses grief as a 4-story hotel collapses in Anuppur's Kotma, killing one. Rescue ops with NDRF, SDRF underway.\n[Five-Storey Hotel Collapses at Madhya Pradesh's Kotma Bus Stand: One ...](https://www.timesnownews.com/city/five-storey-hotel-collapses-at-madhya-pradeshs-kotma-bus-stand-one-dead-several-feared-trapped-article-153998478) — A hotel building collapsed at the Kotma bus stand in Anuppur district, Madhya Pradesh, leading to widespread panic and ongoing rescue efforts. Teams from police, SDRF, and local authorities are working to clear the debris and rescue those potentially trapped inside. So far, four individuals have been rescued, but one has been confirmed dead.\n[Four-storey lodge collapses in MP's Anuppur; at least six persons ...](https://www.deccanherald.com/india/madhya-pradesh/madhya-pradesh-6-feared-buried-in-debris-after-four-storey-building-collapses-3956435) — Anuppur : A four-storey building collapsed in Kotma town in Anuppur district of Madhya Pradesh on Saturday evening, trapping at least six persons in the debris, police said.\n[Three dead in Anuppur lodge collapse, CM announces aid](https://safirnews.in/2026/04/05/three-dead-in-anuppur-lodge-collapse-cm-announces-aid/) — The death toll in a lodge collapse in Madhya Pradesh's Anuppur district has risen to three, with several injured. Rescue operations are ongoing, and the Chief Minister has announced compensation while authorities probe negligence behind the incident Published Date - 5 April 2026 , 08:26 PM Anuppur (MP): The death toll in the collapse of a\n[One killed, 7-10 feared trapped as 4-storey lodge collapses in MP ...](https://www.hindustantimes.com/cities/bhopal-news/one-killed-7-10-feared-trapped-as-4-storey-lodge-collapses-in-mp-official-101775322483090.html) — Anuppur , One person was killed and 7-10 others were t"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Qx39u5XLjN8jVjzEDdoQmqKZ",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.timesnownews.com/city/five-storey-hotel-collapses-at-madhya-pradeshs-kotma-bus-stand-one-dead-several-feared-trapped-article-153998478\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_yWvLYQvhXRnIpfQnuPlEme05",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.newkerala.com/news/a/mp-cm-yadav-expresses-grief-over-anuppur-incident-602.htm\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Qx39u5XLjN8jVjzEDdoQmqKZ",
+   "content": "Five-Storey Hotel Collapses at Madhya Pradesh's Kotma Bus Stand: One Dead, Several Feared Trapped | Times Now Live TV Latest India World Entertainment Sports Business Lifestyle Opinion Pickleball Crypto Videos Games Search Latest India Cities Delhi Mumbai Kolkata Bengaluru Hyderabad Chennai Pune Crime World US US News US Buzz UK Europe Asia Middle East Australia Canada Entertainment Bollywood South OTT TV Hollywood Reviews Korean Sports Cricket Hockey Football Pickleball WWE Tennis Badminton Athletics Padel Basketball Live Score NBA Business Personal Finance Markets Companies Economy Lifestyle Relationships Fashion Books People Food Travel Opinion Pickleball Crypto Videos India World Shows Newshour India Upfront Nation Wants To Know Frankly Speaking Specials Digit Viral Video Elections Education Tech Weather Web Stories Elections LOT Health Auto Car News Bike News Electric Vehicles Features Viral Opinion World India Spirituality Astrology Photos City Five-Storey Hotel Collapses at Madhya Pradesh's Kotma Bus Stand: One Dead, Several Feared Trapped Authored by : Aditi Pandey Updated: Apr 4, 2026, 22:38 IST A hotel building collapsed at the Kotma bus stand in Anuppur district, Madhya Pradesh, leading to widespread panic and ongoing rescue efforts. Teams from police, SDRF, and local authorities are working to clear the debris and rescue those potentially trapped inside. So far, four individuals have been rescued, but one has been confirmed dead. Building Collapse in Madhya Pradesh follow us follow us A multi-storey hotel building collapsed at a bus stand in Madhya Pradesh’s Anuppur district on Saturday, triggering panic in the area. Rescue teams are continuing operations, with fears that several people may still be trapped under the debris. The incident took place at Kotma bus stand, where a five-storey hotel building suddenly came down earlier in the day. Locals reported chaos as the structure collapsed, sending dust and debris across the area. Rescue Team Rushed to Sp"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yWvLYQvhXRnIpfQnuPlEme05",
+   "content": "Anuppur Building Collapse: MP CM Orders Rescue, 1 Dead Mon, 21 Sep 2026 · LIVE Updated Apr 4, 2026 · 23:35 Est. 2001 · India Edition Home India World Business Cricket Health Tech Home › News › Madhya Pradesh News Madhya Pradesh News Updated Apr 4, 2026 MP CM Mohan Yadav Grieves Anuppur Building Collapse, 1 Dead Madhya Pradesh Chief Minister Mohan Yadav expressed deep distress over a tragic building collapse in Anuppur district that claimed one life. The four-story hotel structure collapsed in Kotma town, with several people feared trapped under the debris. The CM has directed the minister-in-charge and officials to ensure immediate relief and medical treatment for the affected. Rescue operations involving the NDRF, SDRF, and local teams are actively underway at the site. Apr 4, 2026 · 2 min read Save Listen Copy At a glance Key points 4-story hotel collapse in Kotma, Anuppur One citizen confirmed dead, several feared trapped CM directs minister, officials to site for relief NDRF, SDRF, local teams conducting rescue operations MP CM Yadav expresses grief over Anuppur incident Bhopal, April 4 Chief Minister Mohan Yadav expressed grief over a tragic incident in Anuppur district, where a four-story collapse resulted in the death of one person on Saturday evening.​ \"The loss of a citizen's life is deeply distressing. - Chief Minister Mohan Yadav\" Responding to the incident, the Chief Minister shared a message on his social media account (X), stating that he has directed Minister-in-Charge Dilip Ahirwar and other officials to reach the scene immediately and ensure relief and medical treatment for the affected persons.​ \"The collapse of a hotel building within the Kotma Municipal area of Anuppur district is a tragic incident. The loss of a citizen's life is deeply distressing,\" he wrote on X.​ He shared that rescue operations were still underway (till 1:30 pm) by the local administration, police, and State Disaster Response Force (SDRF) teams.​ \"Three citizens have been su"
+  },
+  {
+   "role": "assistant",
+   "content": "According to reports, after the hotel collapse in Anuppur, Madhya Pradesh, in April 2026, **7-10** individuals were feared trapped under debris.\n\nFINAL: 7-10",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

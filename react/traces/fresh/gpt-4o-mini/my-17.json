@@ -1,0 +1,88 @@
+{
+ "task": {
+  "id": "my-17",
+  "source": "my",
+  "question": "Какую общую сумму продаж достигли весенние торги Poly Auction Beijing в 2026 году?",
+  "answer": "¥42,3 млн",
+  "evidence": "На весенних торгах Poly Auction Beijing 2026 года было продано 87% лотов, общая сумма продаж достигла ¥42,3 млн.",
+  "page": "tea.report catalogue",
+  "url": "https://tea.report/ru/catalog"
+ },
+ "agent_answer": "620 миллионов юаней",
+ "agent_ok": false,
+ "cost": 0.0005668499999999799,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Какую общую сумму продаж достигли весенние торги Poly Auction Beijing в 2026 году?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5nU9pm66i0cYKafncn443g5a",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Poly Auction Beijing spring sales 2026 total sales amount\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5nU9pm66i0cYKafncn443g5a",
+   "content": "[Poly Beijing 2026 Spring Auction_Baiduwiki - 百度百科](https://baike.baidu.com/en/item/Poly%20Beijing%202026%20Spring%20Auction/3766866) — An auction held from May to July 2026 . The Poly Beijing 2026 Spring Auction was an auction held from May to July 2026 . The auction achieved a total turnover of 620 million yuan, representing an increase of 14.81% compared to the 2025 Spring Auction ; it produced 8 lots valued in the tens of millions and 75 lots valued in the millions.\n[Beijing spring 2026 vintage tea auction — realised vs. estimate](https://tea.report/article/beijing-2026-spring-auction-recap) — Poly Auction Beijing's spring 2026 sale saw vintage pu'er dominate, but 2005-2008 lots faltered. Realised prices surged for well-stored 1999-2003 cakes, while storage provenance became a binary factor. Full lot-level analysis.\n[Beijing Poly International Auction Co., Ltd](https://en.polypm.com.cn/) — Announcements READ MORE 2026 -09-16 金秋佳器，静候知音——保利山东第一届古董拍卖会启幕 2026 -09-14 秋泓照物，赴东瀛一晤——2026秋拍日本征集9月16日发轫 2026 -09-13 \"保利拍卖系金秋拍卖季\"重磅来袭丨书画、古画与瓷器等精品领衔登场! 2026 -09-12 北京保利拍卖第二十三季线上拍卖会（下）已上线!\n[Poly Auction Hong Kong Spring Auctions 2026 concluded on a high note](https://www.etnet.com.hk/www/tc/news/news-article.php?section=index&amp;category=prnewswire&amp;newsid=4935990_AE35990_0) — HONG KONG, April 17, 2026 /PRNewswire/ -- Poly Auction Hong Kong Spring Auctions 2026 concluded with total sales of more than HKD 255 million, marking a 23% rise from the 2025 Autumn Auctions .\n[Beijing Poly 2026 'Spring Treasures' Fine Art Exhibition](https://baike.baidu.com/en/item/Beijing%20Poly%202026%20%27Spring%20Treasures%27%20Fine%20Art%20Exhibition/4693365) — The Beijing Poly 2026 'Spring Treasures' Fine Art Exhibition is a touring exhibition of selected highlights from the Beijing Poly Auction's 2026 Spring Auction . Its inaugural stop was held at the Shenzhen Bay One Art Center from June 13 to 14, 2026 , featuring over a hundred selected masterpieces from the spring auction , encompassing fou"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_YNxjXZv225gDtiKOjZx7EXpT",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://baike.baidu.com/en/item/Poly%20Beijing%202026%20Spring%20Auction/3766866\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_FiKiS1pfxdsw4VXSvrkC5Uet",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://tea.report/article/beijing-2026-spring-auction-recap\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_YNxjXZv225gDtiKOjZx7EXpT",
+   "content": "Poly Beijing 2026 Spring Auction_Baiduwiki English Event Timeline Event Content Key Information Poly Beijing 2026 Spring Auction An auction held from May to July 2026. The Poly Beijing 2026 Spring Auction was an auction held from May to July 2026. The auction achieved a total turnover of 620 million yuan, representing an increase of 14.81% compared to the 2025 Spring Auction; it produced 8 lots valued in the tens of millions and 75 lots valued in the millions. Several private collection sessions and special topics, entrusted by collectors, spanned various business segments and were successfully presented during this season's spring auction. 1 Chinese name 北京保利2026春季拍卖会 Event Date May 2026 to July 2026 Event Timeline The Poly Beijing 2026 Spring Auction was held from May to July 2026. Event Content The Chinese Painting and Calligraphy Section featured five special sessions, with a total turnover of 115 million yuan, generating one lot exceeding ten million yuan and fifteen lots exceeding one million yuan. The Chinese Painting and Calligraphy Night Auction produced one lot exceeding ten million yuan and eleven lots exceeding one million yuan. Zhang Daqian's 1968 masterpiece from his Badayuan period, Five Pavilion Mountain Scenery · Running Script Fengdie Seven-Character Poem , sold for 17.25 million yuan. The work employs a rare technique of vermilion splashed color and has a clear provenance. Pan Tianshou 's Imitating the Brushwork of Bada was hammered down at 8.05 million yuan after more than ten rounds of bidding. This work was once used as an illustration in the artist's theoretical article, making it highly representative of his creative output. Additionally, one of Zhang Daqian's twelve landscape screens in the archaic style, Imitating Shen Zifan's Silk Tapestry Painting , from the original collector's family and appearing on the market for the first time in over eighty years, sold for 7.59 million yuan after over thirty rounds of bidding. The six special sessio"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_FiKiS1pfxdsw4VXSvrkC5Uet",
+   "content": "Beijing spring 2026 vintage tea auction: realised vs estimate · tea.report tea.report · sampling channel Encyclopedia · School · Atlas · Pu-erh · Equipment EN · RU · 繁 · 简 · FR · ES · AR tea.report Home Topics Authors About Browse all → home · The <em>realised</em> record of China's tea market Auction data Beijing spring 2026 vintage tea auction — realised vs. estimate Poly Auction Beijing's spring 2026 vintage tea sale saw 87% of lots clear, with total realised value reaching ¥42.3 million. Raw pu'er dominated, but the story was in the misses — over a third of 2007-era cakes failed to meet low estimates, while well-stored 1999–2003 productions from named villages doubled expectations. 10 min read Auction data Contents Scale and composition of the spring 2026 catalogue Registration and bidder demographics Estimate-setting and pre-sale transparency The role of the GB/T 22111 standard The standout lots — five that shaped the sale Lot 98 — 1999 Yiwu yesheng single cake Lot 121–122 — Dayi vs Xiaguan 2005 pairing Lot 175 — 2009 Chen Sheng Hao Lao Banzhang The 2005–2008 pu'er slump — a cautionary cluster White tea and yancha — the bracket creep Heicha and the pre-1990 segment Buyer behaviour and Russia–Mongolia crossover The 'post-sale availability' window Implications for vintage pricing and forward strategy When Poly Auction Beijing opened the bidding for Lot 203, a seven-cake tong of 2003 Menghai Tea Factory 7542, the room fell silent. The catalogue estimate of ¥280,000–350,000 was widely considered conservative — the last public sale of an identical tong in Guangzhou six months earlier had cleared at ¥410,000. Yet by the time the gavel fell on 16 May 2026, the final price of ¥526,000 (including buyer’s premium) had reset expectations for this benchmark recipe. This single lot encapsulated the diverging forces shaping the Beijing spring 2026 vintage tea auction: surging demand for early-2000s premium productions with Guangzhou dry-storage provenance, and persistent cau"
+  },
+  {
+   "role": "assistant",
+   "content": "Весной 2026 года торги Poly Auction Beijing достигли общей суммы продаж в 620 миллионов юаней, что на 14.81% больше по сравнению с весной 2025 года. \n\nFINAL: 620 миллионов юаней",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

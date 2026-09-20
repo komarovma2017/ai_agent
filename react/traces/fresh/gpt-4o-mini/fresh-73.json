@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-73",
+  "source": "fresh",
+  "question": "Who was sentenced to two years' imprisonment for bribery in South Korea on August 31, 2026?",
+  "answer": "Han Hak-ja",
+  "evidence": "31 August – A court in Seoul sentences Unification Church leader Han Hak-ja to two years' imprisonment for bribery involving former first lady Kim Keon Hee.",
+  "page": "2026 in South Korea",
+  "url": "https://en.wikipedia.org/wiki/2026_in_South_Korea",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "Han Hak-ja",
+ "agent_ok": true,
+ "cost": 0.00024419999999999997,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Who was sentenced to two years' imprisonment for bribery in South Korea on August 31, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TuofM7WoNS4nG5CdmsmeDa1n",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"sentenced to two years' imprisonment for bribery in South Korea August 31 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TuofM7WoNS4nG5CdmsmeDa1n",
+   "content": "[South Korea court sentences Unification Church leader to jail in ...](https://www.reuters.com/world/asia-pacific/south-korea-court-finds-unification-church-leader-han-guilty-2026-08-31/) — A South Korean court on Monday sentenced Unification Church leader Han Hak-ja to a combined two years in prison over political funding and bribery offences linked to efforts to gain influence with ...\n[South Korea court gives Unification Church leader jail sentence for bribery](https://asia.nikkei.com/spotlight/society/crime/south-korea-court-gives-unification-church-leader-jail-sentence-for-bribery) — SEOUL (Reuters) -- A South Korean court on Monday sentenced Unification Church leader Han Hak-ja to a combined two years in prison over political funding and bribery offences tied to alleged ...\n[South Korea's Unification Church leader Hak Ja Han sentenced to 2 years ...](https://www.wsls.com/news/world/2026/08/31/south-koreas-unification-church-leader-hak-ja-han-sentenced-to-2-years-for-corruption/) — SEOUL - A South Korean court sentenced Hak Ja Han, the 83- year -old leader of the Unification Church, to two years in prison on Monday for bribing the wife of ousted conservative President Yoon ...\n[South Korea Court Sentences Unification Church Leader to Jail in ...](https://www.usnews.com/news/world/articles/2026-08-31/south-korea-court-finds-unification-church-leader-han-guilty) — SEOUL, Aug 31 (Reuters) - A South Korean court on Monday ⁠ sentenced ⁠Unification Church leader Han Hak-ja to a ⁠combined two years in prison over political funding and bribery offences ...\n[South Korea court gives Unification Church leader 2-year jail sentence ...](https://japantoday.com/category/world/south-korea-court-gives-unification-church-leader-jail-sentence-for-bribery) — Unification Church leader Han Hak-ja arrives for the sentencing hearing on allegations of bribery and political funding, at the Seoul Central District Court in Seoul, South Korea , 31 August 2026 ."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: Han Hak-ja",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

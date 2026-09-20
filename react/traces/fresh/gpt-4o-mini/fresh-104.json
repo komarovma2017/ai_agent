@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-104",
+  "source": "fresh",
+  "question": "How many people were killed in the bus accident in Udhampur, Jammu and Kashmir?",
+  "answer": "21",
+  "evidence": "20 April – A bus falls into a gorge in Udhampur, Jammu and Kashmir, killing 21 people and injuring 45 others.",
+  "page": "2026 in India",
+  "url": "https://en.wikipedia.org/wiki/2026_in_India",
+  "sonnet_answer": "Could you clarify which specific incident you're referring to? There have been multiple bus accidents in Udhampur. One notable accident killed 10 people, but different incidents have had different death tolls.",
+  "agent_ok": true
+ },
+ "agent_answer": "21",
+ "agent_ok": true,
+ "cost": 0.00027240000000000597,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "How many people were killed in the bus accident in Udhampur, Jammu and Kashmir?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_NHhZmD9TskxPBq6XjpiXWccA",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Udhampur bus accident casualties Jammu and Kashmir\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_NHhZmD9TskxPBq6XjpiXWccA",
+   "content": "[21 Killed, 29 Injured After Bus Rolls Down Hill In J&K's Udhampur; PM ...](https://www.news18.com/india/udhampur-bus-accident-in-jammu-kashmir-death-toll-injuries-rescue-police-traffic-ws-l-10044838.html) — At least 21 people were killed and 29 others injured after a bus turned turtle in Udhampur district of Jammu and Kashmir on Monday.\n[Udhampur bus accident | Udhampur bus accident kills 21 in Jammu and ...](https://www.telegraphindia.com/india/udhampur-bus-accident-kills-21-in-jammu-and-kashmir-dozens-injured-in-crash-prnt/cid/2157053) — The mangled bus after it plunged into the gorge in Udhampur on Monday. PTI At least 21 people were killed and 61 injured on Monday when an overcrowded bus plunged nearly 100 metres down a hillside in Jammu's Udhampur district, crushing an autorickshaw before landing upside down on the road below.\n[Bus rolls down hill in Jammu and Kashmir's Udhampur, seven killed 15 ...](https://www.thehindu.com/news/national/jammu-and-kashmir/bus-accident-in-jammu-and-kashmir-udhampur-death-toll/article70883306.ece) — Twenty-one people were killed and more than 61 injured after an overcrowded passenger bus tumbled down a hillside in Udhampur district of Jammu and Kashmir on Monday (April 20, 2026).\n[21 Dead, 51 Injured As Bus Rolls Down Hill In J&K's Udhampur](https://www.ndtv.com/india-news/udhampur-bus-accident-7-dead-several-injured-as-bus-rolls-down-hill-in-jammu-and-kashmirs-udhampur-11381574) — Jammu : At least 21 people were killed and 51 injured on Monday when an overcrowded passenger bus plunged nearly 100 metres down a hillside in Jammu and Kashmir's Udhampur district, crushing an ...\n[21 dead, 51 injured as bus rolls down hill in J&K's Udhampur](https://economictimes.indiatimes.com/news/india/21-dead-51-injured-as-bus-rolls-down-hill-in-jks-udhampur/articleshow/130384205.cms) — Udhampur bus accident : Death toll rises to 15; PM Modi expresses grief, announces ex gratia Jammu : At least 21 people were killed and 51 injured on Monday whe"
+  },
+  {
+   "role": "assistant",
+   "content": "At least 21 people were killed and more than 61 injured after an overcrowded passenger bus tumbled down a hillside in Udhampur district of Jammu and Kashmir. \n\nFINAL: 21",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+ "task": {
+  "id": "fresh-80",
+  "source": "fresh",
+  "question": "What regulation did the Supreme Court of India stay on January 29, 2026?",
+  "answer": "UGC Equity Regulations, 2026",
+  "evidence": "29 January – The Supreme Court of India stays the implementation of the UGC Equity Regulations, 2026 citing misuse by specific groups.",
+  "page": "2026 in India",
+  "url": "https://en.wikipedia.org/wiki/2026_in_India",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "University Grants Commission (Promotion of Equity in Higher Education Institutions) Regulations, 2026",
+ "agent_ok": false,
+ "cost": 0.0006506999999999902,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What regulation did the Supreme Court of India stay on January 29, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_p8Y7hFhPXN5R8denjknj8eSZ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Supreme Court of India stay regulation January 29, 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_p8Y7hFhPXN5R8denjknj8eSZ",
+   "content": "[Supreme Court Stays UGC Equity Regulations 2026: A Major Judicial ...](https://www.legalservicesindia.com/supreme-court-stays-ugc-equity-regulations-2026/) — Supreme Court Stays UGC Equity Regulations 2026 On January 29, 2026 , the Supreme Court of India delivered a significant interim order staying the implementation of the University Grants Commission (Promotion of Equity in Higher Education Institutions) Regulations , 2026 — commonly known as the UGC Equity Regulations 2026 .\n[Supreme Court stays 2026 UGC equity regulations](https://www.scobserver.in/journal/supreme-court-stays-2026-ugc-equity-regulations/) — On 29 January , a Division Bench of Chief Justice Surya Kant and Joymalya Bagchi stayed the University Grants Commission (Promotion of Equity in Higher Education Institutions) Regulations , 2026 . The Regulations , which were notified on 13 January , had stirred a controversy for allegedly being \"unfair\" to students belonging to the general category. The outrage is centred on the definition ...\n[Supreme Court stays 2026 UGC equity regulations - LILY THOMAS](https://lilythomas.net/supreme-court-stays-2026-ugc-equity-regulations/) — On 29 January 2026 , the Supreme Court passed an interim order halting the operation of the UGC Regulations , 2026 . The Regulations , notified on 13 January 2026 , aimed to strengthen protections against caste-based discrimination in higher educational institutions.\n[Supreme Court stays 2026 UGC equity rules, calls it 'too sweeping'](https://www.thehindu.com/news/national/supreme-court-stays-2026-ugc-equity-regulations-calls-it-too-sweeping/article70564593.ece) — The Supreme Court of India on Thursday ( January 29, 2026 ) kept in abeyance the University Grants Commission (Promotion of Equity in Higher Education Institutions) Regulations , 2026 , which ...\n[Supreme Court stays UGC Equity Regulations, 2026 - Jurivine](https://jurivine.com/supreme-court-stays-ugc-equity-regulations-2026/) — On January 29, 2026 , a bench of Chief Jus"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_1oHKxYOzAknr09O3ca5Bwql1",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.legalservicesindia.com/supreme-court-stays-ugc-equity-regulations-2026/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_DMd97gAZrrYadWx01lrrDwc6",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.scobserver.in/journal/supreme-court-stays-2026-ugc-equity-regulations/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 2,
+     "id": "call_x5ZEmIQC3Zaefr085TPk0MpW",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.thehindu.com/news/national/supreme-court-stays-2026-ugc-equity-regulations-calls-it-too-sweeping/article70564593.ece\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1oHKxYOzAknr09O3ca5Bwql1",
+   "content": "Supreme Court Stays UGC Equity Regulations 2026: A Major Judicial Intervention - Free Legal Advice, Supreme Court Judgments, Lawyers & Case Laws Sign in Join Legal Services India Law Articles Court International Law Family Law Article Submission Law News Services World Featured User Registration Form My Account Profile Details Change Password Lost password Login | Logout Sign in Welcome! Log into your account your username your password Forgot your password? Create an account Sign up Welcome! Register for an account your email your username A password will be e-mailed to you. Password recovery Recover your password your email Search Legal Services India Sign in Welcome! Log into your account your username your password Forgot your password? Get help Create an account Create an account Welcome! Register for an account your email your username A password will be e-mailed to you. Password recovery Recover your password your email A password will be e-mailed to you. Search 23.7 C Los Angeles Monday, September 21, 2026 Sign in / Join Legal Services India Law Articles Court International Law Family Law How to Prove Wife’s Income in a Maintenance Case in India: Salary, Bank Records, ITR & Business Income How to Prove Wife’s Income in a Maintenance Case... Wife Hid Previous Marriage: Is It Cheating or Bigamy? Chhattisgarh HC Answers Wife Hid Previous Marriage—Is It Cheating or Bigamy? Chhattisgarh... Delhi Court Says Maintenance Cannot Exceed Husband’s Means: ₹1,840 Interim Maintenance Upheld Delhi Court Says Maintenance Cannot Be Fixed Beyond Husband’s... Supreme Court on Maintenance: EMI, Loan Repayments Cannot Automatically Reduce Liability | Deepa Joshi v. Gaurav Joshi Deepa Joshi v. Gaurav Joshi: Supreme Court Holds That... Marriage Registration in India: Laws, Benefits, Validity & Legal Rights Marriage Registration in India: Legal Importance, Rights, and Practical... Article Submission Law News Services How to File a Medical Negligence Case in India: Procedure, Eviden"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_DMd97gAZrrYadWx01lrrDwc6",
+   "content": "Supreme Court stays 2026 UGC equity regulations - Supreme Court Observer South Asia Constitutional Law Series Subscribe --> Submit Cases SCO.LR Judges Analysis Court Data Channel About SC Overview Procedure Glossary 75 Years of the Supreme Court About SCO About Us Team Using SCO Support Careers South Asia Constitutional Law Series Subscribe View Plans Gift A Plan --> Home > Analysis > Supreme Court stays 2026 UGC equity regulations Analysis Supreme Court stays 2026 UGC equity regulations Advay Vora | 29th Jan 2026 Challenged for being “unfair” to general category students, the Bench found that the Regulations were prima facie vague and easy to misuse On 29 January, a Division Bench of Chief Justice Surya Kant and Joymalya Bagchi stayed the University Grants Commission (Promotion of Equity in Higher Education Institutions) Regulations, 2026 . The Regulations, which were notified on 13 January, had stirred a controversy for allegedly being “ unfair ” to students belonging to the general category. The outrage is centred on the definition clause. Clause 3(c) defines “caste-based discrimination” as discrimination only based on caste or tribe against the members of the Scheduled Castes, Scheduled Tribes and Other Backward Classes. Petitioners argued that the exclusion of the general category from the definition would lead to harassment. Moreover, the Regulations contain no mechanism to penalise “false complaints” against them. The 2026 Regulations came out of Abeda Salim Tadvi v Union of India , a case which is pending in the Supreme Court. A Bench of Justices Surya Kant and Ujjal Bhuyan had directed the University Grants Commission (UGC) to notify new regulations to address caste-based discrimination and student suicides in higher educational institutions. The case was filed in 2019 by parents of two students who had committed suicide, allegedly after facing caste-based discrimination. Their petition assailed the failure of authorities to implement the UGC’s 2012 equity "
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_x5ZEmIQC3Zaefr085TPk0MpW",
+   "content": "Supreme Court stays 2026 UGC equity rules, calls it ‘too sweeping’ - The Hindu You are logged in Loading... LOGOUT You don’t have any Active Subscription. Subscribe now Subscribed with another email? Logout and Login with that one. Your active subscription(s) Account subscription benefits alongside Premium Stories, Editorials, Opinions and more. Unlock these with Subscription Products you've access to Additional Subscription Benefits eBooks Webinars Newsletters Games Monthly Digest Account Settings Go to My Account Bookmarks Manage Subscriptions Need help with your subscription? customersupport@thehindu.co.in 1800 102 1878 September 14, 2026 e-Paper LOGIN Account eBooks Subscribe Search Live Now News SECTION News India World States Cities TOPICS Israel-US strikes on Iran Delimitation Ground Zero Spotlight NEWSLETTER The View From India Looking at World Affairs from the Indian perspective. SEE ALL NEWSLETTERS States Cities Entertainment SECTION Entertainment Art Dance Movies Music Reviews Theatre NEWSLETTER First Day First Show News and reviews from the world of cinema and streaming. SEE ALL NEWSLETTERS Opinion SECTION Opinion Editorial Cartoon Columns Comment Interview Lead Letters Open Page Corrections & Clarifications Business SECTION Business Agri-Business Economy Industry Markets Budget Sport SECTION Sport Cricket Football Hockey Tennis Athletics Motorsport Races Other Sports TOPICS Between Wickets Technology SECTION Technology Gadgets Internet NEWSLETTER Today's Cache Your download of the top 5 technology stories of the day. SEE ALL NEWSLETTERS Science SECTION Science TOPICS ISRO Question Corner NEWSLETTER Science For All The weekly newsletter from science writers takes the jargon out of science and puts the fun in! SEE ALL NEWSLETTERS Data SECTION Data TOPICS Data Point Podcast NEWSLETTER Data Point Decoding the headlines with facts, figures, and numbers SEE ALL NEWSLETTERS Education SECTION Education Careers Colleges Schools NEWSLETTER THEdge At the cutting e"
+  },
+  {
+   "role": "assistant",
+   "content": "On January 29, 2026, the Supreme Court of India stayed the implementation of the University Grants Commission (Promotion of Equity in Higher Education Institutions) Regulations, 2026, which had been notified on January 13, 2026. The court found these regulations controversial for being potentially \"unfair\" to general category students and vague in their definitions.\n\nFINAL: University Grants Commission (Promotion of Equity in Higher Education Institutions) Regulations, 2026",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "task": {
+  "id": "my-11",
+  "source": "my",
+  "question": "Какого числа вышла игра Resident Evil Requiem?",
+  "answer": "February 27, 2026",
+  "evidence": "Requiem was released for Nintendo Switch 2, PlayStation 5, Windows, and Xbox Series X/S on February 27, 2026, to critical acclaim.",
+  "page": "Resident Evil Requiem",
+  "url": "https://en.wikipedia.org/wiki/Resident_Evil_Requiem"
+ },
+ "agent_answer": "27 февраля",
+ "agent_ok": false,
+ "cost": 0.00023535000000002304,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Какого числа вышла игра Resident Evil Requiem?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_0mycWZhHRMoyJSJH0RAKZCnv",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Resident Evil Requiem release date\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0mycWZhHRMoyJSJH0RAKZCnv",
+   "content": "[Resident Evil Requiem - Wikipedia](https://en.wikipedia.org/wiki/Resident_Evil_Requiem) — Capcom announced Resident Evil Requiem at Summer Game Fest on June 6, 2025, with a release date of February 27, 2026. [1][66][67] The trailer was the show's concluding reveal. [68]\n[Resident Evil Requiem release time and date - Rock Paper Shotgun](https://www.rockpapershotgun.com/resident-evil-requiem-release-time-date) — Want to know when Resident Evil Requiem is out? Our guide reveals the release date and times for regions around the world.\n[Resident Evil Requiem Release Date, Platforms and Editions: What Is ...](https://gamertagmythras.com/blog/resident-evil-requiem/resident-evil-requiem-release-date-guide) — Resident Evil Requiem release date , every platform, the three editions and prices, PC system requirements, and camera modes — the confirmed launch facts only.\n[Resident Evil Requiem: Release Date, Pre-Orders and Details](https://www.forbes.com/sites/brianmazique/2026/02/03/resident-evil-requiem-release-date-pre-order-info-and-everything-you-should-know/) — Resident Evil Requiem launches February 27, 2026 on PS5, Xbox Series X|S, Switch 2 and PC. Here's everything you need to know about pre-orders and editions.\n[Resident Evil Requiem Release: What We Know So Far About ... - The Click](https://www.theclick.gg/resident-evil-requiem-release-date/) — Available to pre-order now, The Resident Evil Requiem release is shaping up to be one of the most talked-about horror games in years, and for good reason. As the next mainline entry in Capcom's long-running survival horror series, this game is expected to blend classic Resident Evil tension with modern gameplay systems, pushing the franchise forward while still respecting its roots."
+  },
+  {
+   "role": "assistant",
+   "content": "Игра Resident Evil Requiem выйдет 27 февраля 2026 года. \n\nFINAL: 27 февраля",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

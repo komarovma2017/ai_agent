@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-123",
+  "source": "fresh",
+  "question": "What country broke off diplomatic relations with France in June 2026?",
+  "answer": "Burkina Faso",
+  "evidence": "26 June – Burkina Faso breaks off diplomatic relations with France.",
+  "page": "2026 in France",
+  "url": "https://en.wikipedia.org/wiki/2026_in_France",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "Burkina Faso",
+ "agent_ok": true,
+ "cost": 0.0002230500000000024,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What country broke off diplomatic relations with France in June 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_FNt3s2a2DKajMU1wa2C56aCm",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"country broke off diplomatic relations with France June 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_FNt3s2a2DKajMU1wa2C56aCm",
+   "content": "[Burkina Faso breaks off diplomatic relations with France](https://www.reuters.com/world/africa/burkina-faso-breaks-off-diplomatic-relations-with-france-2026-06-26/) — Burkina Faso has broken off diplomatic relations with France , the ‌government said on state television on Friday, widening a rupture with its former colonial ruler after years of worsening ties ...\n[Burkina Faso Breaks off Diplomatic Relations With France](https://www.usnews.com/news/world/articles/2026-06-26/burkina-faso-breaks-off-diplomatic-relations-with-france) — June 26 (Reuters) - Burkina Faso has broken off diplomatic relations with France , the ‌government said on state ‌television on Friday, widening ⁠a ⁠rupture with its former colonial ruler ...\n[Burkina Faso cuts diplomatic ties with former colonial ruler France](https://www.aljazeera.com/news/2026/6/26/burkina-faso-cuts-diplomatic-ties-with-former-colonial-ruler-france) — Burkina Faso has broken off diplomatic relations with France , further widening the rift with its former colonial ruler. \"The government of Burkina Faso hereby informs the national and ...\n[Burkina Faso breaks off diplomatic relations with France - Yahoo](https://www.yahoo.com/news/world/articles/burkina-faso-breaks-off-diplomatic-183733718.html) — June 26 (Reuters) - Burkina Faso ‌has broken off diplomatic relations with ‌ France , the government said on state television on Friday, widening a rupture with its former colonial ruler after ...\n[Burkina Faso severs diplomatic ties with France - BBC](https://www.bbc.com/news/articles/c7vymlgl5vgo) — Burkina Faso's military junta has broken off diplomatic ties with France , accusing Paris of persistently acting against its national interests. Relations between Burkina Faso and its former ..."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: Burkina Faso",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-124",
+  "source": "fresh",
+  "question": "What city in Germany experienced a nightclub fire in March 2026?",
+  "answer": "Kehl",
+  "evidence": "29 March – A nightclub burns down in Kehl, Baden-Württemberg. All 750 people inside are evacuated, three of whom are treated for shock.",
+  "page": "2026 in Germany",
+  "url": "https://en.wikipedia.org/wiki/2026_in_Germany",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "Kehl",
+ "agent_ok": true,
+ "cost": 0.0002415000000000056,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What city in Germany experienced a nightclub fire in March 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_qqRPcCvp1hK3uv6dVkB9iBu1",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Germany nightclub fire March 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_qqRPcCvp1hK3uv6dVkB9iBu1",
+   "content": "[Major Fire Destroys German Nightclub, Evacuates Hundreds With No One ...](https://www.edmtunes.com/2026/03/major-fire-destroys-german-nightclub/) — A massive fire tore through the widely popular K Club in Kehl, Germany , in the early hours of Sunday, March 29, 2026 , forcing the emergency evacuation of approximately 750 patrons.\n[Hundreds of people flee as fire rips through German nightclub](https://www.dailymail.com/news/article-15689451/Hundreds-people-flee-fire-Berlin-nightclub.html) — Hundreds of people were forced to flee a nightclub in Germany as fire ripped through and destroyed the building. Images from the scene at the K Club in Kehl - on the French border in the southwest of the country - show the blaze raging on the establishment's roof as party-goers struggle desperately to escape. The fire began around 3.45am local time and went on to 'spread over the whole ...\n[Hundreds Evacuated as fire tears through German nightclub near French ...](https://ctif.org/news/hundreds-evacuated-fire-tears-through-german-nightclub-near-french-border) — Additional international outlets also covered the event, including the South China Morning Post, which highlighted the rapid evacuation and cross‑border nature of the venue's clientele (SCMP, 29 March 2026 ), and Mixmag, which confirmed the 750‑person evacuation and described the fire as a \"blaze that ripped through the venue\" (Mixmag ...\n[Nightclub Fire in Kehl: 750 Evacuated, No Serious Injuries - News and ...](https://www.europesays.com/germany/411/) — Mar 30, 2026 Approximately 750 individuals were safely evacuated from a nightclub in southwestern Germany after a fire occurred. According to police, the incident took place in the early morning hours at a venue in Kehl, a city near the French border. The fire originated inside the club and subsequently extended throughout the structure.\n[Revellers flee fire at dance club in Germany | AP News](https://apnews.com/article/germany-dance-club-fire-kehl-83e88a1f7405cb3bb779ad17"
+  },
+  {
+   "role": "assistant",
+   "content": "A nightclub fire occurred in Kehl, Germany, in March 2026. \n\nFINAL: Kehl",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

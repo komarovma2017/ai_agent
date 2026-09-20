@@ -1,0 +1,90 @@
+{
+ "task": {
+  "id": "fresh-122",
+  "source": "fresh",
+  "question": "Who ousted Sussan Ley in February 2026 in Australian politics?",
+  "answer": "Angus Taylor",
+  "evidence": "February 13 – Sussan Ley, the first female leader of the Liberal Party of Australia, was ousted by Angus Taylor.",
+  "page": "2026 in politics",
+  "url": "https://en.wikipedia.org/wiki/2026_in_politics",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "Angus Taylor",
+ "agent_ok": true,
+ "cost": 0.0005215500000000095,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Who ousted Sussan Ley in February 2026 in Australian politics?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_JZ7gdk9eNTXrFaYwlZPoJa5h",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Sussan Ley ousted February 2026 Australian politics\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JZ7gdk9eNTXrFaYwlZPoJa5h",
+   "content": "[Federal politics: Sussan Ley officially resigns two weeks after being ...](https://www.abc.net.au/news/2026-02-27/federal-politics-live-blog-fri-feb-27/106391736) — Federal politics : Sussan Ley officially resigns two weeks after being ousted as Liberal leader — as it happened By political reporter Courtney Gould Government and Politics\n[Sussan Ley - Wikipedia](https://en.wikipedia.org/wiki/Sussan_Ley) — Sussan Penelope Ley[d] (née Braybrooks; born 14 December 1961) is an Australian retired politician who served as the leader of the Opposition from 2025 to 2026 , holding office as the 16th leader of the Liberal Party.\n[Ley formally quits parliament, triggering byelection - The New Daily](https://www.thenewdaily.com.au/news/politics/australian-politics/2026/02/27/ley-formally-resigns) — Sussan Ley has formally quit parliament two weeks after being ousted from the Liberal Party's top job, triggering a byelection.\n[Sussan Ley Ousted as Liberal Leader, Igniting Debate on Women in ...](https://www.heraldtimes.org/2026/02/13/sussan-ley-ousted-as-liberal-leader-igniting-debate-on-women-in-australian-politics/) — Angus Taylor has been elected as the new leader of Australia's Liberal Party, replacing Sussan Ley after a leadership spill that ended her historic nine-month tenure. This development has sparked renewed conversation about the 'glass cliff' phenomenon and the challenges women face in achieving and maintaining leadership roles in Australian politics . In a partyroom vote held on February ...\n[Sussan Ley officially resigns from parliament after being ousted as ...](https://7news.com.au/news/sussan-ley-officially-resigns-from-parliament-after-being-ousted-as-liberal-party-leader-by-angus-taylor-c-21773066) — Sussan Ley has announced her immediate resignation from parliament just two weeks after being ousted as Liberal Party leader. Credit: AAP \"I became attached to the landscapes and lifestyles of this part of Australia and was never prouder than when speaking up for"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_7Iay2IoafOYk4fR59F3GHtMt",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.heraldtimes.org/2026/02/13/sussan-ley-ousted-as-liberal-leader-igniting-debate-on-women-in-australian-politics/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_TeA7gvjl80D519jK7ECMbaVN",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://en.wikipedia.org/wiki/Sussan_Ley\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_7Iay2IoafOYk4fR59F3GHtMt",
+   "content": "Sussan Ley Ousted as Liberal Leader, Igniting Debate on Women in Australian Politics - Herald Times Sign in Home World Business & Economy Entertainment & Culture Politics & Society Health & Environment Sports Technology & Science Sign in Welcome! Log into your account your username your password Forgot your password? Password recovery Recover your password your email Search Sign in Welcome! Log into your account your username your password Forgot your password? Get help Password recovery Recover your password your email A password will be e-mailed to you. Sunday, September 20, 2026 Sign in / Join Home World Business & Economy Entertainment & Culture Politics & Society Health & Environment Sports Technology & Science Facebook Instagram Twitter Vimeo Youtube Home World Business & Economy Entertainment & Culture Politics & Society Health & Environment Sports Technology & Science Search Home World Business & Economy Entertainment & Culture Politics & Society Health & Environment Sports Technology & Science Search Home Politics & Society Sussan Ley Ousted as Liberal Leader, Igniting Debate on Women in Australian... Politics & Society Sussan Ley Ousted as Liberal Leader, Igniting Debate on Women in Australian Politics By Herald Times February 13, 2026 0 337 Share Facebook Twitter Pinterest WhatsApp Angus Taylor has been elected as the new leader of Australia’s Liberal Party, replacing Sussan Ley after a leadership spill that ended her historic nine-month tenure. This development has sparked renewed conversation about the ‘glass cliff’ phenomenon and the challenges women face in achieving and maintaining leadership roles in Australian politics. In a partyroom vote held on February 12, 2026, Angus Taylor secured 34 votes to Sussan Ley’s 17, comfortably winning the leadership. Jane Hume was elected as deputy leader, replacing Ted O’Brien. The spill was precipitated by internal party turmoil, poor polling, and a temporary split with the National Party, which had weakened Ley’"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TeA7gvjl80D519jK7ECMbaVN",
+   "content": "Sussan Ley - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 Early life and education 2 Political career Toggle Political career subsection 2.1 Howard government (2001–2007) 2.2 Opposition (2007–2013) 2.3 Abbott and Turnbull governments (2013–2018) 2.4 Morrison government (2018–2022) 2.5 Opposition (2022–2025) 3 Leader of the Opposition (2025–2026) 4 Post-political career 5 Political positions 6 Personal life 7 Notes 8 References 9 External links Toggle the table of contents Sussan Ley 9 languages مصرى Español Français Polski Русский Simple English ไทย Türkçe 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikiquote Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia Australian retired politician (born 1961) {{nobold|2013–{{wj}}2025}}\\n| titlestyle = border:1px dashed lightgrey;}}{{Infobox officeholder\\n| embed = yes\\n| office3 = [[Leader of the Opposition (Australia)#List of deputy leaders of the opposition|Deputy Leader of the Opposition]]\\n| leader3 = Peter Dutton\\n| term_start3 = 5 June 2022\\n| term_end3 = 13 May 2025\\n| predecessor3 = [[Richard Marles]]\\n| successor3 = Ted O'Brien\\n| office4 = [[Leader of the Liberal Party of Australia#Federal deputy leaders|Deputy Leader of the Liberal Party]]\\n| leader4 = Peter Dutton<br />''Herself'' (acting)\\n| term_start4 = 30 May 2022\\n| term_end4 = 13 May 2025\\n| predecesso"
+  },
+  {
+   "role": "assistant",
+   "content": "Sussan Ley was ousted as Liberal leader by Angus Taylor on 12 February 2026. \n\nFINAL: Angus Taylor",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-19",
+  "source": "fresh",
+  "question": "In animation, what did Disney Branded Television rebrand itself as on June 15, 2026?",
+  "answer": "Disney Kids & Family",
+  "evidence": "June 15: Disney Branded Television (Parent company of Disney Television Animation) rebrands itself as \"Disney Kids & Family\".",
+  "page": "2026 in animation",
+  "url": "https://en.wikipedia.org/wiki/2026_in_animation",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "Disney Kids & Family",
+ "agent_ok": true,
+ "cost": 0.0002467500000000039,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "In animation, what did Disney Branded Television rebrand itself as on June 15, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_VEfnCbKFh4QnVZT4lKbzjpgC",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Disney Branded Television rebrand June 15, 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_VEfnCbKFh4QnVZT4lKbzjpgC",
+   "content": "[Disney Branded Television Rebranding with New Name](https://wdwnt.com/2026/06/disney-branded-television-rebranding-with-new-name/) — Disney Branded Television , Disney's division focused on TV aimed at teenagers and children, is changing its name to Disney Kids & Family.\n[Disney Announces Rebrand, Will Return Focus To \"Kids and Family ...](https://insidethemagic.net/2026/06/disney-branded-television-announces-rebrand-jc1/) — On June 15, Disney Branded Television announced it would rebrand as Disney Kids & Family. This division of The Walt Disney Company already focused on televised entertainment targeted at children ...\n[Disney Branded Television Changes Name To Disney Kids & Family - Deadline](https://deadline.com/2026/06/disney-branded-television-name-change-disney-kids-and-family-1236955356/) — Disney Branded Television is rebranding itself as Disney Kids & Family. The new name will more accurately reflect the division's content & audience.\n[Disney Branded Television Is Changing Its Name To Disney Kids And Family](https://thedisneyscoop.com/disney-branded-television-is-changing-its-name-to-disney-kids-and-family/) — The rebrand was announced on June 15, 2026 , via a memo sent to creative partners by Debra OConnell, Chairman of Disney Entertainment Television , and Ayo Davis, President of the division.\n[Disney Renames Branded Television Unit to Disney Kids & Family ...](https://entertainmentnews.com/news/2026-06-17-disney-renames-branded-television-unit-to-disney-kids-and-family-highlighting-streaming-shift) — On June 15, 2026 , The Walt Disney Company announced that its Disney Branded Television division would immediately become Disney Kids & Family. The change signals a clearer focus on children's and family programming across Disney+, Disney Channel, Disney Jr., and Disney XD, and underscores the company's pivot from linear television to streaming."
+  },
+  {
+   "role": "assistant",
+   "content": "On June 15, 2026, Disney Branded Television rebranded itself as Disney Kids & Family. \n\nFINAL: Disney Kids & Family",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

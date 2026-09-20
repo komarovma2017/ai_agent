@@ -1,0 +1,90 @@
+{
+ "task": {
+  "id": "fresh-101",
+  "source": "fresh",
+  "question": "What is the duration of the ceasefire in the 2026 Lebanon war?",
+  "answer": "10-day",
+  "evidence": "April 16 – 2026 Lebanon war: A US-brokered 10-day ceasefire takes effect between Israel and Lebanon, following ambassador-level talks in the White House.",
+  "page": "2026",
+  "url": "https://en.wikipedia.org/wiki/2026",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "ten days",
+ "agent_ok": false,
+ "cost": 0.0006085499999999994,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What is the duration of the ceasefire in the 2026 Lebanon war?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_II3hKyxW5hznbi1MqJsypp07",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"2026 Lebanon war ceasefire duration\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_II3hKyxW5hznbi1MqJsypp07",
+   "content": "[2026 Israel-Lebanon ceasefire - Wikipedia](https://en.wikipedia.org/wiki/2026_Israel%E2%80%93Lebanon_ceasefire) — The 2026 Israel- Lebanon ceasefire is a cessation of hostilities agreed between Israel and Lebanon on 16 April 2026 , amid the ongoing 2026 Lebanon war and wider regional conflict linked to the 2026 Iran war .\n[2026 Lebanon war - Wikipedia](https://en.wikipedia.org/wiki/2026_Lebanon_war) — 2026 Lebanon war - Wikipedia\n[2026 Israel-Lebanon ceasefire - Wikiwand](https://www.wikiwand.com/en/2026_Israel%E2%80%93Lebanon_ceasefire) — The 2026 Israel- Lebanon ceasefire is a cessation of hostilities agreed between Israel and Lebanon on 16 April 2026 , amid the ongoing 2026 Lebanon war and wider regional conflict linked to the 2026 Iran war . The agreement, brokered by the United States, established a 10-day truce intended to halt active fighting and create conditions for further negotiations toward a longer-term settlement.\n[Ten Day Cessation of Hostilities to Enable Peace Negotiations Between ...](https://www.state.gov/releases/office-of-the-spokesperson/2026/04/ten-day-cessation-of-hostilities-to-enable-peace-negotiations-between-israel-and-lebanon/) — Israel and Lebanon will implement a cessation of hostilities beginning on April 16, 2026 , at 17:00 EST, for an initial period of ten days, as a gesture of goodwill by the Government of Israel, intended to enable good-faith negotiations toward a permanent security and peace agreement between Israel and Lebanon .\n[Full text of Israel-Lebanon 10-day ceasefire, sides aim for 'lasting ...](https://www.timesofisrael.com/full-text-of-israel-lebanon-10-day-ceasefire-sides-aim-for-lasting-peace/) — The following is the text of the 10-day ceasefire between Israel and Lebanon agreed to by the two countries and declared by US President Donald Trump on April 16, 2026 . The text of the ceasefire ..."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_x3loZleUi6Z0zEeJm7E7K364",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://en.wikipedia.org/wiki/2026_Israel%E2%80%93Lebanon_ceasefire\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_lgTLTR9IwTKab29Yqbbfk842",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.state.gov/releases/office-of-the-spokesperson/2026/04/ten-day-cessation-of-hostilities-to-enable-peace-negotiations-between-israel-and-lebanon/\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_x3loZleUi6Z0zEeJm7E7K364",
+   "content": "2026 Israel–Lebanon ceasefire - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 Background 2 Terms 3 Implementation 4 Violations Toggle Violations subsection 4.1 Attacks by Israel 5 Reactions Toggle Reactions subsection 5.1 Regional 5.2 International 6 See also 7 References Toggle the table of contents 2026 Israel–Lebanon ceasefire 2 languages فارسی עברית Edit links Article Talk English Read View source View history Tools Tools move to sidebar hide Actions Read View source View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser Print/export Download as PDF Printable version In other projects Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia Halt to 2026 Lebanon war {{Cite news |title=Israel-Lebanon ceasefire goes into effect after US brokers pause - as it happened |url=https://www.reuters.com/world/iran-war-live-updates-trump-says-israel-lebanon-have-agreed-10-day-ceasefire-2026-04-16/ |access-date=17 April 2026 |work=[[Reuters]]}}</ref>\"},\"date_expiry\":{\"wt\":\"\"},\"mediators\":{\"wt\":\"{{flag|United States}}\"},\"parties\":{\"wt\":\"{{flag|Israel}}<br>{{flag|Lebanon}}\"}},\"i\":0}}]}'> 2026 Israel–Lebanon ceasefire Ten Day Cessation of Hostilities to Enable Peace Negotiations Between Israel and Lebanon Type Ceasefire Context Stopping the 2026 Lebanon war and the Israel–Hezbollah conflict . Effective 16 April 2026 ( 2026-04-16 ) , 5:00 pm EST [ 1 ] Mediators United States Parties Israel Lebanon v t e 2026 Iran war Outline Timeline Lebanon Analysis Casualties Iranian officials Ali Khamenei Ali Larijani List of attacks Order of "
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_lgTLTR9IwTKab29Yqbbfk842",
+   "content": "Ten Day Cessation of Hostilities to Enable Peace Negotiations Between Israel and Lebanon - United States Department of State Skip to content An official website of the United States Government Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( ) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites. Newsroom Business Employees Students Travelers Passports Visas Facebook Facebook X X Instagram Instagram YouTube YouTube Flickr Flickr GovDelivery Menu State Department Home --> State Department Home State Department Home search United States Department of State Countries & Areas Back Countries & Areas Search for country or area Select an Option Search for country or area A Afghanistan Albania Algeria Andorra Angola Antigua and Barbuda Argentina Armenia Australia Austria Azerbaijan B Bahamas, The Bahrain Bangladesh Barbados Belarus Belgium Belize Benin Bhutan Bolivia Bosnia and Herzegovina Botswana Brazil Brunei Bulgaria Burkina Faso Burma Burundi C Cabo Verde Cambodia Cameroon Canada Central African Republic Chad Chile China Colombia Comoros Cook Islands Costa Rica Croatia Cuba Cyprus Czechia Côte d’Ivoire D Democratic Republic of the Congo Denmark Djibouti Dominica Dominican Republic E Ecuador Egypt El Salvador Equatorial Guinea Eritrea Estonia Eswatini Ethiopia F Fiji Finland France G Gabon Gambia, The Georgia Germany Ghana Greece Grenada Guatemala Guinea Guinea-Bissau Guyana H Haiti Holy See Honduras Hungary I Iceland India Indonesia Iran Iraq Ireland Israel Italy J Jamaica Japan Jordan K Kazakhstan Kenya Kiribati Kosovo Kuwait Kyrgyzstan L Laos Latvia Lebanon Lesotho Liberia Libya Liechtenstein Lithuania Luxembourg M Madagascar Malawi Malaysia Maldives Mali Malta Marshall Islands Mauritania Mauritius Mexico Micronesia Moldova Monaco Mongolia Montenegro Morocco Mozambique N Namib"
+  },
+  {
+   "role": "assistant",
+   "content": "The ceasefire in the 2026 Lebanon war, known as the \"Ten Day Cessation of Hostilities to Enable Peace Negotiations Between Israel and Lebanon,\" was established for an initial period of ten days starting from 16 April 2026.\n\nFINAL: ten days",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

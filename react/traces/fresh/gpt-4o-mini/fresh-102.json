@@ -1,0 +1,170 @@
+{
+ "task": {
+  "id": "fresh-102",
+  "source": "fresh",
+  "question": "Who was recognized as Hero of Ukraine in 2025?",
+  "answer": "Oleksandr Dovhach",
+  "evidence": "9 March – Oleksandr Dovhach, military pilot, Hero of Ukraine (2025).",
+  "page": "2026 in Ukraine",
+  "url": "https://en.wikipedia.org/wiki/2026_in_Ukraine",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "Dmytro Maslovskyi, Vasyl Malyuk, Robert Brovdi, Pavlo Petrichenko.",
+ "agent_ok": false,
+ "cost": 0.001409699999999986,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Who was recognized as Hero of Ukraine in 2025?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_RkKucQ4lBvXoFiShgtCgNvIA",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Hero of Ukraine 2025\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_RkKucQ4lBvXoFiShgtCgNvIA",
+   "content": "[Hero of Ukraine - Wikipedia](https://en.wikipedia.org/wiki/Hero_of_Ukraine) — The origin of the \" Hero of Ukraine \" award can be traced to the Hero of the Soviet Union (established 16 April 1934) and the Hero of Socialist Labor (27 December 1938), the highest decorations established in the Soviet Union, of which Ukraine was a constituent republic. Most of the recipients of the former title received it for heroic military action (with Soviet cosmonauts being a notable ...\n[Dmytro Maslovskyi - Wikipedia](https://en.wikipedia.org/wiki/Dmytro_Maslovskyi) — Dmytro Olehovych Maslovskyi (Ukrainian: Дмитро Олегович Масловський; callsign Kobra; 7 November 1994 — 17 November 2024) was a Ukrainian serviceman, participant in the Russian-Ukrainian war. Hero of Ukraine ( 2025 , posthumously). [1]\n[Honoring Heroes of Ukraine: New Awards > News > UkrVisti](https://ukrvisti.com/en/news/3568-details) — President Zelensky posthumously honored new heroes of Ukraine for their contributions to the fight for independence.\n[State awards of Ukraine: orders, medals & personalized weapons](https://frontliner.ua/en/state-awards-of-ukraine/) — The highest award - Hero of Ukraine The Hero of Ukraine is the nation's highest title, awarded either for acts of courage on the battlefield, in rescue missions, or other extreme situations, or for outstanding achievements in nation-building, science, economy, and culture. The \"Golden Star\" Order, Kyiv, Ukraine , Nov. 5, 2025 .\n[President Zelensky Awards Hero of Ukraine Title to Vasyl Malyuk, Robert ...](https://deepnewz.com/ukraine/president-zelensky-awards-hero-ukraine-title-to-vasyl-malyuk-robert-brovdi-pavlo-7848eb13) — On May 8 and 9, 2025 , Ukrainian President Volodymyr Zelensky awarded the title of Hero of Ukraine to several individuals for their service. Recipients include Vasyl Malyuk, head of the Security Service of Ukraine (SBU); Robert Brovdi, commander of the \"Birds of Madyar\" unit; and Pavlo Petrichenko, a military officer .."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_tskb695ho7r9qYqeRlbrQYKW",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://en.wikipedia.org/wiki/Hero_of_Ukraine\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_IwwkFg8eltH23q9qttzFTx7H",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://deepnewz.com/ukraine/president-zelensky-awards-hero-ukraine-title-to-vasyl-malyuk-robert-brovdi-pavlo-7848eb13\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_tskb695ho7r9qYqeRlbrQYKW",
+   "content": "Hero of Ukraine - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 History 2 Creation 3 Design 4 Regulations Toggle Regulations subsection 4.1 Display 5 Procedure 6 Recipients 7 Controversial awards 8 References 9 External links Toggle the table of contents Hero of Ukraine 38 languages العربية Azərbaycanca Беларуская (тарашкевіца) Беларуская Български Brezhoneg Català Čeština Dansk Deutsch Español Eesti فارسی Suomi Français עברית Հայերեն Italiano 日本語 ქართული Lietuvių Latviešu Nederlands Norsk bokmål Polski پنجابی Português Română Русский Simple English Slovenčina Српски / srpski Svenska Türkçe Українська اردو Tiếng Việt 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia Highest state award of Ukraine {{nobold|Герой України}}\"},\"image\":{\"wt\":\"[[File:Ukrainian Goldenstar.jpg|90px]] [[File:Hero of Ukraine - Order of the Gold Star (cropped).jpg|90px]] [[File:Gold star116.jpg|70px]]\"},\"caption\":{\"wt\":\"Order of the State (left), Order of the Gold Star (centre), miniature medal (right)\"},\"awarded_by\":{\"wt\":\"the [[President of Ukraine]]\"},\"type\":{\"wt\":\"[[Order (distinction)|National order]]\"},\"motto\":{\"wt\":\"\"},\"eligibility\":{\"wt\":\"Citizens of Ukraine\"},\"for\":{\"wt\":\"\\\"Personal heroism and great labor achievements\\\"\"},\"status\":{\"wt\":\"Active\"},\"head_title\":{\"wt\":\"\"},\"head\":{\"wt\":\"\"}"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_IwwkFg8eltH23q9qttzFTx7H",
+   "content": "President Zelensky Awards Hero of Ukraine Title to Vasyl Malyuk, Robert Brovdi, Posthumous Pavlo Petrichenko, and Pilot Ihor Parkhomenko | DeepNewz Ukraine Market Brief New Daily market recaps with key events, stock movements, and global influences Open main menu Search DeepNewz Real-time, unbiased, personalized news Real-time, unbiased, personalized news For You AI Business Crypto Culture Environment Politics Science Sports Tech United States World Sources Similar Stories Footer AI AI Fundraising AI Modeling AI Products Business Automobile Company Earnings Economics Law Prediction Markets Real Estate Rumors Stocks VC Crypto Airdrops Blockchains CBDCs DeFi Hacks Markets Memecoin Mining NFT Regulation Culture Anime Celebrities Crime Education Movies Music Obituary TV Video Games Environment Climate Energy Natural Disasters Natural Resources Sustainability Politics DOGE Epstein Files Executive Orders Tariffs US Domestic Policy US Elections US Foreign Policy US Gov Appointments US Judiciary US Legislation War Science Archeology Bio Health Math Pharma Physics Space Sports Boxing Chess Cricket Golf Hockey MLB NBA NCAA NFL Olympics PGA Poker Racing Rugby Soccer Tennis UFC Tech AR-VR Fintech Infosec IoT Metaverse Policy Robotics Smart Home Software Startups Wearables United States Arizona Boston California Chicago Colorado Detroit Florida Georgia Las Vegas Los Angeles New Jersey New Mexico New York Ohio Oregon Philadelphia San Francisco Seattle Texas Utah Washington DC World Africa Albania Algeria Angola Argentina Armenia Asia Australia Austria Azerbaijan Bahrain Balkans Bangladesh Belarus Belgium Belize Benin Bolivia Bosnia and Herzegovina Brazil Britain Bulgaria Cambodia Cameroon Canada Caribbean Caucasus Central Africa Central African Republic Central America Central Asia Chad Chile China Colombia Congo Republic Costa Rica Croatia Cyprus Czech Republic Democratic Republic of Congo Denmark East Africa East Asia Eastern Europe Ecuador Egypt El Salvador Estonia Ethiopia Eu"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5Iu1EgERloZL0ycgwQ797p4Q",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Hero of Ukraine recipients 2025 list\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5Iu1EgERloZL0ycgwQ797p4Q",
+   "content": "[List of Heroes of Ukraine - Wikipedia](https://en.wikipedia.org/wiki/List_of_Heroes_of_Ukraine) — List of Heroes of Ukraine The article uses the latest official Romanization of Ukrainian on resolution of the Government of Ukraine.[1] This is a list of individuals who have been presented with the title Hero of Ukraine in reverse chronological order.\n[List of Heroes of Ukraine — Grokipedia](https://grokipedia.com/page/List_of_Heroes_of_Ukraine) — The list of Heroes of Ukraine enumerates citizens awarded the title of Hero of Ukraine , the highest state distinction conferred by the President for personal heroism or exceptional labor contributions to the nation. [1] Established on 23 August 1998 through Decree No. 944/98 by President Leonid Kuchma, the award initially featured the Order of the Golden Star for heroic deeds and the Order of ...\n[Hero of Ukraine - Wikipedia](https://en.wikipedia.org/wiki/Hero_of_Ukraine) — The origin of the \" Hero of Ukraine \" award can be traced to the Hero of the Soviet Union (established 16 April 1934) and the Hero of Socialist Labor (27 December 1938), the highest decorations established in the Soviet Union, of which Ukraine was a constituent republic. Most of the recipients of the former title received it for heroic military action (with Soviet cosmonauts being a notable ...\n[President Zelensky Awards Hero of Ukraine Title to Vasyl Malyuk, Robert ...](https://deepnewz.com/ukraine/president-zelensky-awards-hero-ukraine-title-to-vasyl-malyuk-robert-brovdi-pavlo-7848eb13) — On May 8 and 9, 2025 , Ukrainian President Volodymyr Zelensky awarded the title of Hero of Ukraine to several individuals for their service. Recipients include Vasyl Malyuk, head of the Security Service of Ukraine (SBU); Robert Brovdi, commander of the \"Birds of Madyar\" unit; and Pavlo Petrichenko, a military officer ..\n[Hero of Ukraine - Recipients - LiquiSearch](https://www.liquisearch.com/hero_of_ukraine/recipients) — Recipients have been awarded the Hero of Ukrain"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_H6N6E92Esn5Zv6fYFS59g8ut",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\":\"https://en.wikipedia.org/wiki/List_of_Heroes_of_Ukraine\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_H6N6E92Esn5Zv6fYFS59g8ut",
+   "content": "List of Heroes of Ukraine - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in List of Heroes of Ukraine 3 languages Español Русский Українська Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia The article uses the latest official Romanization of Ukrainian on resolution of the Government of Ukraine . [ 1 ] This is a list of individuals who have been presented with the title Hero of Ukraine in reverse chronological order. \\n<timeline>\\nImageSize = width:1080 height:286\\nPlotArea = left:65 right:15 bottom:20 top:5\\nAlignBars = justify\\n\\nPeriod = from:0 till:220\\nTimeAxis = orientation:ver\\nScaleMajor = unit:year increment:10 start:0\\nScaleMinor = unit:year increment:1 start:0\\n\\nPlotData=\\n align:center textcolor:black fontsize:M width:30 shift:(2,8) color:green\\n bar:1998 from:start till:1 text:1 \\n bar:1999 from:start till:19 text:19 shift:(2,-5)\\n bar:2000 from:start till:9 text:9 shift:(2,-5)\\n bar:2001 from:start till:20 text:20 shift:(2,-5)\\n bar:2002 from:start till:25 text:25 shift:(2,-5)\\n bar:2003 from:start till:16 text:16 shift:(2,-5)\\n bar:2004 from:start till:41 text:41 shift:(2,-5)\\n bar:2005 from:start till:17 text:17 shift:(2,-5)\\n bar:2006 from:start till:25 text:25 shift:(2,-5)\\n bar:2007 from:start till:25 text:25 shift:(2,-5) \\n bar:2008 from:start till:18 text:18 shift:(2,-5) \\n bar:2009 from"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_mSI5td4wbGgcOjkdbewQeShj",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://liquisearch.com/hero_of_ukraine/recipients\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_rmrPdMq3dMZZVJ1Bm5FqMBVY",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://ukrvisti.com/en/news/3568-details\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_mSI5td4wbGgcOjkdbewQeShj",
+   "content": "Hero of Ukraine - Recipients Home Contact Privacy Hero of Ukraine - Recipients Recipients Recipients have been awarded the Hero of Ukraine title for a variety of accomplishments. The first to receive the title — in 1998 – was Borys Paton. He was recognised for studies in metallurgy of electrical welding and has been President of National Academy of Sciences of Ukraine since 1962. Other science-related honors were given to Platon Kostyuk, for his work in neurophysiology, and Valerii Kazakov for his work in medicine, The title is often awarded to athletes and other sports-related personalities. Vitali Klitschko, a heavyweight boxing champion was given the level \"Order of the Gold Star\" in 2004 as was Andriy Shevchenko, 2004 European Footballer of the Year and two time winner of the Serie A scoring title. Valeriy Lobanovskyi, the former coach of the football club FC Dynamo Kyiv (Dinamo Kiev), died on 13 May 2002 in hospital after he passed out during a game. He was awarded the title for \"his years of service to Ukraine for the development of football inside the nation and also improving national prestige\" . Olympic medalists are also prominent winners. Yana Klochkova, who won gold medals in swimming at the Athens and Sydney Olympic Games was awarded the title \"in recognition of Klochkova's outstanding services to Ukraine and her efforts to build up the country's reputation in the Olympic arena.\" People involved in the arts and literature have also received the award. Renowned Ukrainian composer, Oleksandr Bilash, was awarded in 2001 for outstanding personal contribution to the enrichment of the spiritual treasures of the Ukrainian people and many years of fruitful creative activity . Sofia Rotaru, arguably the best-known popular singer from Ukraine in the former Soviet Union, received her award \"for outstanding personal merits in the sphere of art\" . Writer Pavlo Zahrebelnyi was awarded for \"self-sacrifice for Ukraine, and for many years of writing and significant pers"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_rmrPdMq3dMZZVJ1Bm5FqMBVY",
+   "content": "ошибка загрузки страницы: ('Received response with content-encoding: gzip, but failed to decode it.', error('Error -3 while decompressing data: incorrect header check'))"
+  },
+  {
+   "role": "assistant",
+   "content": "In 2025, the title of Hero of Ukraine was awarded posthumously to Dmytro Maslovskyi, along with other individuals including Vasyl Malyuk, Robert Brovdi, and Pavlo Petrichenko. \n\nFINAL: Dmytro Maslovskyi, Vasyl Malyuk, Robert Brovdi, Pavlo Petrichenko.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

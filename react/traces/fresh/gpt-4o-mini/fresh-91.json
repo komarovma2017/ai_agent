@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-91",
+  "source": "fresh",
+  "question": "What was the amount released by Shivraj Singh Chouhan for the VB-G RAM-G scheme in July 2026?",
+  "answer": "₹25,863 crore",
+  "evidence": "5 July – Union Agriculture and Rural Development Minister Shivraj Singh Chouhan releases the first instalment of ₹25,863 crore (US$2.7 billion) to states for the implementation of the VB-G RAM-G scheme.",
+  "page": "2026 in India",
+  "url": "https://en.wikipedia.org/wiki/2026_in_India",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "₹25,863 crore",
+ "agent_ok": true,
+ "cost": 0.0002761500000000028,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What was the amount released by Shivraj Singh Chouhan for the VB-G RAM-G scheme in July 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_9QesneoCCx7H3BsJp2nzO3bk",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Shivraj Singh Chouhan VB-G RAM-G scheme amount July 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_9QesneoCCx7H3BsJp2nzO3bk",
+   "content": "[Centre releases ₹25,863 crore as new rural jobs scheme VB-G-RAM-G rolls ...](https://www.livemint.com/news/vbgramg-rural-employment-mgnrega-shivraj-singh-chouhan-rural-development-wage-guarantee-gram-panchayat-11783246854711.html) — Rural development minister Shivraj Singh Chouhan said the government had resolved to implement VB-G-RAM-G across the country without disruption from 1 July 2026 .\n[Shivraj Singh Chouhan releases Rs 25,863 crore first instalment to ...](https://ddindia.co.in/2026/07/shivraj-singh-chouhan-releases-rs-25863-crore-first-instalment-to-states-for-rollout-of-vb-g-ram-g/) — Union Rural Development Minister Shivraj Singh Chouhan on Sunday released the first instalment, or Mother Sanction, of ₹25,863 crore to states for the implementation of the Viksit Bharat - Guarantee for Rozgar and Aajeevika Mission (Gramin) [ VB-G-RAM-G ], while reviewing the rollout of the flagship rural employment scheme with Rural ...\n[Rs 25,863 Crore Released for VB-G RAM G Yojana - newkerala.com](https://www.newkerala.com/news/a/union-minister-shivraj-singh-chouhan-releases-rs-25863-849.htm) — Union Minister Shivraj Singh Chouhan releases Rs 25,863 crore first instalment for states under Viksit Bharat G-RAM-G Yojana, replacing MGNREGA with 125-day employment guarantee.\n[VB-G RAM G Yojana: 25,863 करोड़ रुपए की ... - Patrika](https://www.patrika.com/national-news/shivraj-singh-chouhan-releases-rs-25-863-crore-first-instalment-for-vb-g-ram-g-yojana-20722392) — केंद्रीय मंत्री Shivraj Singh Chouhan ने VB-G RAM G योजना के तहत 25,863 करोड़ रुपए की पहली किस्त जारी की। यह योजना एक जुलाई 2026 से प्रभावी हो गई है। इसके तहत 125 दिनों की रोजगार की ...\n[Centre releases ₹25,863 crore first instalment under VB-G RAM G Yojana](https://www.thehindubusinessline.com/economy/agri-business/centre-releases-25863-crore-first-instalment-under-vb-g-ram-g-yojana/article71185376.ece) — Centre disburses ₹25,863 crore for VB-G RAM G Yojana, enhancing rural employment with a new 125-day guarantee sc"
+  },
+  {
+   "role": "assistant",
+   "content": "The amount released by Shivraj Singh Chouhan for the VB-G RAM-G scheme in July 2026 was ₹25,863 crore. \n\nFINAL: ₹25,863 crore",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

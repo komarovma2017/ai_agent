@@ -1,0 +1,132 @@
+{
+ "task": {
+  "id": "fresh-108",
+  "source": "fresh",
+  "question": "Where does a man get killed in a shark attack in June 2026?",
+  "answer": "Michaelmas Island",
+  "evidence": "6 June – A man is killed in a shark attack off Michaelmas Island in Western Australia.",
+  "page": "2026 in Australia",
+  "url": "https://en.wikipedia.org/wiki/2026_in_Australia",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "Sorrento Beach, Perth, Western Australia.",
+ "agent_ok": false,
+ "cost": 0.0008140500000000106,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Where does a man get killed in a shark attack in June 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_0oMVjDbty0DtNXeR7UAgdSEB",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"man killed shark attack June 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_0oMVjDbty0DtNXeR7UAgdSEB",
+   "content": "[Shark kills swimmer off Australian beach as witnesses recall seeing ...](https://nypost.com/2026/09/18/world-news/shark-kills-swimmer-off-australian-beach-as-witnesses-recall-seeing-pool-of-blood/) — A swimmer was killed by a shark at Sorrento Beach in Perth, Western Australia, marking the country's fifth fatal shark attack this year.\n[Man Killed in Sorrento Shark Attack — IJR News](https://ijr.com/discover/world-2026-09-18-swimmer-missing-suspected-sorrento-shark-attack-daed5e83) — A man in his 60s was killed by a shark while swimming at Sorrento Beach, north of Perth, Western Australia, on Friday morning. Witnesses reported seeing the shark drag him offshore and described a ...\n[Australia: Man killed in shark attack near Perth - dw.com](https://www.dw.com/en/australia-man-killed-in-shark-attack-near-perth/a-79319936) — In May and June , three spearfishing divers were killed by sharks in seperate incidents. In January, a 12-year-old boy died in hospital after being mauled by a bull shark in Sydney Harbor.\n[Man dies in shark attack at Sorrento Beach north of Perth](https://www.abc.net.au/news/2026-09-18/shark-attack-perth-sorrento-beach/107168950) — A male swimmer dies in a shark attack at Sorrento Beach, as a witness described seeing blood in the water where two men had been swimming.\n[Shark Attacks in 2026: 155 So Far, 32 Fatal (updated Sep 18)](https://www.sharkdatalab.com/en/shark-attacks/year/2026) — 155 shark attacks recorded so far in 2026 , 32 fatal (20.6%). A running tally, updated as incidents are verified, with monthly pace by country."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_XmBU3KdtRCQyrlJjePIrItn4",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://nypost.com/2026/09/18/world-news/shark-kills-swimmer-off-australian-beach-as-witnesses-recall-seeing-pool-of-blood/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_2nni8kN0tCJsauyWf1ZHU0Pe",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://ijr.com/discover/world-2026-09-18-swimmer-missing-suspected-sorrento-shark-attack-daed5e83\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 2,
+     "id": "call_gmXDqJkG8TQQIwcS8t9MOyno",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.dw.com/en/australia-man-killed-in-shark-attack-near-perth/a-79319936\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 3,
+     "id": "call_xNEVdxNv0HX8S5TUy0pN1hDS",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.abc.net.au/news/2026-09-18/shark-attack-perth-sorrento-beach/107168950\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 4,
+     "id": "call_iz20KUBRKsTfSeP2yzxVyxOW",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.sharkdatalab.com/en/shark-attacks/year/2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_XmBU3KdtRCQyrlJjePIrItn4",
+   "content": "Shark kills swimmer off Australian beach as witnesses recall seeing 'pool of blood' Primary Menu Sections US News Metro Long Island Politics World News Page Six Sports NFL MLB Olympics NBA NHL College Football College Basketball WNBA Post Sports+ Sports Betting Business Opinion Entertainment TV Movies Music Celebrities Awards Theater Shopping Lifestyle Weird But True Sex & Relationships Viral Trends Human Interest Parenting Fashion & Beauty Food & Drink Travel Health Wellness Fitness Health Care Medicine Men’s Health Women’s Health Mental Health Nutrition Real Estate Alexa Media Tech Science Space Environment Wildlife Archaeology Astrology Video Photos Pod Force One NY POSTcast Today’s Paper Covers Columnists Horoscopes Crosswords & Games Sports Odds Podcasts Careers Email Newsletters Official Store Home Delivery Tips Search Email New York Post Switch between CA and NY editions here. Got it Edition CA NY Open World News navigation US News US News Metro Long Island Politics World News US News Metro Long Island Politics World News Search Search World News Shark kills swimmer in attack off Australian beach as witnesses recall seeing ‘pool of blood’ By Associated Press Published Sep. 18, 2026 Updated Sep. 18, 2026, 7:34 a.m. ET See more of our coverage in your search results. Add The New York Post on Google A man was killed by a shark as he swam off a Western Australian city beach Friday, police said. Search boats and helicopters extensively searched the ocean off Sorrento Beach in Perth’s northern suburbs after the late morning attack without finding any trace of the victim, a police statement said. But police were confident the “swimmer died as a result of the attack,” the statement said. 3 A shark is spotted off Sorrento Beach in Perth, Australia, on Friday. 9News Witnesses reported seeing blood in the water. “My friend said, ‘Jac, I think there’s been a shark attack,’ and I looked out to the ocean and I could see a pool of blood,” beach walker Jacqui Rapaic told Aus"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_2nni8kN0tCJsauyWf1ZHU0Pe",
+   "content": "block verse w o rdys billionaire .ai your list Whiteboard App quizie un school New Journal Loading Ask Genius Apps Want your own hosted, self-optimizing clone of this — or any OpenServe site? Open Development for enterprise → © OpenServe Holdings LLC Privacy Notice Data rights Terms of Service Feedback Cookie Notice Cookie settings Help Acceptable Use Copyright AI Notice Your Privacy Choices Subprocessors Data Processing Addendum Installed App Terms Company Solutions Free assessment Investors Get the app Contact News Home Politics World Sports Markets Business Entertainment Music Health Tech Science Good News Encouragement Video Meme Wars Brands Yourlist Quizie F FaithTap B Blessed All brands Man Killed in Sorrento Shark Attack — IJR News Man Killed in Sorrento Shark Attack Share World Man Killed in Sorrento Shark Attack 60 sources · Updated Sep 19, 2026 © IJR Sponsored A man in his 60s was killed by a shark while swimming at Sorrento Beach, north of Perth, Western Australia, on Friday morning. Witnesses reported seeing the shark drag him offshore and described a large pool of blood, while his swimming companion reached shore. The shark species has not been confirmed, although a great white measuring more than 16 feet was reportedly seen nearby later that day. Police, boats, helicopters and emergency crews searched the area, but the victim was not publicly identified and it was unclear whether remains were recovered. Authorities closed the beach and extended restrictions along about 12 kilometers of coastline. The incident followed a separate attack near Geraldton that seriously injured a surfer and was Australia’s fifth fatal shark attack of the year, above the long-term annual average of two to three. Sponsored In this story: 🏷️ Sorrento Beach Tag Where do you stand? Sorrento Beach Support Oppose Coverage details L 38 % C 24 % R 38 % Left 8 38 % Center 5 24 % More on this story Back to News Tech Albanese seeks tech support for child safety and AI rules Albanese me"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_gmXDqJkG8TQQIwcS8t9MOyno",
+   "content": "Australia: Man killed in shark attack near Perth Skip to content Skip to main menu Skip to more DW sites Latest videos Latest audio Regions Africa Asia Europe Latin America Middle East North America Germany Topics Climate Equality Health Human Rights Migration Technology Categories Business Science Environment Culture Sports In focus German politics Russia Climate change Latest audio Latest videos Live TV Advertisement Catastrophe Australia Australia: Man killed in shark attack near Perth Wesley Rahn with AFP, AP, dpa 09/18/2026 September 18, 2026 A swimmer was mauled by a shark, with witnesses reporting a massive pool of blood in the water. There have been four confirmed fatal shark attacks in Australia this year. https://p.dw.com/p/5Mojo Four people have been confirmed killed by sharks in Australia this year [FILE JUNE 2026] Image: Hollie Adams/REUTERS Advertisement A swimmer off the coast of Perth in Western Australia was killed by a shark on Friday, police said. Emergency services were called to Sorrento Beach in the north of the city to search for the man. Earlier, witnesses said they had watched the man being attacked by a shark, with blood pooling in the water, Australian media reported. It is unclear whether any remains were recovered, and no details of the victim's identity have yet been shared. \"It was reported a male swimmer had been bitten by a shark while swimming along the coast,\" a Western Australia state police spokeswoman said in a statement. \"The swimmer died as a result of the attack.\" The beach was closed following the attack. Several killed this year by sharks Friday's incident would be the fifth fatal shark attack in Australia this year. Previously, there were four confirmed fatal shark attacks. In May and June , three spearfishing divers were killed by sharks in seperate incidents. In January, a 12-year-old boy died in hospital after being mauled by a bull shark in Sydney Harbor. On Monday, a surfer was severely wounded in the leg near the cit"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_xNEVdxNv0HX8S5TUy0pN1hDS",
+   "content": "Man dies in shark attack at Sorrento Beach north of Perth - ABC News Skip to main content Skip to news navigation, settings and search Explore the ABC More from ABC Close menu ABC ABC News ABC iview ABC listen Kids & Students Indigenous Information & Services Editorial Policies Read our editorial guiding principles Follow the ABC news iview listen Loading ABC News Just In For You Politics World Business Analysis Sport Lifestyle Entertainment Quizzes More Search News Home Just In For You Analysis Rural Watch Live Health Indigenous Politics Science Deep Time Elections World Environment Investigations Business Local news Quizzes Sport AFL NRL Football Tennis Cricket Netball Lifestyle Wellbeing Relationships & Family Food & Recipes Personal Finance Home & Garden Entertainment TV & Movies Books Music Pop Culture Arts Facebook YouTube Instagram Twitter Emergency Backstory Newsletters 中文新闻 BERITA BAHASA INDONESIA TOK PISIN Appearance (BETA) Follow system settings Select an option Always light Always dark Follow system settings ABC iView ABC Listen ABC News News Home Man dies in shark attack at Sorrento Beach north of Perth Share Share article Man dies in shark attack at Sorrento Beach north of Perth M By Mya Kordic C By Courtney Withers Topic: Shark Attacks Posted Fri 18 Sep 2026 at 1:08pm Fri 18 Sep 2026 at 1:08pm Fri 18 Sep 2026 at 1:08pm , updated Fri 18 Sep 2026 at 8:31pm Fri 18 Sep 2026 at 8:31pm Fri 18 Sep 2026 at 8:31pm Loading... In short: A man has died in a shark attack at Sorrento Beach in Perth's north. A witness described seeing blood in the water, and said two men had been swimming, but only one made it back to shore. The attack came after a 2.5-metre shark was seen in the area. abc.net.au/news/shark-attack-perth-sorrento-beach/107168950 Link copied Share Share article A swimmer has been killed in a shark attack at a beach in Perth's northern suburbs. Police confirmed the male swimmer died as a result of the attack, but provided no further details. Earlier, a"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_iz20KUBRKsTfSeP2yzxVyxOW",
+   "content": "Shark Attacks in 2026: 155 So Far, 32 Fatal (updated Sep 18) Shark Data Lab Map Attacks Sightings Stats Articles Library Shop Hub By Country By Year Map Compare Species Stories Home / Shark Attacks / 2026 Shark Attacks in 2026 As of September 18, 2026, Shark Data Lab has logged 155 shark attacks worldwide in 2026, 32 of them fatal (20.6%). Australia has the most recorded incidents so far, with 66. Recent incidents can take weeks to be verified and added, so the latest months are typically undercounted — this page updates as new records arrive. 155 shark attacks recorded so far in 2026 32 fatal · 20.6% fatality rate · as of September 18, 2026 Fatal 32 Fatality rate 20.6% Global avg 21.1% Data as of September 18, 2026 Updated from GSAF Unprovoked 58 7 provoked Shark attacks by month in 2026 Jan 23 Feb 6 Mar 13 Apr 3 May 31 Jun 30 Jul 24 Aug 11 Sep 14 Oct 0 Nov 0 Dec 0 Based on 155 incidents with a known date. Recent months are typically undercounted — new incidents can take weeks to be verified and added. Countries with the most incidents in 2026 Country Recorded incidents Australia 66 United States 59 New Caledonia 5 Canada 4 Brazil 4 What victims were doing in 2026 Activity Recorded incidents Swimming 20 Surfing 14 Snorkeling 5 Fishing 4 Wing Foiling 4 The activity the victim was engaged in at the time of the incident, where recorded. Species most often involved in 2026 Species Recorded incidents White Shark 14 Bull Shark 11 Tiger Shark 5 Broadnose Sevengill Shark 3 Blue Shark 2 Counts based on the species field in the Global Shark Attack File. Species identification in incident reports is not always reliable. Notable incidents in 2026 Sorrento Beach, Perth, Australia Fatal 2026-09-19 Western Australia, Australia Non-fatal 2026-09-18 Perth, Australia Non-fatal 2026-09-18 Gaspé coast, Quebec, Canada Non-fatal 2026-09-16 · great white Quebec, Canada Non-fatal 2026-09-16 · great white shark Percé, Canada Non-fatal 2026-09-16 Percé, Gaspésie, Canada Non-fatal 2026-09-16"
+  },
+  {
+   "role": "assistant",
+   "content": "A man was killed in a shark attack at Sorrento Beach, north of Perth, Western Australia, on 18 September 2026. FINAL: Sorrento Beach, Perth, Western Australia.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

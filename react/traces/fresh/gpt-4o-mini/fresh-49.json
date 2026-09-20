@@ -1,0 +1,148 @@
+{
+ "task": {
+  "id": "fresh-49",
+  "source": "fresh",
+  "question": "What was the sentence given to Asiya Andrabi in India on March 24, 2026?",
+  "answer": "life imprisonment",
+  "evidence": "24 March – A special NIA court sentences Kashmiri separatist Asiya Andrabi to life imprisonment for her involvement in terrorist activities in Kashmir.",
+  "page": "2026 in India",
+  "url": "https://en.wikipedia.org/wiki/2026_in_India",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "life imprisonment",
+ "agent_ok": true,
+ "cost": 0.001229549999999996,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What was the sentence given to Asiya Andrabi in India on March 24, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_KThljXKGRaSvey5hsauAEBeV",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Asiya Andrabi sentence March 24 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_KThljXKGRaSvey5hsauAEBeV",
+   "content": "[Delhi Court Awards Life Sentence to Kashmiri Separatist Asiya Andrabi ...](https://english.dainikjagranmpcg.com/national/delhi-court-awards-life-sentence-to-kashmiri-separatist-asiya-andrabi/article-15927) — On March 24 , 2026 , Additional Sessions Judge Chander Jit Singh at a Delhi NIA special court pronounced the sentencing order against Asiya Andrabi , 64, the founder and chief of Dukhtaran-e-Millat — a women's separatist organisation banned by the Indian government in 2018 as a terrorist organisation.\n[Delhi court sentences Asiya Andrabi to life imprisonment in UAPA case](https://freepresskashmir.news/2026/03/24/delhi-court-sentences-asiya-andrabi-to-life-imprisonment-in-uapa-case/) — Andrabi's two associates Sofi Fehmeeda and Nahida Nasreen, sent to 30 years in prison in the same case New Delhi: A Delhi court on Tuesday sentenced Kashmiri Hurriyat leader and Dukhtaran-e-Millat chief Asiya Andrabi to life imprisonment following her conviction in an Unlawful Activities (Prevention) Act (UAPA) case. Additional Sessions Judge Chander Jit Singh announced the verdict on ...\n[Delhi Court Sentences Asiya Andrabi To Life Imprisonment In UAPA Case](https://kashmirlife.net/delhi-court-sentences-asiya-andrabi-to-life-imprisonment-in-uapa-case-429451/) — DeM chairperson Asiya Andrabi The sentencing follows their conviction in January 2026 under multiple provisions of the Unlawful Activities (Prevention) Act (UAPA) and the Indian Penal Code by the trial court at Karkardooma, Delhi.\n[Delhi court sentences Kashmiri separatist Asiya Andrabi to life ...](https://www.thehindu.com/news/national/delhi-court-sentences-kashmiri-separatist-asiya-andrabi-to-life-imprisonment-in-uapa-case/article70779484.ece) — A Delhi court on Tuesday ( March 24 , 2026 ) sentenced Kashmiri separatist leader Asiya Andrabi to life imprisonment after convicting her in a case under the Unlawful Activities (Prevention) Act ...\n[NIA Court awards Kashmiri separatist Aasiya Andrabi life sentence](https://orga"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_5r7UhVsut2moj5MEcia8wBkG",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://freepresskashmir.news/2026/03/24/delhi-court-sentences-asiya-andrabi-to-life-imprisonment-in-uapa-case/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_mAgRj3xry1cNR4mPrhYOcZTb",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.thehindu.com/news/national/delhi-court-sentences-kashmiri-separatist-asiya-andrabi-to-life-imprisonment-in-uapa-case/article70779484.ece\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_5r7UhVsut2moj5MEcia8wBkG",
+   "content": "Delhi court sentences Asiya Andrabi to life imprisonment in UAPA case | Free Press Kashmir News In Depth Visuals Photo Video FPK Cartoons Explainers Labs Podcasts Data Infographics Viz Commentary Poetry Literature Analysis Opinion Memory Web 101 About Us About Us Authors Submissions Style Guide Privacy Policy Terms and Conditions Cookie Policy Refund Policy Connect Subscribe Free Press Kashmir News BCCI office bearers to decide on selection committee as Agarkar’s future remains unclear Two killed, 16 injured in bomb attack targeting paramilitary vehicle in Thailand Suicide blast near police lines in Pakistan’s Kohat kills 15, injures dozens Explosion near mosque in Pakistan’s Kohat injures at least 20 US approves visas for Iranian president, foreign minister to attend UN meeting In Depth In Leh, the old Silk Route still lives Are fewer women reporting crime in Kashmir? Inside the mortuary, Kashmir’s medical negligence cases hit a wall Explained: Why is sugar getting costlier in India? Kashmir’s cancer care: chapter 2 — the waiting ward Visuals Photo Video FPK Cartoons Explainers Labs Podcasts Data Infographics Viz Commentary Poetry Literature Analysis Opinion Memory Candies and Chaos: How 2014 Flood changed everything overnight September 2014 Floods – A Memoir That summer when a siege was laid on all lovers ‘We had hope’: How Kashmiris tackled the communication crisis in 2019 Of journalism and censorship: The forgotten Rahber Web 101 Brief: Syrian Opposition topples Assad, Baathist era ends Brief: Iran evacuates military commanders as Syrian Rebels advance on Damascus Explained: Syrian opposition groups’ surprise offensive against Assad Explained: Reservation policies cause a political firestorm in JK ‘Golabaw’: An emotional symphony exploring hope About Us About Us Authors Submissions Style Guide Privacy Policy Terms and Conditions Cookie Policy Refund Policy Connect Subscribe News Delhi court sentences Asiya Andrabi to life imprisonment in UAPA case By News Desk P"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_mAgRj3xry1cNR4mPrhYOcZTb",
+   "content": "Delhi court sentences Kashmiri separatist Asiya Andrabi to life imprisonment - The Hindu You are logged in Loading... LOGOUT You don’t have any Active Subscription. Subscribe now Subscribed with another email? Logout and Login with that one. Your active subscription(s) Account subscription benefits alongside Premium Stories, Editorials, Opinions and more. Unlock these with Subscription Products you've access to Additional Subscription Benefits eBooks Webinars Newsletters Games Monthly Digest Account Settings Go to My Account Bookmarks Manage Subscriptions Need help with your subscription? customersupport@thehindu.co.in 1800 102 1878 August 28, 2026 e-Paper LOGIN Account eBooks Subscribe Search Live Now News SECTION News India World States Cities TOPICS Israel-US strikes on Iran Delimitation Ground Zero Spotlight NEWSLETTER The View From India Looking at World Affairs from the Indian perspective. SEE ALL NEWSLETTERS States Cities Entertainment SECTION Entertainment Art Dance Movies Music Reviews Theatre NEWSLETTER First Day First Show News and reviews from the world of cinema and streaming. SEE ALL NEWSLETTERS Opinion SECTION Opinion Editorial Cartoon Columns Comment Interview Lead Letters Open Page Corrections & Clarifications Business SECTION Business Agri-Business Economy Industry Markets Budget Sport SECTION Sport Cricket Football Hockey Tennis Athletics Motorsport Races Other Sports TOPICS Between Wickets Technology SECTION Technology Gadgets Internet NEWSLETTER Today's Cache Your download of the top 5 technology stories of the day. SEE ALL NEWSLETTERS Science SECTION Science TOPICS ISRO Question Corner NEWSLETTER Science For All The weekly newsletter from science writers takes the jargon out of science and puts the fun in! SEE ALL NEWSLETTERS Data SECTION Data TOPICS Data Point Podcast NEWSLETTER Data Point Decoding the headlines with facts, figures, and numbers SEE ALL NEWSLETTERS Education SECTION Education Careers Colleges Schools NEWSLETTER THEdge At the cu"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_GkoJKeelkwNRcAesjWs0IBv9",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Asiya Andrabi life sentence March 24 2026 details\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_GkoJKeelkwNRcAesjWs0IBv9",
+   "content": "[Delhi court sentences Kashmiri separatist Asiya Andrabi to life ...](https://www.thehindu.com/news/national/delhi-court-sentences-kashmiri-separatist-asiya-andrabi-to-life-imprisonment-in-uapa-case/article70779484.ece) — A Delhi court on Tuesday ( March 24 , 2026 ) sentenced Kashmiri separatist leader Asiya Andrabi to life imprisonment after convicting her in a case under the Unlawful Activities (Prevention) Act ...\n[Delhi Court Sentences Kashmiri Separatist Asiya Andrabi To Life ...](https://kashmirnewsville.com/2026/03/24/delhi-court-sentences-kashmiri-separatist-asiya-andrabi-to-life-imprisonment/) — New Delhi: A Delhi court on Tuesday sentenced Kashmiri Hurriyat leader and Dukhtaran-e-Millat chief Asiya Andrabi to life imprisonment following her conviction in an Unlawful Activities (Prevention) Act (UAPA) case. Additional Sessions Judge Chander Jit Singh announced the verdict on Andrabi after concluding the arguments on the quantum of sentence , PTI reported. The court also …\n[Delhi Court Imposes Life Sentence on Separatist Leader Asiya Andrabi](https://thecsrjournal.in/delhi-court-imposes-life-sentence-on-separatist-leader-asiya-andrabi) — A Delhi court has sentenced Asiya Andrabi , a prominent separatist leader from Kashmir, to life imprisonment in connection with various terrorist activities. The ruling was announced on March 24 , 2026 , as the court delivered its verdict following a thorough examination of the case over recent months.\n[Delhi court sentences Asiya Andrabi to life imprisonment in UAPA case](https://freepresskashmir.news/2026/03/24/delhi-court-sentences-asiya-andrabi-to-life-imprisonment-in-uapa-case/) — Andrabi's two associates Sofi Fehmeeda and Nahida Nasreen, sent to 30 years in prison in the same case New Delhi: A Delhi court on Tuesday sentenced Kashmiri Hurriyat leader and Dukhtaran-e-Millat chief Asiya Andrabi to life imprisonment following her conviction in an Unlawful Activities (Prevention) Act (UAPA) case. Additional Sessions Judge "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_33NHfFZklBxdkqWJGmd3jWim",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://kashmirnewsville.com/2026/03/24/delhi-court-sentences-kashmiri-separatist-asiya-andrabi-to-life-imprisonment/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_el3ILPhrEPtPmx11sishnE09",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://thecsrjournal.in/delhi-court-imposes-life-sentence-on-separatist-leader-asiya-andrabi\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_33NHfFZklBxdkqWJGmd3jWim",
+   "content": "Delhi Court Sentences Kashmiri Separatist Asiya Andrabi To Life Imprisonment – Kashmir Newsville Home Contact About us Disclaimer Privacy Policy Monday, September 21, 2026 Home News Top Stories City Local Regional World Business Education Health Environment Sports Life & Times Opinion Tech Multi-Media ePaper No Result View All Result Home News Top Stories City Local Regional World Business Education Health Environment Sports Life & Times Opinion Tech Multi-Media ePaper No Result View All Result No Result View All Result Delhi Court Sentences Kashmiri Separatist Asiya Andrabi To Life Imprisonment by Newsville Desk March 24, 2026 Reading Time: 1 min read FB X Whatsapp Email New Delhi : A Delhi court on Tuesday sentenced Kashmiri Hurriyat leader and Dukhtaran-e-Millat chief Asiya Andrabi to life imprisonment following her conviction in an Unlawful Activities (Prevention) Act (UAPA) case. Additional Sessions Judge Chander Jit Singh announced the verdict on Andrabi after concluding the arguments on the quantum of sentence, PTI reported. The court also sentenced two associates of Andrabi, Sofi Fehmeeda and Nahida Nasreen, who were also convicted for 30 years in prison in the same case. Earlier on January 14, Andrabi, Fehmeeda and Nasreen were convicted under the offences of UAPA Sections 20 (punishment for being a member of a terrorist gang or terrorist organisation), 38 (offence relating to membership of a terrorist organisation) and 39 (supporting a terrorist organisation). The court also convicted the three women under IPC Sections 153A (promoting enmity between different groups), 153B (imputations, assertions prejudicial to national integration), 120B (criminal conspiracy) and 505 (statements conducing to public mischief) and 121A (conspiracy to commit offences against the State). Following her conviction, the National Investigation Agency (NIA) had sought life imprisonment for Andrabi, saying she had “waged war against India and a stern message was required to be sen"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_el3ILPhrEPtPmx11sishnE09",
+   "content": "Delhi Court Imposes Life Sentence on Separatist Leader Asiya Andrabi - The CSR Journal --> --> --> --> --> --> --> --> --> --> --> --> Facebook Instagram Linkedin X Youtube Sign in India Bihar Bihar Elections Chhattisgarh Delhi Gujarat Haryana Himachal Pradesh Jammu and Kashmir Jharkhand Karnataka Madhya Pradesh Maharashtra Mumbai North-East Punjab Rajasthan Tamil Nadu Telangana Uttar Pradesh Uttarakhand West Bengal Kolkata World Nepal Business Automobile Corporate News Sports Entertainment Lifestyle Fashion Technology CSR What is CSR? CSR Agriculture & Rural Development CSR Animal Welfare & Cruelty CSR Business Ethics & Philanthropy CSR Reports CSR Education and Skill Training CSR Environment CSR Events CSR Fund The Project CSR Global Stories CSR Health & Sanitation LGBTQI Releases CSR Travel CSR Women & Child Welfare Leaders Speak Opinions हिन्दी मंच Magazine Sign in Welcome! Log into your account your username your password Forgot your password? Password recovery Recover your password your email Search THECSRJOURNAL Search THECSRJOURNAL ENG हि September 21, 2026 Facebook Instagram Linkedin X Youtube India Maharashtra Mumbai Delhi Uttar Pradesh Gujarat Bihar UP Elections 2027: हर सीट पर 27 हजार वोट का लक्ष्य, महिलाओं को 2 लाख का लोन… अखिलेश यादव ने यूपी में की चुनावी... 37 minutes ago BJP Chief Nitin Nabin to Visit Uttar Pradesh on September 21-22 6 hours ago Bihar Approves Rs 3,516 Crore for Gaya Infrastructure Development 7 hours ago Assam Announces Rs 50,000 Crore Adani Power Project in Dhubri 7 hours ago Chambal Water Project Addresses Broader Urban Needs, Says Jyotiraditya Scindia 9 hours ago World Nepal Nepal Flood Search Operations Continue as 6,000 Remain Missing 6 hours ago Imran Khan Receives Medical Examination Amid Health Concerns 6 hours ago Ukraine Launches Major Drone Attacks on Moscow, Causing Two Deaths 9 hours ago Mark Carney Imitates Trump’s Hand Gestures During Ottawa Speech 12 hours ago US Lawsuit Alleges OpenAI, Anthropic and Google Colluded "
+  },
+  {
+   "role": "assistant",
+   "content": "On March 24, 2026, a Delhi court sentenced Kashmiri separatist leader Asiya Andrabi to life imprisonment after her conviction under the Unlawful Activities (Prevention) Act (UAPA) and the Indian Penal Code. The court also imposed a 30-year prison term on her two associates, Sofi Fehmeeda and Nahida Nasreen, who were convicted alongside her. The sentence was announced by Additional Sessions Judge Chander Jit Singh. \n\nFINAL: life imprisonment",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

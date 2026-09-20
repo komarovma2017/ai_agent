@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-76",
+  "source": "fresh",
+  "question": "What was the sentence given to former president Yoon Suk Yeol in South Korea in February 2026?",
+  "answer": "life imprisonment",
+  "evidence": "19 February – Former president Yoon Suk Yeol is convicted and sentenced to life imprisonment for insurrection relating to the 2024 South Korean martial law crisis.",
+  "page": "2026 in South Korea",
+  "url": "https://en.wikipedia.org/wiki/2026_in_South_Korea",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "Yoon Suk Yeol was sentenced to life in prison.",
+ "agent_ok": true,
+ "cost": 0.00024044999999998928,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What was the sentence given to former president Yoon Suk Yeol in South Korea in February 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_M4f3gp1ZeYvlV42WQSe9uf2s",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Yoon Suk Yeol sentence February 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_M4f3gp1ZeYvlV42WQSe9uf2s",
+   "content": "[South Korean Ex-Leader Is Sentenced to Life in Prison](https://www.nytimes.com/live/2026/02/19/world/yoon-korea-martial-law-president) — Former President Yoon Suk Yeol was found guilty of masterminding an insurrection when he imposed martial law in 2024. It was the country's biggest criminal trial in decades.\n[South Korean court sentences president to life in prison](https://abcnews.com/International/south-korean-court-sentences-former-president-life-prison/story?id=130292933) — SEOUL -- The Seoul Central District Court sentenced former South Korean President Yoon Suk Yeol to life in prison Thursday. The court found him guilty of leading an insurrection linked to his declaration of martial law on Dec. 3, 2024. The court ruled that Yoon's central offense was mobilizing military and police forces to seize control of the National Assembly and detain key political figures ...\n[Former South Korean President Yoon gets life sentence for rebellion ...](https://www.cbsnews.com/news/yoon-life-sentence-martial-law-former-south-korea-president/) — Former President Yoon Suk Yeol was sentenced to life in prison for briefly imposing martial law in a dramatic culmination to the country's biggest political crisis in decades.\n[Former South Korean president Yoon Suk Yeol gets life sentence over ...](https://www.cnbc.com/2026/02/19/south-korea-ex-president-yoon-suk-yeol-life-sentence-guilty-insurrection-death-sentence-martial-law-verdict.html) — Former South Korean president Yoon Suk Yeol was sentenced to life imprisonment Thursday after being found guilty of leading an insurrection during his declaration of martial law in December 2024.\n[Former South Korean President Yoon Suk Yeol handed life sentence for ...](https://www.cnn.com/2026/02/19/asia/south-korea-yoon-suk-yeol-verdict-insurrection-intl-hnk) — A blue bus believed to be transporting South Korea's impeached former president Yoon Suk Yeol arrives at the Seoul Central District Court in Seoul, on February 19, 2026 ."
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: Yoon Suk Yeol was sentenced to life in prison.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

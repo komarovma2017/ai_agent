@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-21",
+  "source": "fresh",
+  "question": "In art, which artist accused Devon Rodriguez of presenting his work as his own in June 2026?",
+  "answer": "Gavin Snider",
+  "evidence": "June – Artist Gavin Snider accuses fellow artist and social media star Devon Rodriguez of presenting images of paintings of triumphant New York Knicks fans outside Madison Square Garden commissioned by the team from him to celebrate their 2026 NBA Championship, victory as his own. Rodriguez summarily removes his social media post introducing the work as his own.",
+  "page": "2026 in art",
+  "url": "https://en.wikipedia.org/wiki/2026_in_art",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "Gavin Snider",
+ "agent_ok": true,
+ "cost": 0.00024914999999998966,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "In art, which artist accused Devon Rodriguez of presenting his work as his own in June 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_tD1OKEBQjMJ5u0eVEQJZtbGM",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"artist accused Devon Rodriguez of presenting work as his own June 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_tD1OKEBQjMJ5u0eVEQJZtbGM",
+   "content": "[TikTok Artist Devon Rodriguez Accused of Plagiarism](https://www.plagiarismtoday.com/2026/06/23/tiktok-artist-devon-rodriguez-accused-of-plagiarism/) — Devon Rodriguez may well be the most-followed visual artist in the world, possibly in history. Originally shooting to prominence for his work painting strangers on the subway, he quickly became a viral sensation. Today, between his Instagram and TikTok accounts, he has amassed over 43 million followers. A native to New York City, Rodriguez , like many artists in the city, wanted to celebrate ...\n[Artist Accuses TikTok Star Devon Rodriguez of Copying His Knicks Artwork](https://news.artnet.com/art-world/gavin-snider-devon-rodriguez-knicks-artwork-2781772) — Watercolorist Gavin Snider took to Instagram today to point out the similarities between his Knicks artwork and another by Devon Rodriguez .\n[TikTok Star With 34M Followers Accused of Ripping off Local Artist's ...](https://www.fashiontimes.co.uk/tiktok-art-star-devon-rodriguez-accused-copying-knicks-artwork-1760275) — TikTok art star Devon Rodriguez , who has more than 34 million followers on the platform, has been accused of copying two Knicks artworks by New York watercolour artist Gavin Snider after the team's NBA Finals win turned Madison Square Garden into the city's loudest visual obsession. Snider made the allegation in a 16 June Instagram post, claiming Rodriguez had created and sold a Knicks-themed ...\n[Artist Accuses TikTok Star Devon Rodriguez of Copying His Knicks ...](https://usaartnews.com/news/artist-accuses-tiktok-star-devon-rodriguez-of-copying-his-knicks-artwork) — Knicks Commission Becomes the Center of a Credit Dispute Between Two Artists A pair of Knicks-themed paintings has sparked a sharp conversation about influence, authorship, and acknowledgment on Instagram. New York watercolorist Gavin Snider says Devon Rodriguez copied two of his works , including a view of Madison Square Garden's exterior and an interior scene that\n[Artist Accuses Ti"
+  },
+  {
+   "role": "assistant",
+   "content": "In June 2026, New York watercolorist Gavin Snider accused Devon Rodriguez of copying his Knicks artwork. \n\nFINAL: Gavin Snider",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

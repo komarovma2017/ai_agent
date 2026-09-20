@@ -1,0 +1,88 @@
+{
+ "task": {
+  "id": "my-4",
+  "source": "my",
+  "question": "Сколько петафлопс вычислений NVFP4 для инференса обеспечивает GPU NVIDIA Rubin?",
+  "answer": "50 petaflops",
+  "evidence": "Rubin GPU delivers 50 petaflops of NVFP4 compute for AI inference.",
+  "page": "NVIDIA Rubin platform launch",
+  "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Kicks-Off-the-Next-Generation-of-AI-With-Rubin--Six-New-Chips-One-Incredible-AI-Supercomputer/default.aspx"
+ },
+ "agent_answer": "50 petaFLOPS",
+ "agent_ok": true,
+ "cost": 0.0005302500000000099,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Сколько петафлопс вычислений NVFP4 для инференса обеспечивает GPU NVIDIA Rubin?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_yucAYMB9P0NHDYwrl7NdEiza",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"NVIDIA Rubin GPU NVFP4 petaflops\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_yucAYMB9P0NHDYwrl7NdEiza",
+   "content": "[3 Ways NVFP4 Accelerates AI Training and Inference](https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/) — The NVIDIA Rubin platform extends NVFP4 capability with 35 petaFLOPS of NVFP4 training compute and 50 petaFLOPS of NVFP4 Transformer Engine inference compute, representing 3.5x and 5x leaps over Blackwell respectively.\n[Inside NVIDIA Rubin GPU Architecture: Powering the Era of Agentic AI](https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/) — The Rubin GPU delivers up to 10x more agentic throughput per unit of energy than NVIDIA Blackwell, using 336 billion transistors, 224 streaming multiprocessors, 896 Tensor Cores, and a third-generation Transformer Engine that provides up to 50 petaflops of NVFP4 performance.\n[Why NVFP4 Inference (50 PFLOPS) Outperforms Training (35 ... - GitHub](https://github.com/NVIDIA/TransformerEngine/issues/2565) — According to NVIDIA's official blog Inside the NVIDIA Rubin Platform: Six New Chips, One AI Supercomputer, the 3rd Gen Transformer Engine is equipped with \"hardware-accelerated adaptive compression designed to boost NVFP4 performance while preserving accuracy\", which enables up to 50 PetaFLOPS of NVFP4 inference capability and 35 PetaFLOPS for training. Could you please tell me the technical ...\n[Rubin (microarchitecture) - Wikipedia](https://en.wikipedia.org/wiki/Rubin_(microarchitecture)) — Nvidia is using Blackwell GPUs to accelerate the design of Vera, Rubin , and Rubin's successor, Feynman. [3] Rubin is said to have 50 sparse petaflops performance in FP4 (4-bit floating point math, often used for AI), increased from 20 petaflops in Blackwell, while Rubin Ultra will double the performance of Rubin with 100 sparse petaflops . [4]\n[NVIDIA Rubin R200 - Next-Gen AI Superchip | Awesome Agents](https://awesomeagents.ai/hardware/nvidia-rubin-r200/) — Overview The NVIDIA Rubin R200 is the first GPU built on NVIDIA's Rubin architecture, and it "
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_Jb4vZPBMRv2FdRe8ZgQhwC4Z",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://developer.nvidia.com/blog/3-ways-nvfp4-accelerates-ai-training-and-inference/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_1tkYPUAGQJEdqGiguBehd9J0",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Jb4vZPBMRv2FdRe8ZgQhwC4Z",
+   "content": "3 Ways NVFP4 Accelerates AI Training and Inference | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Data Center / Cloud English 日本語 한국어 中文 3 Ways NVFP4 Accelerates AI Training and Inference Feb 06, 2026 By Ashraf Eassa Like Discuss (0) L T F R E AI-Generated Summary NVFP4 delivers up to 15 petaFLOPS of peak dense throughput on NVIDIA Blackwell Ultra GPUs, which is 3x the FP8 throughput on the same architecture. MLPerf Training results show multiple NVIDIA GB300 NVL72 systems with 512 Blackwell Ultra GPUs completed the Llama 3.1 405B pre-training benchmark in 64.6 minutes using NVFP4, achieving 1.9x faster performance than the prior FP8 submission. The NVIDIA Rubin platform extends NVFP4 capability with 35 petaFLOPS of NVFP4 training compute and 50 petaFLOPS of NVFP4 Transformer Engine inference compute, representing 3.5x and 5x leaps over Blackwell respectively. NVFP4 maintains accuracy on par with higher-precision formats, meeting strict MLPerf closed-division requirements across models including DeepSeek-R1, Llama 3.1 8B and 405B, and Llama 2 70B. Ecosystem adoption spans libraries such as NVIDIA Model Optimizer , LLM Compressor, and torch.ao, plus inference frameworks including NVIDIA TensorRT-LLM, vLLM, and SGLang, with ready-to-deploy NVFP4 model variants available on Hugging Face. Companies including Black Forest Labs, Radical Numerics, Cognition, and Red Hat are deploying NVFP4 in production, reporting significant latency reductions, throughput gains, and the ability to serve state-of-the-art LLMs within existing infrastructure. Next Steps Explore the NVIDIA Rubin platform to understand how enhanced NVFP4 enables new levels of AI training and inference performance. Review the NVFP4 training recipe for implementing low-precision training workflows. Access NVFP4-optimized model checkpoints on Hugging Face for immediate deployment. Powered by NVIDIA Nemotron. AI-generated content may summa"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_1tkYPUAGQJEdqGiguBehd9J0",
+   "content": "Inside NVIDIA Rubin GPU Architecture: Powering the Era of Agentic AI | NVIDIA Technical Blog DEVELOPER Home Blog Forums Docs Downloads Training Join Technical Blog Subscribe Related Resources Data Center / Cloud English 한국어 中文 Inside NVIDIA Rubin GPU Architecture: Powering the Era of Agentic AI Jul 21, 2026 By Eduardo Alvarez , Vishal Mehta and Farshad Ghodsian Like Discuss (0) L T F R E AI-Generated Summary The NVIDIA Vera Rubin platform reimagines the data center as a single unit of compute to power agentic AI workloads that require sustained inference across many reasoning steps. The Rubin GPU delivers up to 10x more agentic throughput per unit of energy than NVIDIA Blackwell, using 336 billion transistors, 224 streaming multiprocessors, 896 Tensor Cores, and a third-generation Transformer Engine that provides up to 50 petaflops of NVFP4 performance. HBM4 memory doubles interface width to provide up to 22 TB/s of bandwidth and 288 GB of capacity per GPU, supporting multitrillion-parameter models, larger context windows, and high-concurrency inference without KV cache offload. NVLink 6 delivers 3,600 GB/s of scale-up bandwidth for all-to-all GPU communication, while counted writes streamline synchronization for device-initiated NVLink transfers to reduce latency in distributed inference. Vera Rubin NVL72 integrates compute, networking, liquid cooling, and Intelligent Power Smoothing into a rack-scale execution domain, with DSX MaxLPS enabling operators to provision up to 40% more GPUs within the same power budget. Next Steps Read the Inside the NVIDIA Vera Rubin Platform: Six New Chips, One AI Supercomputer for a deeper look at the rack architecture and broader platform. Read the NVIDIA Vera Rubin POD: Seven Chips, Five Rack-Scale Systems, One AI Supercomputer to learn more about NVIDIA Vera Rubin POD. Powered by NVIDIA Nemotron. AI-generated content may summarize information incompletely. Verify important information. Learn more What began as discrete AI model tr"
+  },
+  {
+   "role": "assistant",
+   "content": "GPU NVIDIA Rubin обеспечивает 50 петафлопс вычислений NVFP4 для инференса. \n\nFINAL: 50 petaFLOPS",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

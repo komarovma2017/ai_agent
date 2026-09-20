@@ -1,0 +1,102 @@
+{
+ "task": {
+  "id": "my-22",
+  "source": "my",
+  "question": "Сколько параметров содержит флагманская модель DeepSeek V4-Pro?",
+  "answer": "1.6T",
+  "evidence": "DeepSeek V4-Pro (1.6T total / 49B active) and V4-Flash (284B total / 13B active)",
+  "page": "DeepSeek V4 status",
+  "url": "https://geotoolbox.ai/blog/deepseek-v4"
+ },
+ "agent_answer": "1.6 trillion parameters",
+ "agent_ok": true,
+ "cost": 0.0005362500000000159,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Сколько параметров содержит флагманская модель DeepSeek V4-Pro?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_9qypmRv7llkXBxhOQagcj2Ui",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"DeepSeek V4-Pro specifications parameters\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_9qypmRv7llkXBxhOQagcj2Ui",
+   "content": "[DeepSeek V4 Explained: V4-Pro 1.6T vs V4-Flash 284B (2026)](https://deepseek.ai/deepseek-v4) — DeepSeek V4 is the flagship model family from DeepSeek that pushes the boundaries of parameter scale while promising unprecedented efficiency. V4-Pro totals 1.6 trillion parameters (~49B active per token via MoE), while V4 -Flash totals 284 billion parameters (~13B active).\n[DeepSeek V4 Architecture: MoE, Parameters & 1M Context](https://deepseek-v4.io/architecture) — DeepSeek V4 architecture: MoE, 1M context, and verified specifications DeepSeek V4 is a 2026 Mixture-of-Experts family with a hybrid long-context attention design. Pro publishes 1.6T total / 49B activated parameters ; Flash publishes 284B / 13B. This page explains what those numbers mean, how CSA and HCA target million-token efficiency, what the paper actually reports, and where application ...\n[DeepSeek V4 Pro vs V4.1 Flash: Specs & Pricing](https://deepseek-v4.io/deepseek-v4-pro) — DeepSeek V4 Pro vs original V4 Flash specifications This is the historical V4 family comparison. V4.1 Flash is a newer release with different architecture and identifiers; it is covered on a separate current-model page. Both models are mixture-of-experts systems: the total parameter count describes the complete weight set, while activated parameters describe the smaller subset used for a token ...\n[DeepSeek-V4-Pro-0813: Specs, Pricing, API and Benchmark Boundaries ...](https://www.datalearner.com/en/ai-models/pretrained-models/deepseek-v4-pro) — Architecture and specifications DeepSeek-V4-Pro is a text-input, text-output MoE model with 1.6T total parameters and 49B activated parameters , a 1M-token context window, and up to 384K output tokens. The V4 family combines Compressed Sparse Attention (CSA) and Heavily Compressed Attention (HCA), together with mHC connections and the Muon optimizer.\n[DeepSeek-V4-Pro: Specifications and GPU VRAM Requirements](https://apxml.com/models/deepseek-v4-pro) — About DeepSeek-V4-Pro DeepSeek-V4-P"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TjCOBBb5b23Q604Hscn28I5t",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://deepseek.ai/deepseek-v4\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_Xt1a6SpWumrhiAntvr1dVZja",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://deepseek-v4.io/architecture\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 2,
+     "id": "call_gVqjdyPBcGAaNMa5EiHxhFo9",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://deepseek-v4.io/deepseek-v4-pro\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TjCOBBb5b23Q604Hscn28I5t",
+   "content": "DeepSeek V4 Explained: V4-Pro 1.6T vs V4-Flash 284B (2026) Deepseek.ai is an independent website and is not affiliated with, sponsored by, or endorsed by Hangzhou DeepSeek Artificial Intelligence Co., Ltd. DeepSeek AI Home Products Compare Resources Pricing Add to Chrome - It's Free Create AI Agents Focus Keyword: DeepSeek V4 Updated June 28, 2026 16 min read DeepSeek V4: Everything You Need to Know About V4-Pro (1.6T MoE) and V4-Flash (284B MoE) The complete 2026 guide to DeepSeek V4 — the mixture-of-experts family that launched in April 2026 and reshaped the AI pricing landscape. V4-Pro totals 1.6 trillion parameters with ~49 billion active per token; V4-Flash totals 284 billion parameters with ~13 billion active. Both models share a 1M-token context window. This page covers the architecture, real benchmarks against GPT-5.4 and Claude Opus 4.8, and current API pricing. Table of Contents The DeepSeek V4 Family in 2026 (Pro, Flash & Base) What is DeepSeek V4? (Core Specs) 3 Groundbreaking Architectural Innovations Benchmarks: DeepSeek V4 vs. GPT-5.4 and Claude 4.5 API Pricing: The Most Cost-Effective Frontier AI Geopolitics and Hardware: The Shift to Huawei Release Date: When is DeepSeek V4 Coming Out? FAQ The world of artificial intelligence is on the verge of a massive shift. DeepSeek V4 is the flagship model family from DeepSeek that pushes the boundaries of parameter scale while promising unprecedented efficiency. V4-Pro totals 1.6 trillion parameters (~49B active per token via MoE), while V4-Flash totals 284 billion parameters (~13B active). Both are text-only and offer a 1 million token context window, positioning them as direct competitors to Western giants like OpenAI's GPT-5.4 and Anthropic's Claude Opus 4.8. In this comprehensive article, we dive into the key specifications, architectural innovations, expected pricing, and the strategic hardware shifts behind DeepSeek V4. Key Takeaways • V4-Pro 1.6T / V4-Flash 284B parameters with ~49B / ~13B active per to"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Xt1a6SpWumrhiAntvr1dVZja",
+   "content": "ошибка загрузки страницы: HTTPSConnectionPool(host='deepseek-v4.io', port=443): Read timed out. (read timeout=15)"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_gVqjdyPBcGAaNMa5EiHxhFo9",
+   "content": "DeepSeek V4 Pro vs V4.1 Flash: Specs & Pricing DeepSeek V4 Home V4.1 Flash API Pricing Guides Compare English Sign In Start Chat Source-backed model guide · updated September 14, 2026 DeepSeek V4 Pro: specifications, pricing, benchmarks, and Pro vs Flash DeepSeek V4 Pro began as the larger model in the V4 Preview family announced on April 24, 2026 . DeepSeek released the V4 Pro 0813 general-availability update on August 13, 2026 , with native Responses API support and Low, High, and Max reasoning effort. The published architecture still describes a 1.6-trillion-parameter mixture-of-experts model with 49 billion parameters activated per token and a one-million-token context. This page separates current product facts, earlier preview specifications, and this independent site's runtime. Looking for the current Flash release? DeepSeek released V4.1 Flash on September 10, 2026. This page preserves the Pro and original V4 Flash comparison; use the DeepSeek V4.1 Flash guide for current model IDs and migration details. Start Chat View one-time pricing 1.6T / 49B total / activated parameters 1M published context 384K published max output Aug 13, 2026 V4 Pro 0813 GA The short answer Choose Pro in the official API when difficult knowledge, long-context retrieval, coding, or agentic work justifies its higher token price and lower concurrency. Choose Flash when throughput, latency, and cost matter more, then evaluate whether its output is sufficient. On this website, do not assume the word “Pro” in a balance pack means the Pro model: the deployed provider and model configuration are separate from billing pack names. Official change log · Official model card · Live API model and pricing table What the August 13 general-availability update changes The main product change is agent integration, not a new marketing benchmark table. DeepSeek now documents the Responses API as native and publishes Codex setup for the same model IDs used by its API. Native Responses API Tool loops can u"
+  },
+  {
+   "role": "assistant",
+   "content": "Флагманская модель DeepSeek V4-Pro содержит 1.6 триллиона параметров. \n\nFINAL: 1.6 trillion parameters",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

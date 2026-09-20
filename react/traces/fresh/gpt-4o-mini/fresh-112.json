@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-112",
+  "source": "fresh",
+  "question": "What mission was launched by ESA and CAS on May 19, 2026?",
+  "answer": "SMILE",
+  "evidence": "On 19 May, ESA and CAS launched their joint heliophysics mission SMILE to study the dynamic interaction between solar wind and Earth's magnetosphere. The spacecraft reached its final science orbit on 20 June.",
+  "page": "2026 in spaceflight",
+  "url": "https://en.wikipedia.org/wiki/2026_in_spaceflight",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "SMILE (Solar wind Magnetosphere Ionosphere Link Explorer)",
+ "agent_ok": true,
+ "cost": 0.0002492999999999801,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What mission was launched by ESA and CAS on May 19, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_d3oi1IJLz24wOJkQvcSVzQWd",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"ESA CAS mission launch May 19 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_d3oi1IJLz24wOJkQvcSVzQWd",
+   "content": "[ESA - Smile set to launch on 19 May - European Space Agency](https://www.esa.int/Science_Exploration/Space_Science/Smile/Smile_set_to_launch_on_19_May) — The European-Chinese Smile mission is due to launch on Tuesday 19 May 2026 , at 05:52 CEST / 04:52 BST / 00:52 local time on a European Vega-C rocket.\n[ESA - Smile](https://www.esa.int/Science_Exploration/Space_Science/Smile) — 12/05/ 2026 2104 views 30 likes Play Story Science & Exploration Smile set to launch on 19 May 23/04/ 2026 6915 views 49 likes Read Video 00:01:33\n[Smile - ESA Science Programme](https://www.science.esa.int/web/cm25/smile) — Smile is a joint mission between ESA , which provides the payload module and the launcher, and the Chinese Academy of Sciences ( CAS ), which provides the platform.\n[SMILE (spacecraft) - Wikipedia](https://en.wikipedia.org/wiki/SMILE_%28spacecraft%29) — SMILE (spacecraft) ... Solar wind Magnetosphere Ionosphere Link Explorer (SMILE) is a spacecraft mission of the European Space Agency and the Chinese Academy of Sciences launched on 19 May 2026 from the Guiana Space Centre in French Guiana.\n[Successful SMILE Launching Forges New Chapter in China-ESA Space ...](https://english.cas.cn/newsroom/headlines/202605/t20260515_1159452.shtml) — CAS assumed primary responsibility for the satellite platform, mission operation and control, ground support, and the scientific application system. In parallel, ESA contributed the payload module, launch vehicle, launch site, and launch -phase tracking support. The core payloads development was a truly collaborative effort."
+  },
+  {
+   "role": "assistant",
+   "content": "The mission launched by ESA and CAS on May 19, 2026, is called SMILE (Solar wind Magnetosphere Ionosphere Link Explorer). \n\nFINAL: SMILE (Solar wind Magnetosphere Ionosphere Link Explorer)",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

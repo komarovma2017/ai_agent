@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-47",
+  "source": "fresh",
+  "question": "What position did Dharmendra Pradhan resign from in India in July 2026?",
+  "answer": "Education Minister",
+  "evidence": "July 25 – Indian Education Minister Dharmendra Pradhan resigns from the position in light of the protests over a NEET exam leak. Most of the protests ceased following his resignation.",
+  "page": "2026 in politics",
+  "url": "https://en.wikipedia.org/wiki/2026_in_politics",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "Union Education Minister Dharmendra Pradhan resigned from the Union Council of Ministers on Saturday, 25 July 2026, amid ongoing nationwide protests over the NEET-UG 2026 paper leak controversy.",
+ "agent_ok": true,
+ "cost": 0.0002727000000000007,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What position did Dharmendra Pradhan resign from in India in July 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_YKCeCaWBkanoMwQSMeC1v8DW",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Dharmendra Pradhan resign position July 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_YKCeCaWBkanoMwQSMeC1v8DW",
+   "content": "[Dharmendra Pradhan Resigns as Education Minister (July 2026)](https://ouprephub.in/dharmendra-pradhan-resigns-education-minister-neet-2026/) — Union Education Minister Dharmendra Pradhan resigned from the Union Council of Ministers on Saturday, 25 July 2026 , amid ongoing nationwide protests over the NEET-UG 2026 paper leak controversy. Pradhan submitted his resignation to Prime Minister Narendra Modi, saying the decision was meant to protect students' interests and prevent the issue from being used for political gain. Here's a ...\n[NEET 2026 Leak: Dharmendra Pradhan Resigns as Minister](https://frontline.thehindu.com/politics/dharmendra-pradhan-resigns-cockroach-janta-party-neet/article71265726.ece) — On July 25, Union Education Minister Dharmendra Pradhan resigned from the Union Council of Ministers amid nationwide protests over the NEET-UG 2026 paper leak controversy, marking the first resignation of a Minister from the Modi government in the past 12 years.\n[Dharmendra Pradhan Becomes First Cabinet Minister To Resign Under ...](https://www.timesnownews.com/india/dharmendra-pradhan-becomes-first-cabinet-minister-to-resign-under-public-pressure-in-narendra-modi-govt-article-155176020) — Union Education Minister Dharmendra Pradhan resigned on Saturday, stepping down from the Union Council of Ministers amid nationwide student protests over the NEET-UG 2026 paper leak controversy. His exit is being widely read as a rare moment of ministerial accountability, arguably the first time a Cabinet minister in the Narendra Modi-led government has stepped down under sustained public ...\n[Dharmendra Pradhan tenders resignation as Union Education Minister; CJP ...](https://www.thehindu.com/news/national/dharmendra-pradhan-quit-resign-as-union-education-minister-jantar-mantar-protest-july-25-2026/article71265711.ece) — Dharmendra Pradhan resigns as Union Education Minister, announcing his decision on X on July 25, 2026 .\n[Dharmendra Pradhan Resigns as Education Minister; Pralhad"
+  },
+  {
+   "role": "assistant",
+   "content": "Dharmendra Pradhan resigned from the position of Union Education Minister on July 25, 2026. \n\nFINAL: Union Education Minister Dharmendra Pradhan resigned from the Union Council of Ministers on Saturday, 25 July 2026, amid ongoing nationwide protests over the NEET-UG 2026 paper leak controversy.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

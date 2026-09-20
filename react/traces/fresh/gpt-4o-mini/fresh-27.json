@@ -1,0 +1,134 @@
+{
+ "task": {
+  "id": "fresh-27",
+  "source": "fresh",
+  "question": "In classical music, who was placed on leave until September 30, 2026, by the Salzburg Festival on March 26, 2026?",
+  "answer": "Markus Hinterhäuser",
+  "evidence": "26 March – The board of directors of the Salzburg Festival announce the termination of the contract of Markus Hinterhäuser as artistic director of the festival, placing him on leave until 30 September 2026.",
+  "page": "2026 in classical music",
+  "url": "https://en.wikipedia.org/wiki/2026_in_classical_music",
+  "sonnet_answer": "Teodor Currentzis",
+  "agent_ok": true
+ },
+ "agent_answer": "Markus Hinterhäuser",
+ "agent_ok": true,
+ "cost": 0.0007612499999999911,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "In classical music, who was placed on leave until September 30, 2026, by the Salzburg Festival on March 26, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_uzUudrNyNOzJJID4YKkP0uzf",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Salzburg Festival placed on leave until September 30, 2026 March 26, 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_uzUudrNyNOzJJID4YKkP0uzf",
+   "content": "[Salzburg Festival parts ways with Markus Hinterhäuser with immediate ...](https://moto-perpetuo.com/salzburg-festival-markus-hinterhauser-departure-2026/) — The Salzburg Festival has announced that its Artistic Director, Markus Hinterhäuser, is stepping down with immediate effect following what were described as \"irreconcilable differences of opinion and disagreements.\" Hinterhäuser, who has led the festival since 2017, remains under contract until 30 September 2026 .\n[Salzburg Festival Suspends Artistic Director Markus Hinterhäuser After ...](https://cadenza.work/news/salzburg-festival-suspends-hinterhauser-2026) — Markus Hinterhäuser, who restored the Salzburg Festival's artistic credibility over a decade of geopolitical turbulence — wars, sanctions, collapsed sponsorships — has been placed on immediate paid leave . With the summer season approaching and no interim director named, the world's most prestigious classical music festival faces its gravest leadership crisis in decades.\n[Salzburg Festival and artistic director Hinterhäuser part ways | AP News](https://apnews.com/article/salzburg-festival-hinterhauser-europe-music-d8543f846aa43765bcf401c0f5d1dfbe) — The board said Hinterhäuser will be on leave until his current contract ends on Sept. 30 . The board said it will appoint a provisional artistic director \"without delay\" and said conversations with potential candidates had begun. Hinterhäuser had been in position to become the Salzburg Festival's longest-serving artistic director since Herbert von Karajan from 1956-89. Kristina Hammer ...\n[Salzburg Festival Fires Its Artistic Director - The New York Times](https://www.nytimes.com/2026/03/26/arts/music/salzburg-festival-fires-artistic-director-markus-hinterhauser.html) — The board terminated Markus Hinterhäuser's contract early, leaving the leadership of the world's largest classical music festival in limbo for now.\n[Breaking: Salzburg Festival chief is gone - Slippedisc](https://slippedisc.com/2026/03/breaki"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_pg9joCpAqga67nndR9Hoc9Bk",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://cadenza.work/news/salzburg-festival-suspends-hinterhauser-2026\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_U6MKkZEXfPPujkXQVvSTDgE1",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.nytimes.com/2026/03/26/arts/music/salzburg-festival-fires-artistic-director-markus-hinterhauser.html\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_pg9joCpAqga67nndR9Hoc9Bk",
+   "content": "Salzburg Festival Suspends Artistic Director Markus Hinterhäuser After Ten-Year Tenure Skip to content Cadenza Solutions One platform · 19 operating systems Choose the workflow you need View all systems Run your organization Audition OS Run every audition end to end For Orchestras Hiring OS — auditions & applications For Schools Admissions & Recruitment OS For Festivals Applications, programs & ticketing For Competitions Applications, juries & results Sell Tickets Box office, 100% of face value Specialized paths Executive Search & Advisory Search, succession & advisory — in formation Church & Worship Staff, ensembles & blind auditions For Theaters Pit hiring, sub-lists & auditions For Cruise Lines Reach ship musicians & run auditions Military Bands Careers in service bands Forecasts · Will They Hire? Source-governed hiring forecasts · pilot For Musicians Free forever Explore all 19 systems See the complete platform map Browse Schools Organizations Musicians Marketplace Events Forum Pricing News / Industry News / Salzburg Festival Suspends Artistic Director Markus Hinterhäuser After Ten-Year Tenure Industry News Salzburg Festival Suspends Artistic Director Markus Hinterhäuser After Ten-Year Tenure C Cadenza Editorial 3/27/2026 · 6 min read · Comments Salzburg Festival Markus Hinterhäuser Austria opera festival management governance leadership crisis Markus Hinterhäuser, the artistic director of the Salzburg Festival, has been suspended with immediate effect. He will remain on paid leave through September, when his contract terminates. After a decade of leadership through some of the most turbulent years in recent European cultural history, one of the world's most respected festival directors has been removed from his post with three months of programming still to deliver. Ten Years of Steady Hands in Unstable Times To understand the magnitude of this decision, you need to understand what Hinterhäuser achieved — and what he achieved it against. He took the helm of the"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_U6MKkZEXfPPujkXQVvSTDgE1",
+   "content": "страница ответила 403"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_DR9NW5cRsRReICaOHhmiPywY",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\":\"https://moto-perpetuo.com/salzburg-festival-markus-hinterhauser-departure-2026/\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_DR9NW5cRsRReICaOHhmiPywY",
+   "content": "ошибка загрузки страницы: HTTPSConnectionPool(host='moto-perpetuo.com', port=443): Read timed out. (read timeout=15)"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_qoVjjCND3rs3MfUoi5ZIfzGJ",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\":\"https://apnews.com/article/salzburg-festival-hinterhauser-europe-music-d8543f846aa43765bcf401c0f5d1dfbe\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_qoVjjCND3rs3MfUoi5ZIfzGJ",
+   "content": "страница ответила 403"
+  },
+  {
+   "role": "assistant",
+   "content": "Markus Hinterhäuser was placed on leave until September 30, 2026, by the Salzburg Festival on March 26, 2026. \n\nFINAL: Markus Hinterhäuser",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

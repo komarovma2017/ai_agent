@@ -1,0 +1,88 @@
+{
+ "task": {
+  "id": "my-7",
+  "source": "my",
+  "question": "Какого числа была выпущена превью-версия семейства моделей DeepSeek V4?",
+  "answer": "24 April 2026",
+  "evidence": "DeepSeek V4 launched on 24 April 2026 as a two-model family.",
+  "page": "DeepSeek V4 explained",
+  "url": "https://deepseek.ai/deepseek-v4"
+ },
+ "agent_answer": "24 April",
+ "agent_ok": false,
+ "cost": 0.000529349999999984,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Какого числа была выпущена превью-версия семейства моделей DeepSeek V4?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_sVkEWVRJzmgTLGG0UMyME4zU",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"DeepSeek V4 preview release date\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_sVkEWVRJzmgTLGG0UMyME4zU",
+   "content": "[DeepSeek V4: Specs, Benchmarks and the 0731 Release](https://felloai.com/deepseek-v4/) — On 31 July 2026 DeepSeek shipped DeepSeek - V4 -Flash-0731, the official release of V4 -Flash that supersedes the April preview . It is the same architecture, and it launched at the same price, though that price has since risen: DeepSeek moved to peak and off-peak rates on 16 August 2026.\n[DeepSeek V4 Release Date, Features & Benchmarks 2026](https://codersera.com/blog/deepseek-v4-release-date-features-benchmarks/) — DeepSeek V4 is officially released and live. On April 24, 2026, DeepSeek shipped two production-ready models — DeepSeek V4 -Pro and DeepSeek V4 -Flash — both available immediately via the DeepSeek API and as open weights under the MIT license. DeepSeek frames this as a preview release : stable, usable in production, but with a stable version expected later in 2026. This page is the canonical ...\n[DeepSeek V4: Release Date, Specs, and How to Access It (2026)](https://www.yottalabs.ai/post/deepseek-v4-release-date-specs-how-to-access-2026) — DeepSeek V4 is fully shipped: V4 -Pro-0813 went GA on August 13 and its MIT weights are now on Hugging Face. Specs, new pricing, and how to access.\n[DeepSeek | DeepSeek-V4 Preview: Entering the Era of Affordable Million ...](https://www.deepseek.com/en/news/v4-preview/) — DeepSeek-V4 Preview is officially live & open-sourced. Welcome to the era of cost-effective 1M context length.\n[DeepSeek V4 Preview Release | DeepSeek API Docs](https://api-docs.deepseek.com/news/news260424/) — DeepSeek V4 Preview Release 🚀 DeepSeek-V4 Preview is officially live & open-sourced! Welcome to the era of cost-effective 1M context length. 🔹 DeepSeek - V4 -Pro: 1.6T total / 49B active params. Performance rivaling the world's top closed-source models. 🔹 DeepSeek - V4 -Flash: 284B total / 13B active params."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_191gVTlJVb04htqd9F1laNhS",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://codersera.com/blog/deepseek-v4-release-date-features-benchmarks/\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_Z5L919d257G5IWEIBp4zVIms",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.deepseek.com/en/news/v4-preview/\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_191gVTlJVb04htqd9F1laNhS",
+   "content": "DeepSeek V4 Release Date, Features & Benchmarks 2026 Codersera About Services Contact Blog Tools Guides Apply as a Freelancer Hire Developers Hire About us Services Contact Blog Tools Guides Apply as a Freelancer Hire Developers Search articles, topics, and guides Search LLM DeepSeek V4: Full Release Breakdown — Features, Benchmarks and How to Use It DeepSeek V4 is officially released. This article covers the real architecture (CSA+HCA, mHC, Muon), verified benchmarks for V4-Pro and V4-Flash, correct model specs, and exact API pricing to start using DeepSeek V4 today. Published 10 Apr 2026 • Updated 13 Aug 2026 • 12 min read Quick answer. DeepSeek V4 is released, and it is no longer a preview. V4-Pro and V4-Flash shipped on April 24, 2026, and V4-Pro reached general availability on August 13, 2026 with the V4-Pro-0813 checkpoint. Both are open-weight (MIT), text-only, and carry a 1,048,576-token context window. The legacy deepseek-chat and deepseek-reasoner aliases retired July 24, 2026. Status as of August 2026: DeepSeek V4-Pro and V4-Flash shipped on Apr 24, 2026 as a preview, and V4-Pro went GA on August 13, 2026 (checkpoint V4-Pro-0813). The legacy deepseek-chat and deepseek-reasoner API aliases are fully retired . API pricing rises at 16:00 UTC on August 16, 2026. See the full DeepSeek V4 pillar for migration steps. Re-verified June 8, 2026: V4-Pro and V4-Flash remain the latest release — no V4.1 or stable GA has shipped, and pricing is unchanged. DeepSeek V4 is officially released and live. On April 24, 2026 , DeepSeek shipped two production-ready models — DeepSeek V4-Pro and DeepSeek V4-Flash — both available immediately via the DeepSeek API and as open weights under the MIT license. DeepSeek frames this as a preview release: stable, usable in production, but with a stable version expected later in 2026. This page is the canonical live-status reference — it covers the exact release timeline, the hard API-migration deadline, verified specifications, vendor-rep"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_Z5L919d257G5IWEIBp4zVIms",
+   "content": "DeepSeek | DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context Get App Scan to get DeepSeek App ä¸­æ EN DeepSeek Web DeepSeek App API Platform DeepSeek Harness API Docs Join Us ä¸­æ EN News April 24, 2026 DeepSeek-V4 Preview: Entering the Era of Affordable Million-Token Context Read Paper DeepSeek-V4 Preview is officially live & open-sourced! Welcome to the era of cost-effective 1M context length. DeepSeek-V4-Pro: 1.6T total / 49B active params. Performance rivaling the world's top closed-source models. DeepSeek-V4-Flash: 284B total / 13B active params. Your fast, efficient, and economical choice. Try it now at chat.deepseek.com via Expert Mode / Instant Mode. API is updated & available today! DeepSeek-V4 Open Weights - Hugging Face DeepSeek-V4 Technical Report - arXiv DeepSeek-V4-Pro Enhanced Agentic Capabilities: Open-source SOTA in Agentic Coding benchmarks. Rich World Knowledge: Leads all current open models, trailing only Gemini-3.1-Pro. World-Class Reasoning: Beats all current open models in Math/STEM/Coding, rivaling top closed-source models. DeepSeek-V4-Flash Reasoning capabilities closely approach V4-Pro. Performs on par with V4-Pro on simple Agent tasks. Smaller parameter size, faster response times, and highly cost-effective API pricing. Structural Innovation & Ultra-High Context Efficiency Novel Attention: Token-wise compression + DSA (DeepSeek Sparse Attention). Peak Efficiency: World-leading long context with drastically reduced compute & memory costs. 1M Standard: 1M context is now the default across all official DeepSeek services. Dedicated Optimizations for Agent Capabilities DeepSeek-V4 is seamlessly integrated with leading AI agents like Claude Code, OpenClaw & OpenCode. Already driving our in-house agentic coding at DeepSeek. The figure below showcases a sample PDF generated by DeepSeek-V4-Pro. API is Available Today! Keep base_url, just update model to deepseek-v4-pro or deepseek-v4-flash . Supports OpenAI ChatCompletio"
+  },
+  {
+   "role": "assistant",
+   "content": "Превью-версия семейства моделей DeepSeek V4 была выпущена 24 апреля 2026 года. \n\nFINAL: 24 April",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

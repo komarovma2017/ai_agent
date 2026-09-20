@@ -1,0 +1,90 @@
+{
+ "task": {
+  "id": "fresh-98",
+  "source": "fresh",
+  "question": "What document was signed by US president Donald Trump and Iranian president Masoud Pezeshkian in June 2026?",
+  "answer": "Islamabad Memorandum",
+  "evidence": "17 June – US president Donald Trump and Iranian president Masoud Pezeshkian sign the Islamabad Memorandum to end the 2026 Iran war, with Trump signing the document during dinner with President Macron at the Palace of Versailles.",
+  "page": "2026 in France",
+  "url": "https://en.wikipedia.org/wiki/2026_in_France",
+  "sonnet_answer": "unknown",
+  "agent_ok": false
+ },
+ "agent_answer": "Islamabad Memorandum of Understanding (Islamabad MoU)",
+ "agent_ok": true,
+ "cost": 0.0005754000000000037,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What document was signed by US president Donald Trump and Iranian president Masoud Pezeshkian in June 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_LpS5UXSErH9jYyEApeabvdhe",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Trump Pezeshkian signed document June 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_LpS5UXSErH9jYyEApeabvdhe",
+   "content": "[Trump, Iran's President sign memorandum of understanding - CNBC](https://www.cnbc.com/2026/06/17/trump-vance-iran-deal-nuclear-g7.html) — A screen grab shows Iran's President Masoud Pezeshkian holding a memorandum signed with U.S. President Donald Trump , in Tehran, Iran, June 18, 2026 , taken from a video.\n[The Islamabad MOU: Full text of the Trump-Iran peace deal signed by ...](https://en.parapolitika.gr/world/233783/the-islamabad-mou-full-text-of-the-trump-iran-peace-deal-signed-by-trump-pezeshkian-sharif/) — The moment Pakistan's Prime Minister signs the document : Islamabad :18 June 2026 . Prime Minister of Pakistan Muhammad Shehbaz Sharif signed the Islamabad Memorandum of Understanding (Islamabad MoU)، as mediator. The Islamabad MOU has been signed by President of USA Donald J. Trump and Iranian President Masoud Pezeshkian . pic.twitter.com ...\n[Iran's Pezeshkian: US peace memorandum remains cornerstone of foreign ...](https://gulfnews.com/world/mena/irans-pezeshkian-us-peace-memorandum-remains-cornerstone-of-foreign-policy-urges-enforcement-1.500628672) — The US-Iran Memorandum of Understanding (MOU) was signed on June 17-18, 2026 , by US President Donald Trump and Iranian President Masoud Pezeshkian .\n[Full text of Trump's framework agreement to end Iran war : NPR](https://www.npr.org/2026/06/18/nx-s1-5863027/us-iran-trump-memorandum-of-understanding-full-text) — Here is the text of the memorandum of understanding that was signed Wednesday by President Trump and Iranian President Masoud Pezeshkian , as well as Pakistan's prime minister.\n[Trump, Pezeshkian Sign Historic 14-Point Iran-US Deal: War Ends, Hormuz ...](https://www.iaanexpress.com/2026/06/18/iran-us-14-point-deal-end-war-reopen-hormuz/) — US President Trump and Iranian President Pezeshkian signed a 14-point MoU ending the four-month war, reopening Strait of Hormuz, and establishing a $300B reconstruction framework."
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_TRDH1I2jR1OwLJW6pFMpH4uW",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://www.cnbc.com/2026/06/17/trump-vance-iran-deal-nuclear-g7.html\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_uJLDoYNomVvSlAPhrR4edwoZ",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://en.parapolitika.gr/world/233783/the-islamabad-mou-full-text-of-the-trump-iran-peace-deal-signed-by-trump-pezeshkian-sharif/\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_TRDH1I2jR1OwLJW6pFMpH4uW",
+   "content": "Trump, Iran's President sign memorandum of understanding Skip Navigation Markets Pre-Markets U.S. Markets Europe Markets China Markets Asia Markets World Markets Currencies Prediction Markets Cryptocurrency Futures & Commodities Bonds Funds & ETFs Business Economy Finance Health & Science Media Real Estate Energy Climate Transportation Investigations Industrials Retail Wealth Sports Life Small Business Investing Personal Finance Fintech Financial Advisors Options Action ETF Street Buffett Archive Earnings Trader Talk Tech Cybersecurity AI Enterprise Internet Media Mobile Social Media CNBC Disruptor 50 Tech Guide Politics & Policy White House Policy Defense Congress Expanding Opportunity Europe Politics China Politics Asia Politics World Politics Video Latest Video Full Episodes Livestream Top Video Live Audio Europe TV Asia TV CNBC Podcasts CEO Interviews Digital Originals Watchlist Investing Club Trust Portfolio Analysis Trade Alerts Meeting Videos Homestretch Jim's Columns Education Subscribe PRO Pro News Josh Brown Mike Santoli Calls of the Day My Portfolio Livestream Full Episodes Stock Screener Market Forecast Options Investing Chart Investing Subscribe Livestream Menu Make It select USA INTL Livestream Search quotes, news & videos Livestream Watchlist SIGN IN Create free account Markets Business Investing Tech Politics & Policy Video Watchlist Investing Club PRO Livestream Menu Politics & Policy Trump and Iran's President Pezeshkian sign memorandum aimed to end war Published Wed, Jun 17 2026 1:15 PM EDT Updated Thu, Jun 18 2026 8:05 AM EDT Dan Mangan @in/danmangancnbc/ @_DanMangan Eamon Javers @EamonJavers WATCH LIVE Key Points President Donald Trump and Iranian President Masoud Pezeshkian signed a memorandum of understanding aimed at developing a permanent peace deal to end the war between their two nations, officials said. Trump earlier said he liked the idea of blaming Vice President JD Vance if a deal to end the war with Iran does not work out. The MOU cal"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_uJLDoYNomVvSlAPhrR4edwoZ",
+   "content": "The Islamabad MOU: Full text of the Trump-Iran peace deal signed by Trump, Pezeshkian & Sharif Skip to content 90,1 --> Εμείς οι Έλληνες Δήμητρος Καλαρρύτης --> RSS Instagram TikTok Facebook Twitter YouTube News Politics Greece World Economy Business Parapolitika.gr News Politics Greece World Economy Business Parapolitika.gr Greek Version Home » The Islamabad MOU: Full text of the Trump-Iran peace deal signed by Trump, Pezeshkian & Sharif The Islamabad MOU: Full text of the Trump-Iran peace deal signed by Trump, Pezeshkian & Sharif The full 14-point Islamabad MOU signed by Trump, Pezeshkian & Sharif — covering sanctions, nuclear commitments, and a $300B reconstruction fund. 18.06.2026 17:10 World newsroom Iranian President Masoud Pezeshkian has publicly released the three-page “Islamabad Memorandum of Understanding” via his account on X. The document consists of 14 paragraphs and bears the signatures of Pezeshkian himself, US President Donald Trump , and Pakistani Prime Minister Shehbaz Sharif . “This is a historic document and a message from a strong Iran: peace will be achieved through mutual respect,” the head of the Islamic Republic stated, adding that “the Islamic Republic of Iran is always committed and faithful to world peace, while preserving dignity and independence, progress and regional cooperation.” این یک سند تاریخی و پیامی از ایران مقتدر است: صلح در سایه احترام متقابل تحقق خواهد یافت. جمهوری اسلامی ایران به صلح جهانی با حفظ عزت و استقلال، پیشرفت و همکاری منطقه‌ای همواره متعهد و پایبند است. pic.twitter.com/FgbeHSioKX — Masoud Pezeshkian (@drpezeshkian) June 18, 2026 The moment Pakistan’s Prime Minister signs the document: Islamabad :18 June 2026. Prime Minister of Pakistan Muhammad Shehbaz Sharif signed the Islamabad Memorandum of Understanding (Islamabad MoU)، as mediator. The Islamabad MOU has been signed by President of USA Donald J. Trump and Iranian President Masoud Pezeshkian. pic.twitter.com/M0LKK9XoK8 — Prime Minister’s Office (@PakPMO) June 18,"
+  },
+  {
+   "role": "assistant",
+   "content": "The document signed by US President Donald Trump and Iranian President Masoud Pezeshkian in June 2026 was the \"Islamabad Memorandum of Understanding\" (Islamabad MoU), aimed at developing a permanent peace deal to end the war between their two nations.\n\nFINAL: Islamabad Memorandum of Understanding (Islamabad MoU)",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

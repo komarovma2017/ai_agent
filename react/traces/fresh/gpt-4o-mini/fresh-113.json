@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-113",
+  "source": "fresh",
+  "question": "How many job cuts did Statistics Canada announce on January 13, 2026?",
+  "answer": "850",
+  "evidence": "January 13 – Statistics Canada announces 850 job cuts, with over 100 to happen in the following days.",
+  "page": "2026 in Canada",
+  "url": "https://en.wikipedia.org/wiki/2026_in_Canada",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "850",
+ "agent_ok": true,
+ "cost": 0.00023505000000001441,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "How many job cuts did Statistics Canada announce on January 13, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_AGdpOMUALNh3dxm2162Dm1BT",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Statistics Canada job cuts January 13, 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_AGdpOMUALNh3dxm2162Dm1BT",
+   "content": "[Statistics Canada is slashing hundreds of jobs, including executives](https://globalnews.ca/news/11611088/statistics-canada-job-cuts/) — About 850 jobs jobs are being cut at Statistics Canada , plus a portion of the executive team, the federal agency said in a written statement.\n[Statistics Canada Slashing 850 Jobs in 2026, Entering \"Workforce ...](https://stlawyers.ca/blog-news/statistics-canada-job-cuts-january-2026/) — Statistics Canada (Stats Can) is eliminating approximately 850 jobs — claiming that it's entering a \"workforce adjustment period.\" In addition to the cuts , the federal agency will be trimming its executive team by around 12%. \" [We'll] be informing affected and surplus employees within the next 2 weeks,\" Stats Can said in a statement.\n[Statistics Canada to trim 850 jobs as public servants, unions brace for ...](https://www.cbc.ca/news/canada/ottawa/stats-canada-workforce-adjustments-9.7043637) — Federal workers are starting to learn more about planned job cuts across the public service after Statistics Canada told employees on Monday that 850 positions will be eliminated from the ...\n[Statistics Canada to shed 850 positions as Ottawa trims public service](https://www.hrreporter.com/focus-areas/recruitment-and-staffing/statistics-canada-to-shed-850-positions-as-ottawa-trims-public-service/393924) — As the federal government moves ahead with plans to shrink the public service, Statistics Canada has confirmed it will cut hundreds of jobs over the next two years, including 100 positions this week. Statistics Canada says it is entering a workforce adjustment period that will ultimately affect ...\n[Statistics Canada to cut 850 jobs, 12 per cent of executive team](https://halifax.citynews.ca/2026/01/13/statistics-canada-to-cut-850-jobs-12-per-cent-of-executive-team/) — Posted Jan 13, 2026 01:40:55 PM. Last Updated Jan 13, 2026 07:01:09 PM. OTTAWA — Statistics Canada says it will be cutting around 850 of its staff along with 12 per cent of its executive "
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: 850",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

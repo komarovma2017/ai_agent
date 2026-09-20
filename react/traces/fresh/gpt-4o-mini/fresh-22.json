@@ -1,0 +1,104 @@
+{
+ "task": {
+  "id": "fresh-22",
+  "source": "fresh",
+  "question": "In animation, what is the name of the indie animated series created by Matt Braly that was fully funded on March 17, 2026?",
+  "answer": "Clara and the Below",
+  "evidence": "March 17: The Kickstarter campaign for Amphibia creator Matt Braly's indie animated series Clara and the Below was fully funded within 15 minutes of launching.",
+  "page": "2026 in animation",
+  "url": "https://en.wikipedia.org/wiki/2026_in_animation",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "Clara and the Below",
+ "agent_ok": true,
+ "cost": 0.0007153500000000035,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "In animation, what is the name of the indie animated series created by Matt Braly that was fully funded on March 17, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_4n6Y4e73zBM0MdyxUrGnKXWF",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"indie animated series Matt Braly fully funded March 17 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_4n6Y4e73zBM0MdyxUrGnKXWF",
+   "content": "[Matt Braly's 'Clara and the Below' Smashes Kickstarter Re...](https://x.com/i/trending/2033965752894505197) — The Kickstarter for 'Clara and the Below,' a 6-to-10-minute animated horror pilot from Braly's new Fantasy Project studio, hit its $25,000 goal in under 15 minutes after launching March 17 and soared past $207,000 with over 2,400 backers by Thursday. Known for Disney's 'Amphibia,' Braly shifted to indie work to escape studio uncertainties, teaming with veterans from Disney, Pixar, and ...\n[Clara and the Below (Web Animation) - TV Tropes](https://tvtropes.org/pmwiki/pmwiki.php/WebAnimation/ClaraAndTheBelow) — Clara & the Below is an upcoming independent Gothic Horror animated series inspired by The Nutcracker and the Mouse King by E. T. A. Hoffmann later adapted into a short story in 1844 by Alexandre Dumas titled The Tale of a Nutcracker, which became the basis for the ballet adaptation by Pyotr Ilyich Tchaikovsky. The series is created by Matt Braly and is the first production by his own ...\n[Matt Braly - Wikipedia](https://en.wikipedia.org/wiki/Matt_Braly) — Its first project would be Clara and the Below, a gothic horror adaptation of The Nutcracker, with a crowdfunding campaign on Kickstarter. [29][30][31] On March 17 , 2026 , Braly launched a Kickstarter for the series , with a goal of funding a single episode which was 6-10 minutes for a cost of $25,000.\n['Amphibia' creator Matt Braly's next animated project 'Clara and The ...](https://x.com/ToonHive/status/2033967015644262889) — ToonHive (@ToonHive). 25 replies. 'Amphibia' creator Matt Braly's next animated project 'Clara and The Below' was fully funded in under 15 minutes. The indie gothic horror pilot inspired by The Nutcracker has already surpassed $60K, blowing past its $25K goal.\n[Behind the Below and also Clara • Buttondown](https://buttondown.com/reframe/archive/behind-the-below-and-also-clara/) — March 17 , 2026 Behind the Below and also Clara We interview Amphibia creator Matt Braly about his"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_mGNjgn13B8HO8zlDELbBftZq",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://x.com/i/trending/2033965752894505197\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 1,
+     "id": "call_K6tvfOv6gcu9IckoKvA0Bke1",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://tvtropes.org/pmwiki/pmwiki.php/WebAnimation/ClaraAndTheBelow\"}"
+     }
+    },
+    {
+     "type": "function",
+     "index": 2,
+     "id": "call_JG3onPciOScnwPtShPtPU1Dd",
+     "function": {
+      "name": "read_page",
+      "arguments": "{\"url\": \"https://en.wikipedia.org/wiki/Matt_Braly\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_mGNjgn13B8HO8zlDELbBftZq",
+   "content": "Matt Braly's 'Clara and the Below' Smashes Kickstarter Records in Two Days / X Trending Log in Sign up Trending Log in Sign up Matt Braly's 'Clara and the Below' Smashes Kickstarter Records in Two Days Last updated Mar 19, 2026 The Kickstarter for 'Clara and the Below,' a 6-to-10-minute animated horror pilot from Braly's new Fantasy Project studio, hit its $25,000 goal in under 15 minutes after launching March 17 and soared past $207,000 with over 2,400 backers by Thursday. Known for Disney's 'Amphibia,' Braly shifted to indie work to escape studio uncertainties, teaming with veterans from Disney, Pixar, and DreamWorks for this dark tale of Clara's underworld quest to save her father amid wintery chills and Tchaikovsky-inspired music. 'Owl House' creator Dana Terrace cheered the project, predicting its success as the first of a four-episode arc. This story is a summary of posts on X and may evolve over time. Grok can make mistakes, verify its outputs. Related Trending Stories on X Thai Studio Revives Matt Braly's Shelved Animated Film Afterworld Entertainment · 42.1K posts Miraculous Ladybug Franchise Expands with Preschool Spin-Off, Aged-Up Sequel, and Mini-Series Entertainment · 7.3K posts Peacock Orders Live-Action Dungeon Crawler Carl Series from Seth MacFarlane Entertainment · 2.2K posts Matt Braly @Radrappy Mar 17 FUNDED IN UNDER 15 MIN???????>???AL<DAL:ADL\"D \"L\"<D \"<:D\"<:D 195 707 9K 196K Matt Braly @Radrappy Mar 18 AUGHHHHHHH THANK YOU FOR 200K - WE ARE DOING EP 2!! #ClaraandtheBelow GIF 80 660 5.6K 73K Matt Braly @Radrappy Mar 17 WE ARE LIVE!!! GO GO GO!!! TELL YOUR FRIENDS, BULLY YOUR ENEMIES!!! HELP US MAKE A GREAT THING!!!!!!!!! This teaser's music was composed by the incredible @ tjhill !!!! 00:00 191 6.4K 26K 1.7M GLITCH @glitch_prod Mar 17 GO CHECK IT OUT! MATTS AWESOME! Matt Braly @Radrappy Mar 17 WE ARE LIVE!!! GO GO GO!!! TELL YOUR FRIENDS, BULLY YOUR ENEMIES!!! HELP US MAKE A GREAT THING!!!!!!!!! This teaser's music was composed by the incredible "
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_K6tvfOv6gcu9IckoKvA0Bke1",
+   "content": "Clara and the Below (Web Animation) - TV Tropes TVTropes Now available in the app store! Open Tropes Media Reviews Popular Forums Videos Join Login Tropes Media Reviews Popular Indexes Forums Videos Ask The Tropers Trope Finder Media Finder Trope Launch Pad Tech Wishlist Browse Tools Cut List Image Fixer New Edits New Articles Edit Reasons Launches Images List Crowner Activity Un-typed Pages Recent Page Type Changes Changelog Tips Creating New Redirects Cross Wicking Tips for Editing Text Formatting Rules Glossary Edit Reasons Handling Spoilers Word Cruft Administrivia FAQ Tropes HQ About Us Contact Us DMCA Notice Privacy Policy Report Bug Terms Of Service Go Ad-Free Changelog Show Spoilers Night Vision Sticky Header Highlight Links Follow TV Tropes Edit Page Related History Add Review Discussion More To Do Page Source You need to login to do this. Get Known if you don't have an account http://tvtropes.org/pmwiki/pmwiki.php/WebAnimation/ClaraAndTheBelow Web Animation / Clara and the Below 12 Follow ing Go To WebAnimation Laconic Trivia WMG Create Subpage - Create New - Analysis Archive Awesome Characters DerivativeWork… FanficRecs FanWorks Fridge Funny Haiku Headscratchers Heartwarming ImageLinks ImageSource MediaNotes Newsletter NightmareFuel PlayingWith Quotes QuoteSource Recap ReferencedBy Shocking TearJerker Timeline YMMV Clara & the Below is an upcoming independent Gothic Horror animated series inspired by The Nutcracker and the Mouse King by E. T. A. Hoffmann later adapted into a short story in 1844 by Alexandre Dumas titled The Tale of a Nutcracker, which became the basis for the ballet adaptation by Pyotr Ilyich Tchaikovsky . The series is created by Matt Braly and is the first production by his own independent animation studio, Fantasy Project. Providing voices for the series are Anna Akana and Alex Hirsch . In this interpretation of the fairy tale, a young girl named Clara must save her ailing war hero father by battling the spirits of the men he killed in"
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_JG3onPciOScnwPtShPtPU1Dd",
+   "content": "Matt Braly - Wikipedia Jump to content Main menu Main menu move to sidebar hide Navigation Main page Contents Current events Random article About Wikipedia Contact us Contribute Help Learn to edit Community portal Recent changes Upload file Special pages Search Search Appearance Donate Create account Log in Personal tools Donate Create account Log in Contents move to sidebar hide (Top) 1 Early life 2 Career 3 Personal life 4 Filmography Toggle Filmography subsection 4.1 Films 4.2 Television 4.3 Web 5 Bibliography 6 Nominations and awards 7 Notes 8 References 9 External links Toggle the table of contents Matt Braly 11 languages Español Bahasa Indonesia Italiano 日本語 Nederlands Polski Русский Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Switch to legacy parser Print/export Download as PDF Printable version In other projects Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia American animator (born 1988) Matt Braly Braly in 2019 Born Matthew Benjakarn Braly ( 1988-11-08 ) November 8, 1988 (age 37) Sacramento, California , U.S. Education California Institute of the Arts ( BFA ) Occupations Animator storyboard artist director producer writer Years active 2010–present Employers DreamWorks Animation (2010–2012) Disney Television Animation (2012–2022) Sony Pictures Animation (2022–2026) Fantasy Project (2026–present) Known for Amphibia Spouse Katherine Bedrosian ​ ( married</span>\"}]]}'>m. 2018 ) ​ Children 1 Mother On Braly Matthew Benjakarn Braly [ 1 ] (born November 8, 1988) is a Thai-American animator, storyboard artist, writer, and director. He is best known as the creator and executive producer of the Disney Channel animated series Amphibia . [ 2 ] He also worked as a director on Gravity Falls and Big City Greens . Ea"
+  },
+  {
+   "role": "assistant",
+   "content": "The name of the indie animated series created by Matt Braly that was fully funded on March 17, 2026, is \"Clara and the Below.\" \n\nFINAL: Clara and the Below",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-44",
+  "source": "fresh",
+  "question": "What is the name of the super-Earth with a confirmed atmosphere reported on July 16, 2026?",
+  "answer": "LHS 1140 b",
+  "evidence": "16 July – Astronomers report the first observationally confirmed atmosphere around a rocky exoplanet within its star's habitable zone, after detecting helium escaping from the upper atmosphere of LHS 1140 b, a super-Earth approximately 49 light-years from Earth.",
+  "page": "2026 in science",
+  "url": "https://en.wikipedia.org/wiki/2026_in_science",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "LHS 1140 b",
+ "agent_ok": true,
+ "cost": 0.00024090000000000222,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What is the name of the super-Earth with a confirmed atmosphere reported on July 16, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_97CYMTq7DATBrcCa062M8bE3",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"super-Earth confirmed atmosphere July 16 2026\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_97CYMTq7DATBrcCa062M8bE3",
+   "content": "[Astronomers find the first atmosphere on a rocky world in the habitable ...](https://www.sciencedaily.com/releases/2026/07/260721000825.htm) — Helium Reveals an Exoplanet Atmosphere The study, published July 16 in Science, describes observations of helium escaping from LHS 1140 b, a rocky exoplanet located about 48 light-years from Earth .\n[In search of life beyond our solar system: Atmosphere detected on a ...](https://phys.org/news/2026-07-life-solar-atmosphere-habitable-zone.html) — In a major milestone in the search for life on other planets, astronomers have detected, for the first time, an atmosphere surrounding an Earth -like, rocky planet orbiting within the habitable ...\n[In a first, 'super-Earth' rocky exoplanet may have an atmosphere | CNN](https://www.cnn.com/2026/07/31/science/lhs1140b-atmosphere-rocky-exoplanet) — Scientists say exoplanet LHS 1140b shows promising signs that it could have an atmosphere , making it potentially suitable for life.\n[Astronomers spot first atmosphere around a potentially ... - Science](https://www.science.org/content/article/astronomers-spot-first-atmosphere-around-potentially-habitable-alien-world) — Astronomers have discovered more than 6000 planets orbiting other stars—many of them small and rocky like Earth . But despite years of searching, firm evidence that such worlds have stable atmospheres has remained elusive. Now, researchers report in Science that the relatively nearby super-Earth LHS 1140b appears to be leaking helium gas into space, implying it still has a substantial ...\n[Helium Escaping LHS 1140 b Confirms First Habitable-Zone Rocky Atmosphere](https://www.techtimes.com/articles/321071/20260720/helium-escaping-lhs-1140-b-confirms-first-habitable-zone-rocky-atmosphere.htm) — Rocky exoplanet atmosphere confirmed for the first time in a habitable zone: Harvard astronomers detected helium escaping from LHS 1140 b, a super-Earth 48 light-years from Earth . The July 17, 2026"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: LHS 1140 b",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

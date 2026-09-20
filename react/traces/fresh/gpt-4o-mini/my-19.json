@@ -1,0 +1,52 @@
+{
+ "task": {
+  "id": "my-19",
+  "source": "my",
+  "question": "Когда заканчивается срок поддержки (End of Life) Kubernetes 1.34?",
+  "answer": "2026-10-27",
+  "evidence": "The End of Life date for Kubernetes 1.34 is 2026-10-27.",
+  "page": "Kubernetes 1.34",
+  "url": "https://kubernetes.io/releases/1.34/"
+ },
+ "agent_answer": "27 October 2026.",
+ "agent_ok": false,
+ "cost": 0.0002520000000000022,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "Когда заканчивается срок поддержки (End of Life) Kubernetes 1.34?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_valAwlCdVSdBHTBD1mONgZgV",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Kubernetes 1.34 end of life date\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_valAwlCdVSdBHTBD1mONgZgV",
+   "content": "[Kubernetes 1.34](https://kubernetes.io/releases/1.34/) — Kubernetes 1.34 : Of Wind & Will (O' WaW) This page provides an overview of the Kubernetes 1.34 release series. Release Status Maintenance Mode Latest patch release 1.34.11 (Released on 2026-08-11) Maintenance Mode Start Date 2026-08-27 End Of Life Date 2026-10-27 Patch Releases\n[Kubernetes End of Life (EOL) Dates and End of Support (EOS) Dates](https://eosl.date/eol/product/kubernetes/) — Kubernetes end of life dates — 3 supported, 1 expiring, 18 EOL releases. Kubernetes 1.37.0 is the latest supported version (August 2026). 1.34 support ending 2026-10-27. Covers EOL, EOS and EOSL dates .\n[Kubernetes End of Life & Support Options: When Patches Stop (1.34)](https://endoflife.ai/article-kubernetes-eol) — The next Kubernetes version to reach end of life is 1.34 , on October 27, 2026. 18 of 22 tracked Kubernetes versions are past end of life ; the most recent to reach it, 1.33, did so on June 28, 2026. Every Kubernetes version's release and end - of -support date is on the Kubernetes lifecycle page.\n[Kubernetes 1.34 End of Life Date](https://endoflife.ai/kubernetes/1.34) — Kubernetes 1.34 reaches end of life on Oct 27, 2026 — 49 days remaining left. After that date , all new CVEs go unpatched permanently. Latest release: 1.34 .\n[Kubernetes End-of-Life Dates — Official EOL Schedule for Every Version](https://dev.to/endoflifeai/kubernetes-end-of-life-dates-official-eol-schedule-for-every-version-58l9) — K8s 1.33 reached end of life June 28, 2026; 1.34 , 1.35 and 1.36 are supported. Official dates , EOL Risk Scores, EKS/GKE/AKS support windows, and a step-by-step upgrade guide. Tagged with kubernetes , devops, security, cloudnative."
+  },
+  {
+   "role": "assistant",
+   "content": "Срок поддержки Kubernetes 1.34 заканчивается 27 октября 2026 года. FINAL: 27 October 2026.",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}

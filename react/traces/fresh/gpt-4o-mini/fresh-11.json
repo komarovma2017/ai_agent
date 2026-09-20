@@ -1,0 +1,54 @@
+{
+ "task": {
+  "id": "fresh-11",
+  "source": "fresh",
+  "question": "What was the title of the art exhibition at Fondazione Prada in Venice from May 9 to May 23, 2026?",
+  "answer": "Helter Skelter",
+  "evidence": "May 9 until May 23 – Helter Skelter: Arthur Jafa and Richard Prince at Fondazione Prada in Venice.",
+  "page": "2026 in art",
+  "url": "https://en.wikipedia.org/wiki/2026_in_art",
+  "sonnet_answer": "unknown",
+  "agent_ok": true
+ },
+ "agent_answer": "Helter Skelter: Arthur Jafa and Richard Prince",
+ "agent_ok": true,
+ "cost": 0.00025215000000000654,
+ "messages": [
+  {
+   "role": "system",
+   "content": "Ты решаешь задачи. Если нужно посчитать или найти факт, вызывай инструменты, а не угадывай. Когда ответ готов, напиши его последней строкой в формате FINAL: <ответ>. Для числовых задач в FINAL только число, для вопросов о фактах короткая фраза. ВАЖНО про формат FINAL: отвечай на том же языке, на котором задан вопрос, и копируй формулировку максимально близко к найденному источнику - не переводи и не перефразируй. Если источник на английском, а вопрос тоже на английском (или явно про англоязычный факт), FINAL должен быть на английском, дословно как в источнике: имена, названия, цитаты - без перевода на русский. Для дат пиши в формате 'число месяц' без года, если год не спрашивают явно (например, '15 March', а не '15 март' и не 'March 15, 2026'). Для чисел с приставками (трлн/млрд/млн, T/B/M) используй ту же запись и тот же язык, что были бы уместны в источнике, не переводи единицы измерения. Если факт в источнике выражен как соотношение или с уточнением (например, '4 of 5', 'nine of 27'), приведи его в FINAL полностью, а не только первое число."
+  },
+  {
+   "role": "user",
+   "content": "What was the title of the art exhibition at Fondazione Prada in Venice from May 9 to May 23, 2026?"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "refusal": null,
+   "reasoning": null,
+   "tool_calls": [
+    {
+     "type": "function",
+     "index": 0,
+     "id": "call_ahb9cqAm3EF1FTPJ6BBu8iYZ",
+     "function": {
+      "name": "web_search",
+      "arguments": "{\"query\":\"Fondazione Prada Venice art exhibition May 9 to May 23 2026 title\"}"
+     }
+    }
+   ]
+  },
+  {
+   "role": "tool",
+   "tool_call_id": "call_ahb9cqAm3EF1FTPJ6BBu8iYZ",
+   "content": "[Helter Skelter: Arthur Jafa and Richard Prince - Fondazione Prada Venice](https://www.fondazioneprada.org/project/helter-skelter-arthur-jafa-richard-prince/?lang=en) — The upcoming exhibition by Arthur Jafa and Richard Prince, curated by Nancy Spector, from May 2026 at Fondazione Prada in Venice .\n[PDF Fondazione Prada Announces Its 2026 Program in Milan and Venice](https://www.fondazioneprada.org/wp-content/uploads/Fondazione-Prada_2026-Program_PR.pdf) — The exhibition \"Helter Skelter: Arthur Jafa and Richard Prince\", curated by Nancy Spector and presented in Venice from 9 May to 23 November 2026 during the Art Biennale, will constitute a dialogue between two prominent visual artists. Born a decade apart, they share an ethos of lawlessness when it comes to the appropriation and manipulation of images siphoned from movies, pulp novels ...\n[Richard Prince-Helter Skelter: Arthur Jafa and Richard Prince (duo show ...](https://www.maxhetzler.com/news/2026-03-31-richard-prince-helter-skelter-arthur-jafa-and-richard-prince-duo-show-fondazione-prada-venice-9-may-23-november-2026) — Richard Prince's work is shown in dialogue with that of Arthur Jafa in Helter Skelter: Arthur Jafa and Richard Prince at Fondazione Prada , Venice . The exhibition , curated by Nancy Spector, showcases the work of two artists born a decade apart, who share an ethos of lawlessness when it comes to the appropriation and manipulation of images. Trafficking heavily in American popular culture ...\n[Helter Skelter: Arthur Jafa and Richard Prince | Museum Exhibitions ...](https://gagosian.com/news/museum-exhibitions/helter-skelter-arthur-jafa-and-richard-prince-fondazione-prada-venice/) — Through November 23 , 2026 , Fondazione Prada , Venice . Helter Skelter, curated by Nancy Spector, presents for the first time a creative conversation between Arthur Jafa and Richard Prince. Born a decade apart, the two artists share an ethos of lawlessness when it comes to the appropriation and manipulation of image"
+  },
+  {
+   "role": "assistant",
+   "content": "FINAL: Helter Skelter: Arthur Jafa and Richard Prince",
+   "refusal": null,
+   "reasoning": null
+  }
+ ]
+}
